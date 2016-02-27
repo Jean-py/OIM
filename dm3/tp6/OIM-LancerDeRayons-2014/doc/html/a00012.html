@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Référence de la classe Cylinder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00012.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00163.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Cylinder<div class="ingroups"><a class="el" href="a00075.html">Simple Raytracer</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="a00012.html" title="Cylinder geometric object. ">Cylinder</a> geometric object.  
+ <a href="a00012.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00038_source.html">cylinder.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de Cylinder:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00164.png" border="0" usemap="#_cylinder_inherit__map" alt="Inheritance graph"/></div>
+<map name="_cylinder_inherit__map" id="_cylinder_inherit__map">
+<area shape="rect" id="node2" href="a00014.html" title="Abstract class for geometric object. " alt="" coords="49,6,152,119"/></map>
+</div>
+<div class="dynheader">
+Graphe de collaboration de Cylinder:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00165.png" border="0" usemap="#_cylinder_coll__map" alt="Collaboration graph"/></div>
+<map name="_cylinder_coll__map" id="_cylinder_coll__map">
+<area shape="rect" id="node2" href="a00014.html" title="Abstract class for geometric object. " alt="" coords="4,78,107,191"/><area shape="rect" id="node3" href="a00031.html" title="3D vector manipulation " alt="" coords="132,6,244,263"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aa5eaa26636bec4e5b4200bf1e2493823"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aa5eaa26636bec4e5b4200bf1e2493823">Cylinder</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;center_, const <a class="el" href="a00031.html">Vector3D</a> &amp;axis_, float radius_, float length_)</td></tr>
+<tr class="separator:aa5eaa26636bec4e5b4200bf1e2493823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9bb0e9f800879eaa31070c9f7eb687"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687">intersect</a> (<a class="el" href="a00027.html">Ray</a> &amp;ray_, <a class="el" href="a00013.html">Diff_Geom</a> *p_diff_geom_) const </td></tr>
+<tr class="memdesc:aaf9bb0e9f800879eaa31070c9f7eb687"><td class="mdescLeft">&#160;</td><td class="mdescRight"><pre class="fragment">modifies the ray_.max_t() value, intersect only if the intersection
+is before ray_.max_t()
+</pre><p> adapted from <a href="http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp">http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp</a>  <a href="#aaf9bb0e9f800879eaa31070c9f7eb687">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aaf9bb0e9f800879eaa31070c9f7eb687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e9a7ebf491149b58fc079e250f18bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a39e9a7ebf491149b58fc079e250f18bb">clip</a> (<a class="el" href="a00027.html">Ray</a> &amp;ray_, <a class="el" href="a00018.html">IntervalSet</a> &amp;bounds) const </td></tr>
+<tr class="memdesc:a39e9a7ebf491149b58fc079e250f18bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">clip a ray by a geometry.  <a href="#a39e9a7ebf491149b58fc079e250f18bb">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a39e9a7ebf491149b58fc079e250f18bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00014"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00014')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques inherited from <a class="el" href="a00014.html">Geometry</a></td></tr>
+<tr class="memitem:a7fd58bab5c99530e71757539ee3384a3 inherit pub_methods_a00014"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a7fd58bab5c99530e71757539ee3384a3">settangent</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;tg)</td></tr>
+<tr class="separator:a7fd58bab5c99530e71757539ee3384a3 inherit pub_methods_a00014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:adad45f440e3fa3b0d0f1f2d05495aeb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#adad45f440e3fa3b0d0f1f2d05495aeb3">computePlanarTexInfo</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;pt_inter, const <a class="el" href="a00031.html">Vector3D</a> &amp;normal, const <a class="el" href="a00031.html">Vector3D</a> &amp;dPpdx, const <a class="el" href="a00031.html">Vector3D</a> &amp;dPpdy, float &amp;u, float &amp;v, <a class="el" href="a00031.html">Vector3D</a> &amp;dTdx, <a class="el" href="a00031.html">Vector3D</a> &amp;dTdy) const </td></tr>
+<tr class="separator:adad45f440e3fa3b0d0f1f2d05495aeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177615c862c903affe4865063e2fb802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a177615c862c903affe4865063e2fb802">fillPlanarDiffGeom</a> (<a class="el" href="a00013.html">Diff_Geom</a> &amp;dg, const <a class="el" href="a00027.html">Ray</a> &amp;r, float t, const <a class="el" href="a00031.html">Vector3D</a> &amp;normal, bool in) const </td></tr>
+<tr class="separator:a177615c862c903affe4865063e2fb802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92147892ccb160276ef50997c1303ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a92147892ccb160276ef50997c1303ae2">computeCylindricalTexInfo</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;pt_inter, const <a class="el" href="a00031.html">Vector3D</a> &amp;normal, const <a class="el" href="a00031.html">Vector3D</a> &amp;dPpdx, const <a class="el" href="a00031.html">Vector3D</a> &amp;dPpdy, float &amp;u, float &amp;v, <a class="el" href="a00031.html">Vector3D</a> &amp;dTdx, <a class="el" href="a00031.html">Vector3D</a> &amp;dTdy) const </td></tr>
+<tr class="separator:a92147892ccb160276ef50997c1303ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d585ce8b14de9e1611e0accc107e518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a2d585ce8b14de9e1611e0accc107e518">fillCylindricalDiffGeom</a> (<a class="el" href="a00013.html">Diff_Geom</a> &amp;dg, const <a class="el" href="a00027.html">Ray</a> &amp;r, float t, bool in) const </td></tr>
+<tr class="separator:a2d585ce8b14de9e1611e0accc107e518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646e440049ec43067444b2efa0c6b860"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a646e440049ec43067444b2efa0c6b860">get_clip_points</a> (<a class="el" href="a00027.html">Ray</a> &amp;ray_, <a class="el" href="a00013.html">Diff_Geom</a> ipoints[2], float t[2]) const </td></tr>
+<tr class="separator:a646e440049ec43067444b2efa0c6b860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01dc978cb576f834b9545e43d4dad2a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a01dc978cb576f834b9545e43d4dad2a2">Cylinder</a> ()</td></tr>
+<tr class="separator:a01dc978cb576f834b9545e43d4dad2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a03599e6c41c277ed35de4da14c9cd886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a03599e6c41c277ed35de4da14c9cd886">m_base</a></td></tr>
+<tr class="separator:a03599e6c41c277ed35de4da14c9cd886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb8e5f89492ea7b32c30af0f49e04a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a5bb8e5f89492ea7b32c30af0f49e04a1">m_axis</a></td></tr>
+<tr class="separator:a5bb8e5f89492ea7b32c30af0f49e04a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3e3c6fc81ea1ad7e9ac678e58960dd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a4c3e3c6fc81ea1ad7e9ac678e58960dd">m_radius</a></td></tr>
+<tr class="separator:a4c3e3c6fc81ea1ad7e9ac678e58960dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5943bbe030c7c18f9e25f048c014e841"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a5943bbe030c7c18f9e25f048c014e841">m_length</a></td></tr>
+<tr class="separator:a5943bbe030c7c18f9e25f048c014e841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00b72a832a896e630c3ef18b6ad61dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ad00b72a832a896e630c3ef18b6ad61dc">U</a></td></tr>
+<tr class="separator:ad00b72a832a896e630c3ef18b6ad61dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c7947702a9743b141dca395e5d6319"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#a83c7947702a9743b141dca395e5d6319">V</a></td></tr>
+<tr class="separator:a83c7947702a9743b141dca395e5d6319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d0b915aac1186a6b7444cf06701c71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00012.html#ad9d0b915aac1186a6b7444cf06701c71">W</a></td></tr>
+<tr class="separator:ad9d0b915aac1186a6b7444cf06701c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="a00012.html" title="Cylinder geometric object. ">Cylinder</a> geometric object. </p>
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00012">12</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a01dc978cb576f834b9545e43d4dad2a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cylinder::Cylinder </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00296">296</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00038_source.html#l00016">m_axis</a>, <a class="el" href="a00065_source.html#l00116">Vector3D::make_basis()</a>, <a class="el" href="a00038_source.html#l00019">U</a>, <a class="el" href="a00038_source.html#l00019">V</a>, et <a class="el" href="a00038_source.html#l00019">W</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a01dc978cb576f834b9545e43d4dad2a2_cgraph.png" border="0" usemap="#a00012_a01dc978cb576f834b9545e43d4dad2a2_cgraph" alt=""/></div>
+<map name="a00012_a01dc978cb576f834b9545e43d4dad2a2_cgraph" id="a00012_a01dc978cb576f834b9545e43d4dad2a2_cgraph">
+<area shape="rect" id="node2" href="a00031.html#a449ecda100969a0e070b997f0537840a" title="Vector3D::make_basis" alt="" coords="181,5,336,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5eaa26636bec4e5b4200bf1e2493823"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cylinder::Cylinder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>center_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>axis_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>length_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00304">304</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00038_source.html#l00016">m_axis</a>, <a class="el" href="a00065_source.html#l00116">Vector3D::make_basis()</a>, <a class="el" href="a00038_source.html#l00019">U</a>, <a class="el" href="a00038_source.html#l00019">V</a>, et <a class="el" href="a00038_source.html#l00019">W</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_aa5eaa26636bec4e5b4200bf1e2493823_cgraph.png" border="0" usemap="#a00012_aa5eaa26636bec4e5b4200bf1e2493823_cgraph" alt=""/></div>
+<map name="a00012_aa5eaa26636bec4e5b4200bf1e2493823_cgraph" id="a00012_aa5eaa26636bec4e5b4200bf1e2493823_cgraph">
+<area shape="rect" id="node2" href="a00031.html#a449ecda100969a0e070b997f0537840a" title="Vector3D::make_basis" alt="" coords="181,5,336,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a39e9a7ebf491149b58fc079e250f18bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cylinder::clip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00018.html">IntervalSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clip a ray by a geometry. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray_</td><td></td></tr>
+    <tr><td class="paramname">p_diff_geom_in_</td><td>The point by wich the ray enters the geometry </td></tr>
+    <tr><td class="paramname">p_diff_geom_out_</td><td>The point by wich the ray leaves the geometry </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true if the ray intersects the geometry. In and out parameters are filled by this method. The default returned value is false such that non volumic geometries do not need to implement this. </dd></dl>
+
+<p>Implémente <a class="el" href="a00014.html#a767321b776e8662e39aa32347e8918ee">Geometry</a>.</p>
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00333">333</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00046_source.html#l00015">IntervalSet::add()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a39e9a7ebf491149b58fc079e250f18bb_cgraph.png" border="0" usemap="#a00012_a39e9a7ebf491149b58fc079e250f18bb_cgraph" alt=""/></div>
+<map name="a00012_a39e9a7ebf491149b58fc079e250f18bb_cgraph" id="a00012_a39e9a7ebf491149b58fc079e250f18bb_cgraph">
+<area shape="rect" id="node2" href="a00018.html#a5875b7222430d9be92a654db194d0d60" title="IntervalSet::add" alt="" coords="157,105,272,133"/><area shape="rect" id="node4" href="a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="153,257,276,301"/><area shape="rect" id="node3" href="a00013.html#ae931001b67b43308e984fee80902a17b" title="Diff_Geom::t" alt="" coords="371,5,467,33"/><area shape="rect" id="node5" href="a00027.html#aa0271e10968c04224e2986017abb67b3" title="Ray::ori" alt="" coords="385,213,452,241"/><area shape="rect" id="node6" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="852,450,954,478"/><area shape="rect" id="node10" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="869,939,936,967"/><area shape="rect" id="node11" href="a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77" title="to avoid auto intersection " alt="" coords="358,109,479,137"/><area shape="rect" id="node12" href="a00012.html#a177615c862c903affe4865063e2fb802" title="Cylinder::fillPlanarDiffGeom" alt="" coords="326,722,511,750"/><area shape="rect" id="node9" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="1059,398,1149,426"/><area shape="rect" id="node7" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="1059,450,1149,478"/><area shape="rect" id="node8" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="1059,502,1149,530"/><area shape="rect" id="node20" href="a00012.html#a2d585ce8b14de9e1611e0accc107e518" title="Cylinder::fillCylindrical\lDiffGeom" alt="" coords="343,531,495,575"/><area shape="rect" id="node26" href="a00013.html#abd160afd2ac49189a0b2f44dd4845fef" title="Diff_Geom::set_in" alt="" coords="355,161,483,189"/><area shape="rect" id="node13" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="634,695,697,723"/><area shape="rect" id="node14" href="a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="574,799,757,827"/><area shape="rect" id="node19" href="a00012.html#adad45f440e3fa3b0d0f1f2d05495aeb3" title="Cylinder::computePlanarTexInfo" alt="" coords="560,591,770,619"/><area shape="rect" id="node16" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="861,707,944,735"/><area shape="rect" id="node18" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="861,863,944,891"/><area shape="rect" id="node15" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="861,811,944,839"/><area shape="rect" id="node17" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="861,759,944,787"/><area shape="rect" id="node21" href="a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="819,502,986,530"/><area shape="rect" id="node23" href="a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="595,367,736,395"/><area shape="rect" id="node25" href="a00012.html#a92147892ccb160276ef50997c1303ae2" title="Cylinder::computeCylindrical\lTexInfo" alt="" coords="570,471,760,515"/><area shape="rect" id="node22" href="a00031.html#a0b11a8d75da427b27443d8a94d0d296c" title="Vector3D::Vector3D" alt="" coords="1035,554,1173,582"/><area shape="rect" id="node24" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="846,398,960,426"/><area shape="rect" id="node27" href="a00013.html#a6920a3cde4fcf4a5a47e36285917fec5" title="Diff_Geom::in" alt="" coords="614,161,717,189"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a92147892ccb160276ef50997c1303ae2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cylinder::computeCylindricalTexInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pt_inter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dPpdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dPpdy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dTdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dTdy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00048">48</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00038_source.html#l00015">m_base</a>, <a class="el" href="a00038_source.html#l00018">m_length</a>, <a class="el" href="a00038_source.html#l00017">m_radius</a>, <a class="el" href="a00038_source.html#l00019">U</a>, <a class="el" href="a00038_source.html#l00019">V</a>, et <a class="el" href="a00038_source.html#l00019">W</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00064">fillCylindricalDiffGeom()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a92147892ccb160276ef50997c1303ae2_cgraph.png" border="0" usemap="#a00012_a92147892ccb160276ef50997c1303ae2_cgraph" alt=""/></div>
+<map name="a00012_a92147892ccb160276ef50997c1303ae2_cgraph" id="a00012_a92147892ccb160276ef50997c1303ae2_cgraph">
+<area shape="rect" id="node2" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="246,57,348,85"/><area shape="rect" id="node3" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="398,5,488,33"/><area shape="rect" id="node4" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="398,57,488,85"/><area shape="rect" id="node5" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="398,109,488,137"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a92147892ccb160276ef50997c1303ae2_icgraph.png" border="0" usemap="#a00012_a92147892ccb160276ef50997c1303ae2_icgraph" alt=""/></div>
+<map name="a00012_a92147892ccb160276ef50997c1303ae2_icgraph" id="a00012_a92147892ccb160276ef50997c1303ae2_icgraph">
+<area shape="rect" id="node2" href="a00012.html#a2d585ce8b14de9e1611e0accc107e518" title="Cylinder::fillCylindrical\lDiffGeom" alt="" coords="245,23,397,67"/><area shape="rect" id="node3" href="a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="446,23,570,67"/><area shape="rect" id="node4" href="a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="619,5,747,33"/><area shape="rect" id="node5" href="a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="634,57,731,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adad45f440e3fa3b0d0f1f2d05495aeb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cylinder::computePlanarTexInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pt_inter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dPpdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dPpdy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dTdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dTdy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00022">22</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00038_source.html#l00015">m_base</a>, <a class="el" href="a00038_source.html#l00017">m_radius</a>, <a class="el" href="a00038_source.html#l00019">U</a>, <a class="el" href="a00038_source.html#l00019">V</a>, et <a class="el" href="a00038_source.html#l00019">W</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00035">fillPlanarDiffGeom()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_cgraph.png" border="0" usemap="#a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_cgraph" alt=""/></div>
+<map name="a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_cgraph" id="a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_cgraph">
+<area shape="rect" id="node2" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="265,57,367,85"/><area shape="rect" id="node3" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="416,5,506,33"/><area shape="rect" id="node4" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="416,57,506,85"/><area shape="rect" id="node5" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="416,109,506,137"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_icgraph.png" border="0" usemap="#a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_icgraph" alt=""/></div>
+<map name="a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_icgraph" id="a00012_adad45f440e3fa3b0d0f1f2d05495aeb3_icgraph">
+<area shape="rect" id="node2" href="a00012.html#a177615c862c903affe4865063e2fb802" title="Cylinder::fillPlanarDiffGeom" alt="" coords="265,31,450,59"/><area shape="rect" id="node3" href="a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="500,23,623,67"/><area shape="rect" id="node4" href="a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="672,5,800,33"/><area shape="rect" id="node5" href="a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="687,57,785,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d585ce8b14de9e1611e0accc107e518"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cylinder::fillCylindricalDiffGeom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00013.html">Diff_Geom</a> &amp;&#160;</td>
+          <td class="paramname"><em>dg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00064">64</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00056_source.html#l00084">Ray::at()</a>, <a class="el" href="a00038_source.html#l00048">computeCylindricalTexInfo()</a>, <a class="el" href="a00065_source.html#l00096">Vector3D::cross_product()</a>, <a class="el" href="a00056_source.html#l00099">Ray::dDdx()</a>, <a class="el" href="a00056_source.html#l00102">Ray::dDdy()</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00038_source.html#l00016">m_axis</a>, <a class="el" href="a00038_source.html#l00015">m_base</a>, <a class="el" href="a00065_source.html#l00092">Vector3D::normalize()</a>, et <a class="el" href="a00056_source.html#l00119">Ray::propagateDifferentials()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a2d585ce8b14de9e1611e0accc107e518_cgraph.png" border="0" usemap="#a00012_a2d585ce8b14de9e1611e0accc107e518_cgraph" alt=""/></div>
+<map name="a00012_a2d585ce8b14de9e1611e0accc107e518_cgraph" id="a00012_a2d585ce8b14de9e1611e0accc107e518_cgraph">
+<area shape="rect" id="node2" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="270,5,333,33"/><area shape="rect" id="node3" href="a00012.html#a92147892ccb160276ef50997c1303ae2" title="Cylinder::computeCylindrical\lTexInfo" alt="" coords="206,213,396,257"/><area shape="rect" id="node8" href="a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="446,57,613,85"/><area shape="rect" id="node10" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="488,369,571,397"/><area shape="rect" id="node11" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="488,421,571,449"/><area shape="rect" id="node4" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="478,161,580,189"/><area shape="rect" id="node12" href="a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="231,109,372,137"/><area shape="rect" id="node14" href="a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="210,281,393,309"/><area shape="rect" id="node5" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="686,161,776,189"/><area shape="rect" id="node6" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="686,57,776,85"/><area shape="rect" id="node7" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="686,109,776,137"/><area shape="rect" id="node9" href="a00031.html#a0b11a8d75da427b27443d8a94d0d296c" title="Vector3D::Vector3D" alt="" coords="661,5,800,33"/><area shape="rect" id="node13" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="472,109,586,137"/><area shape="rect" id="node15" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="496,213,563,241"/><area shape="rect" id="node16" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="488,265,571,293"/><area shape="rect" id="node17" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="488,317,571,345"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a2d585ce8b14de9e1611e0accc107e518_icgraph.png" border="0" usemap="#a00012_a2d585ce8b14de9e1611e0accc107e518_icgraph" alt=""/></div>
+<map name="a00012_a2d585ce8b14de9e1611e0accc107e518_icgraph" id="a00012_a2d585ce8b14de9e1611e0accc107e518_icgraph">
+<area shape="rect" id="node2" href="a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="206,23,330,67"/><area shape="rect" id="node3" href="a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="379,5,507,33"/><area shape="rect" id="node4" href="a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="394,57,491,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a177615c862c903affe4865063e2fb802"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cylinder::fillPlanarDiffGeom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00013.html">Diff_Geom</a> &amp;&#160;</td>
+          <td class="paramname"><em>dg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00035">35</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00056_source.html#l00084">Ray::at()</a>, <a class="el" href="a00038_source.html#l00022">computePlanarTexInfo()</a>, <a class="el" href="a00056_source.html#l00099">Ray::dDdx()</a>, <a class="el" href="a00056_source.html#l00102">Ray::dDdy()</a>, et <a class="el" href="a00056_source.html#l00119">Ray::propagateDifferentials()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a177615c862c903affe4865063e2fb802_cgraph.png" border="0" usemap="#a00012_a177615c862c903affe4865063e2fb802_cgraph" alt=""/></div>
+<map name="a00012_a177615c862c903affe4865063e2fb802_cgraph" id="a00012_a177615c862c903affe4865063e2fb802_cgraph">
+<area shape="rect" id="node2" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="314,109,377,137"/><area shape="rect" id="node3" href="a00012.html#adad45f440e3fa3b0d0f1f2d05495aeb3" title="Cylinder::computePlanarTexInfo" alt="" coords="240,161,450,189"/><area shape="rect" id="node8" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="509,265,592,293"/><area shape="rect" id="node9" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="509,317,592,345"/><area shape="rect" id="node10" href="a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="254,213,437,241"/><area shape="rect" id="node4" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="500,57,602,85"/><area shape="rect" id="node5" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="651,5,741,33"/><area shape="rect" id="node6" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="651,57,741,85"/><area shape="rect" id="node7" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="651,109,741,137"/><area shape="rect" id="node11" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="517,109,584,137"/><area shape="rect" id="node12" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="509,161,592,189"/><area shape="rect" id="node13" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="509,213,592,241"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a177615c862c903affe4865063e2fb802_icgraph.png" border="0" usemap="#a00012_a177615c862c903affe4865063e2fb802_icgraph" alt=""/></div>
+<map name="a00012_a177615c862c903affe4865063e2fb802_icgraph" id="a00012_a177615c862c903affe4865063e2fb802_icgraph">
+<area shape="rect" id="node2" href="a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="241,23,364,67"/><area shape="rect" id="node3" href="a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="413,5,541,33"/><area shape="rect" id="node4" href="a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="429,57,526,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a646e440049ec43067444b2efa0c6b860"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cylinder::get_clip_points </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00013.html">Diff_Geom</a>&#160;</td>
+          <td class="paramname"><em>ipoints</em>[2], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>[2]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00092">92</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00056_source.html#l00064">Ray::dir()</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00038_source.html#l00064">fillCylindricalDiffGeom()</a>, <a class="el" href="a00038_source.html#l00035">fillPlanarDiffGeom()</a>, <a class="el" href="a00038_source.html#l00016">m_axis</a>, <a class="el" href="a00038_source.html#l00015">m_base</a>, <a class="el" href="a00038_source.html#l00018">m_length</a>, <a class="el" href="a00038_source.html#l00017">m_radius</a>, <a class="el" href="a00056_source.html#l00060">Ray::ori()</a>, <a class="el" href="a00056_source.html#l00089">Ray::ray_epsilon()</a>, <a class="el" href="a00039_source.html#l00157">Diff_Geom::set_in()</a>, <a class="el" href="a00038_source.html#l00019">U</a>, <a class="el" href="a00038_source.html#l00019">V</a>, <a class="el" href="a00038_source.html#l00019">W</a>, <a class="el" href="a00065_source.html#l00035">Vector3D::x()</a>, <a class="el" href="a00065_source.html#l00039">Vector3D::y()</a>, et <a class="el" href="a00065_source.html#l00043">Vector3D::z()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00333">clip()</a>, et <a class="el" href="a00038_source.html#l00314">intersect()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a646e440049ec43067444b2efa0c6b860_cgraph.png" border="0" usemap="#a00012_a646e440049ec43067444b2efa0c6b860_cgraph" alt=""/></div>
+<map name="a00012_a646e440049ec43067444b2efa0c6b860_cgraph" id="a00012_a646e440049ec43067444b2efa0c6b860_cgraph">
+<area shape="rect" id="node2" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="722,240,790,268"/><area shape="rect" id="node3" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="705,403,807,431"/><area shape="rect" id="node7" href="a00012.html#a2d585ce8b14de9e1611e0accc107e518" title="Cylinder::fillCylindrical\lDiffGeom" alt="" coords="196,447,348,491"/><area shape="rect" id="node19" href="a00012.html#a177615c862c903affe4865063e2fb802" title="Cylinder::fillPlanarDiffGeom" alt="" coords="180,623,364,651"/><area shape="rect" id="node21" href="a00027.html#aa0271e10968c04224e2986017abb67b3" title="Ray::ori" alt="" coords="238,340,306,368"/><area shape="rect" id="node22" href="a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77" title="to avoid auto intersection " alt="" coords="212,392,332,420"/><area shape="rect" id="node23" href="a00013.html#abd160afd2ac49189a0b2f44dd4845fef" title="Diff_Geom::set_in" alt="" coords="208,803,336,831"/><area shape="rect" id="node4" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="912,403,1002,431"/><area shape="rect" id="node5" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="912,351,1002,379"/><area shape="rect" id="node6" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="912,455,1002,483"/><area shape="rect" id="node8" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="487,713,550,741"/><area shape="rect" id="node9" href="a00012.html#a92147892ccb160276ef50997c1303ae2" title="Cylinder::computeCylindrical\lTexInfo" alt="" coords="424,336,614,380"/><area shape="rect" id="node10" href="a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="672,455,840,483"/><area shape="rect" id="node12" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="714,663,798,691"/><area shape="rect" id="node13" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="714,611,798,639"/><area shape="rect" id="node14" href="a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="448,232,589,260"/><area shape="rect" id="node16" href="a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="427,559,610,587"/><area shape="rect" id="node11" href="a00031.html#a0b11a8d75da427b27443d8a94d0d296c" title="Vector3D::Vector3D" alt="" coords="888,507,1027,535"/><area shape="rect" id="node15" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="699,351,813,379"/><area shape="rect" id="node17" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="715,507,797,535"/><area shape="rect" id="node18" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="715,559,797,587"/><area shape="rect" id="node20" href="a00012.html#adad45f440e3fa3b0d0f1f2d05495aeb3" title="Cylinder::computePlanarTexInfo" alt="" coords="414,507,624,535"/><area shape="rect" id="node24" href="a00013.html#a6920a3cde4fcf4a5a47e36285917fec5" title="Diff_Geom::in" alt="" coords="467,868,570,896"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_a646e440049ec43067444b2efa0c6b860_icgraph.png" border="0" usemap="#a00012_a646e440049ec43067444b2efa0c6b860_icgraph" alt=""/></div>
+<map name="a00012_a646e440049ec43067444b2efa0c6b860_icgraph" id="a00012_a646e440049ec43067444b2efa0c6b860_icgraph">
+<area shape="rect" id="node2" href="a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="194,5,291,33"/><area shape="rect" id="node3" href="a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="179,57,307,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf9bb0e9f800879eaa31070c9f7eb687"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cylinder::intersect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00013.html">Diff_Geom</a> *&#160;</td>
+          <td class="paramname"><em>p_diff_geom_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><pre class="fragment">modifies the ray_.max_t() value, intersect only if the intersection
+is before ray_.max_t()
+</pre><p> adapted from <a href="http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp">http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp</a> </p>
+
+<p>Implémente <a class="el" href="a00014.html#ae992633602643893bbd1e286e2ca98f9">Geometry</a>.</p>
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00314">314</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>, <a class="el" href="a00056_source.html#l00076">Ray::max_t()</a>, <a class="el" href="a00056_source.html#l00089">Ray::ray_epsilon()</a>, et <a class="el" href="a00056_source.html#l00080">Ray::set_max_t()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00012_aaf9bb0e9f800879eaa31070c9f7eb687_cgraph.png" border="0" usemap="#a00012_aaf9bb0e9f800879eaa31070c9f7eb687_cgraph" alt=""/></div>
+<map name="a00012_aaf9bb0e9f800879eaa31070c9f7eb687_cgraph" id="a00012_aaf9bb0e9f800879eaa31070c9f7eb687_cgraph">
+<area shape="rect" id="node2" href="a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="182,520,306,564"/><area shape="rect" id="node26" href="a00027.html#a8cd07a7f52236e9a1f4c92fbf5c8786a" title="Ray::max_t" alt="" coords="200,700,288,728"/><area shape="rect" id="node23" href="a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77" title="to avoid auto intersection " alt="" coords="388,864,508,892"/><area shape="rect" id="node27" href="a00027.html#a67bf1057835b4a923a50c82f31d46d0d" title="Ray::set_max_t" alt="" coords="187,804,301,832"/><area shape="rect" id="node3" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="898,373,966,401"/><area shape="rect" id="node4" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="881,213,983,241"/><area shape="rect" id="node8" href="a00012.html#a2d585ce8b14de9e1611e0accc107e518" title="Cylinder::fillCylindrical\lDiffGeom" alt="" coords="372,330,524,374"/><area shape="rect" id="node20" href="a00012.html#a177615c862c903affe4865063e2fb802" title="Cylinder::fillPlanarDiffGeom" alt="" coords="356,528,540,556"/><area shape="rect" id="node22" href="a00027.html#aa0271e10968c04224e2986017abb67b3" title="Ray::ori" alt="" coords="414,580,482,608"/><area shape="rect" id="node24" href="a00013.html#abd160afd2ac49189a0b2f44dd4845fef" title="Diff_Geom::set_in" alt="" coords="384,696,512,724"/><area shape="rect" id="node5" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="1088,265,1178,293"/><area shape="rect" id="node6" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="1088,213,1178,241"/><area shape="rect" id="node7" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="1088,161,1178,189"/><area shape="rect" id="node9" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="663,605,726,633"/><area shape="rect" id="node10" href="a00012.html#a92147892ccb160276ef50997c1303ae2" title="Cylinder::computeCylindrical\lTexInfo" alt="" coords="600,176,790,220"/><area shape="rect" id="node11" href="a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="848,265,1016,293"/><area shape="rect" id="node13" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="890,529,974,557"/><area shape="rect" id="node14" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="890,581,974,609"/><area shape="rect" id="node15" href="a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="624,72,765,100"/><area shape="rect" id="node17" href="a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="603,450,786,478"/><area shape="rect" id="node12" href="a00031.html#a0b11a8d75da427b27443d8a94d0d296c" title="Vector3D::Vector3D" alt="" coords="1064,317,1203,345"/><area shape="rect" id="node16" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="875,161,989,189"/><area shape="rect" id="node18" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="891,425,973,453"/><area shape="rect" id="node19" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="891,477,973,505"/><area shape="rect" id="node21" href="a00012.html#adad45f440e3fa3b0d0f1f2d05495aeb3" title="Cylinder::computePlanarTexInfo" alt="" coords="590,346,800,374"/><area shape="rect" id="node25" href="a00013.html#a6920a3cde4fcf4a5a47e36285917fec5" title="Diff_Geom::in" alt="" coords="643,760,746,788"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a5bb8e5f89492ea7b32c30af0f49e04a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Cylinder::m_axis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00016">16</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00296">Cylinder()</a>, <a class="el" href="a00038_source.html#l00064">fillCylindricalDiffGeom()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03599e6c41c277ed35de4da14c9cd886"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Cylinder::m_base</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00015">15</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00048">computeCylindricalTexInfo()</a>, <a class="el" href="a00038_source.html#l00022">computePlanarTexInfo()</a>, <a class="el" href="a00038_source.html#l00064">fillCylindricalDiffGeom()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5943bbe030c7c18f9e25f048c014e841"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Cylinder::m_length</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00018">18</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00048">computeCylindricalTexInfo()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c3e3c6fc81ea1ad7e9ac678e58960dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Cylinder::m_radius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00017">17</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00048">computeCylindricalTexInfo()</a>, <a class="el" href="a00038_source.html#l00022">computePlanarTexInfo()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad00b72a832a896e630c3ef18b6ad61dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Cylinder::U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00019">19</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00048">computeCylindricalTexInfo()</a>, <a class="el" href="a00038_source.html#l00022">computePlanarTexInfo()</a>, <a class="el" href="a00038_source.html#l00296">Cylinder()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83c7947702a9743b141dca395e5d6319"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Cylinder::V</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00019">19</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00048">computeCylindricalTexInfo()</a>, <a class="el" href="a00038_source.html#l00022">computePlanarTexInfo()</a>, <a class="el" href="a00038_source.html#l00296">Cylinder()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9d0b915aac1186a6b7444cf06701c71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Cylinder::W</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00038_source.html#l00019">19</a> du fichier <a class="el" href="a00038_source.html">cylinder.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00038_source.html#l00048">computeCylindricalTexInfo()</a>, <a class="el" href="a00038_source.html#l00022">computePlanarTexInfo()</a>, <a class="el" href="a00038_source.html#l00296">Cylinder()</a>, et <a class="el" href="a00038_source.html#l00092">get_clip_points()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="a00038_source.html">cylinder.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00012.html">Cylinder</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:47 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

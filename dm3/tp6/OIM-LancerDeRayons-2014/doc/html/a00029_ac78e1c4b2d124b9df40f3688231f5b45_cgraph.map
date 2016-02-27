@@ -1,0 +1,17 @@
+<map id="Sphere::clip" name="Sphere::clip">
+<area shape="rect" id="node2" href="$a00018.html#a5875b7222430d9be92a654db194d0d60" title="IntervalSet::add" alt="" coords="181,5,296,33"/>
+<area shape="rect" id="node4" href="$a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="207,57,270,85"/>
+<area shape="rect" id="node5" href="$a00029.html#a67d69832e0316a755ad2b6a12da719c0" title="Sphere::computeTexInfo" alt="" coords="156,109,322,137"/>
+<area shape="rect" id="node6" href="$a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="389,133,472,161"/>
+<area shape="rect" id="node7" href="$a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="389,185,472,213"/>
+<area shape="rect" id="node8" href="$a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="397,341,464,369"/>
+<area shape="rect" id="node9" href="$a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="380,393,482,421"/>
+<area shape="rect" id="node13" href="$a00027.html#aa0271e10968c04224e2986017abb67b3" title="Ray::ori" alt="" coords="205,418,272,446"/>
+<area shape="rect" id="node14" href="$a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="147,263,330,291"/>
+<area shape="rect" id="node3" href="$a00013.html#ae931001b67b43308e984fee80902a17b" title="Diff_Geom::t" alt="" coords="383,5,479,33"/>
+<area shape="rect" id="node10" href="$a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="531,341,621,369"/>
+<area shape="rect" id="node11" href="$a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="531,393,621,421"/>
+<area shape="rect" id="node12" href="$a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="531,445,621,473"/>
+<area shape="rect" id="node15" href="$a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="389,289,472,317"/>
+<area shape="rect" id="node16" href="$a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="389,237,472,265"/>
+</map>

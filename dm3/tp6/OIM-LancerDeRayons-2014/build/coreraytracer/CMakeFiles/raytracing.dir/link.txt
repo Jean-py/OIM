@@ -1,0 +1,2 @@
+/usr/bin/ar cr libraytracing.a  CMakeFiles/raytracing.dir/intervaloperators.cpp.o CMakeFiles/raytracing.dir/raytracing.cpp.o CMakeFiles/raytracing.dir/texture.cpp.o
+/usr/bin/ranlib libraytracing.a

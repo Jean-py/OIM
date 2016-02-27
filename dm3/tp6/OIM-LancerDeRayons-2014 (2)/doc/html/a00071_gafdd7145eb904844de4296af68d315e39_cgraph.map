@@ -1,0 +1,12 @@
+<map id="test_visibility" name="test_visibility">
+<area shape="rect" id="node2" href="$a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef" title="Isect::dg" alt="" coords="184,5,256,33"/>
+<area shape="rect" id="node3" href="$a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a" title="Diff_Geom::pos" alt="" coords="163,57,277,85"/>
+<area shape="rect" id="node4" href="$a00028.html#aac2848f8a3c18972e5d5f077ab682f30" title="test the visibility between a point and a light " alt="" coords="149,109,291,137"/>
+<area shape="rect" id="node5" href="$a00020.html#a305715f1db3acf3dbd9dbd54baaa804e" title="Light::pos" alt="" coords="370,30,449,58"/>
+<area shape="rect" id="node6" href="$a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="528,109,642,137"/>
+<area shape="rect" id="node10" href="$a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="339,134,480,162"/>
+<area shape="rect" id="node11" href="$a00027.html#a67bf1057835b4a923a50c82f31d46d0d" title="Ray::set_max_t" alt="" coords="352,186,466,214"/>
+<area shape="rect" id="node7" href="$a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="691,57,781,85"/>
+<area shape="rect" id="node8" href="$a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="691,109,781,137"/>
+<area shape="rect" id="node9" href="$a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="691,161,781,189"/>
+</map>

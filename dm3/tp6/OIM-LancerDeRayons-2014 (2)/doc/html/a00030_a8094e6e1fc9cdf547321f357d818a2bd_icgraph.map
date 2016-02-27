@@ -1,0 +1,9 @@
+<map id="Texture::integrateMipMap" name="Texture::integrateMipMap">
+<area shape="rect" id="node2" href="$a00030.html#a15376a1db3093522b4402220b771ad04" title="Texture::getPixel" alt="" coords="227,109,347,137"/>
+<area shape="rect" id="node3" href="$a00021.html#ad292661deaf1ff67911e8f298717aa43" title="Material::getTextureColor" alt="" coords="395,109,565,137"/>
+<area shape="rect" id="node4" href="$a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="617,5,730,33"/>
+<area shape="rect" id="node5" href="$a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="617,57,729,85"/>
+<area shape="rect" id="node6" href="$a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="617,109,730,137"/>
+<area shape="rect" id="node7" href="$a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="614,161,733,189"/>
+<area shape="rect" id="node8" href="$a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="613,213,733,241"/>
+</map>

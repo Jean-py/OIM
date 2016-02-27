@@ -1,0 +1,9 @@
+<map id="Cone::computenormal" name="Cone::computenormal">
+<area shape="rect" id="node2" href="$a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="395,57,562,85"/>
+<area shape="rect" id="node7" href="$a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="205,109,347,137"/>
+<area shape="rect" id="node3" href="$a00031.html#a0b11a8d75da427b27443d8a94d0d296c" title="Vector3D::Vector3D" alt="" coords="611,5,749,33"/>
+<area shape="rect" id="node4" href="$a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="635,57,725,85"/>
+<area shape="rect" id="node5" href="$a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="635,161,725,189"/>
+<area shape="rect" id="node6" href="$a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="635,109,725,137"/>
+<area shape="rect" id="node8" href="$a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="422,109,536,137"/>
+</map>

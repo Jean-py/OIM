@@ -1,0 +1,11 @@
+<map id="CSGDifference::intersect" name="CSGDifference::intersect">
+<area shape="rect" id="node2" href="$a00018.html#a071811cdb02ba0cf2c05140bcf466927" title="IntervalSet::bounds" alt="" coords="416,5,552,33"/>
+<area shape="rect" id="node3" href="$a00009.html#abb5077f37138af94f364e00810f83955" title="clip a ray by a geometry. " alt="" coords="222,57,360,85"/>
+<area shape="rect" id="node7" href="$a00027.html#a8cd07a7f52236e9a1f4c92fbf5c8786a" title="Ray::max_t" alt="" coords="246,109,335,137"/>
+<area shape="rect" id="node8" href="$a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77" title="to avoid auto intersection " alt="" coords="230,161,351,189"/>
+<area shape="rect" id="node9" href="$a00027.html#a67bf1057835b4a923a50c82f31d46d0d" title="Ray::set_max_t" alt="" coords="234,213,348,241"/>
+<area shape="rect" id="node10" href="$a00013.html#ae931001b67b43308e984fee80902a17b" title="Diff_Geom::t" alt="" coords="243,265,339,293"/>
+<area shape="rect" id="node4" href="$a00014.html#a767321b776e8662e39aa32347e8918ee" title="clip a ray by a geometry. " alt="" coords="430,57,538,85"/>
+<area shape="rect" id="node5" href="$a00018.html#a9198fef85524577881942cf644e4d6b9" title="IntervalSet::difference\l_operator" alt="" coords="409,109,559,153"/>
+<area shape="rect" id="node6" href="$a00044.html#a405c977f6831f22f9b822f0a1a2a4bb7" title="Calcule dans res la différence des deux ensemble d&#39;intervalles a et b contenant respectivement size_a..." alt="" coords="608,117,763,145"/>
+</map>

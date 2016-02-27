@@ -1,0 +1,25 @@
+<map id="Metal::evaluate" name="Metal::evaluate">
+<area shape="rect" id="node2" href="$a00030.html#a09fbbcee092db9bb6fc53a815a6685c0" title="Texture::computeMipmapLevel" alt="" coords="165,109,368,137"/>
+<area shape="rect" id="node9" href="$a00013.html#afccf9a7535b017156a84237ef9bd3f71" title="Diff_Geom::dTdx" alt="" coords="206,161,328,189"/>
+<area shape="rect" id="node10" href="$a00013.html#aebdb7ea0d43eb3f84fdb8ffcf9c37c5b" title="Diff_Geom::dTdy" alt="" coords="206,213,328,241"/>
+<area shape="rect" id="node11" href="$a00021.html#ad292661deaf1ff67911e8f298717aa43" title="Material::getTextureColor" alt="" coords="182,265,352,293"/>
+<area shape="rect" id="node19" href="$a00021.html#a57ea70765a4884a2500ebb51359cc79d" title="Material::hasTexture" alt="" coords="196,317,337,345"/>
+<area shape="rect" id="node20" href="$a00005.html#a5721ae7c30efb1e90beb7ea6b49d9ca4" title="BSDF::init_pure_refl" alt="" coords="196,369,337,397"/>
+<area shape="rect" id="node22" href="$a00013.html#a5032f917f066531ab12142806d5cb023" title="Diff_Geom::normal" alt="" coords="200,421,333,449"/>
+<area shape="rect" id="node23" href="$a00013.html#a4571bb1840c79799f7f2533b90e5b033" title="Diff_Geom::u" alt="" coords="217,473,316,501"/>
+<area shape="rect" id="node24" href="$a00013.html#a0e011c1c7dcdd6585d13a1f84f3b2cd5" title="Diff_Geom::v" alt="" coords="217,525,316,553"/>
+<area shape="rect" id="node3" href="$a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="419,57,533,85"/>
+<area shape="rect" id="node7" href="$a00030.html#a496e7ecce88213f6190dcb65659ee9b4" title="Texture::width" alt="" coords="424,109,528,137"/>
+<area shape="rect" id="node8" href="$a00030.html#a0a5592fcf3a2270578880aed20c4bde0" title="Texture::height" alt="" coords="422,161,530,189"/>
+<area shape="rect" id="node4" href="$a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="626,5,716,33"/>
+<area shape="rect" id="node5" href="$a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="626,57,716,85"/>
+<area shape="rect" id="node6" href="$a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="626,109,716,137"/>
+<area shape="rect" id="node12" href="$a00030.html#a15376a1db3093522b4402220b771ad04" title="Texture::getPixel" alt="" coords="416,265,536,293"/>
+<area shape="rect" id="node13" href="$a00030.html#a8094e6e1fc9cdf547321f357d818a2bd" title="Texture::integrateMipMap" alt="" coords="585,213,757,241"/>
+<area shape="rect" id="node17" href="$a00030.html#a7f7a4bf88646efb0805b8326d4994b50" title="Texture::integrateExplicit" alt="" coords="806,315,973,343"/>
+<area shape="rect" id="node14" href="$a00030.html#a12d1fa7928a770eb113b12000a0d3633" title="Texture::interpolate" alt="" coords="822,263,957,291"/>
+<area shape="rect" id="node15" href="$a00063.html#aa82c0e54572b2cc47433b2e7f00f13fc" title="interpolateTexture Get a texel linearly interpolated from its neighbors " alt="" coords="1022,263,1149,291"/>
+<area shape="rect" id="node16" href="$a00063.html#ad6c74e0d655725b60d1c0ac068664137" title="getTexel Get a single texel from a texture. " alt="" coords="1198,290,1269,318"/>
+<area shape="rect" id="node18" href="$a00063.html#a79512e8201e923fec16ccc8a8d7113b2" title="integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x de..." alt="" coords="1027,315,1144,343"/>
+<area shape="rect" id="node21" href="$a00005.html#a269624a07342f9d2ea5c9c71b10d0797" title="BSDF::BSDF" alt="" coords="426,369,526,397"/>
+</map>

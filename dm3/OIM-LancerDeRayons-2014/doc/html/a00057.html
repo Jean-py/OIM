@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Référence du fichier raytracing.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00057.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier raytracing.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="a00058_source.html">raytracing.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00059_source.html">scene.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00043_source.html">image.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00053_source.html">plane.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00060_source.html">sphere.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00038_source.html">cylinder.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00036_source.html">cone.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00032_source.html">box.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00037_source.html">csg.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00051_source.html">matte.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00054_source.html">plastic.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00052_source.html">metal.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00041_source.html">glass.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00042_source.html">glossy.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="a00062_source.html">texture.hpp</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de raytracing.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00125.png" border="0" usemap="#raytracing_8cpp" alt=""/></div>
+<map name="raytracing_8cpp" id="raytracing_8cpp">
+<area shape="rect" id="node2" href="a00058.html" title="raytracing.h" alt="" coords="791,161,881,189"/><area shape="rect" id="node20" href="a00059.html" title="scene.hpp" alt="" coords="1024,83,1107,111"/><area shape="rect" id="node25" href="a00043.html" title="image.hpp" alt="" coords="332,393,415,421"/><area shape="rect" id="node31" href="a00053.html" title="plane.hpp" alt="" coords="1484,161,1563,189"/><area shape="rect" id="node32" href="a00060.html" title="sphere.hpp" alt="" coords="1256,83,1344,111"/><area shape="rect" id="node33" href="a00038.html" title="cylinder.hpp" alt="" coords="1394,83,1485,111"/><area shape="rect" id="node34" href="a00036.html" title="cone.hpp" alt="" coords="1563,83,1639,111"/><area shape="rect" id="node36" href="a00032.html" title="box.hpp" alt="" coords="1290,161,1357,189"/><area shape="rect" id="node37" href="a00037.html" title="csg.hpp" alt="" coords="1741,161,1808,189"/><area shape="rect" id="node38" href="a00051.html" title="matte.hpp" alt="" coords="481,161,561,189"/><area shape="rect" id="node39" href="a00054.html" title="plastic.hpp" alt="" coords="532,238,616,266"/><area shape="rect" id="node40" href="a00052.html" title="metal.hpp" alt="" coords="636,161,715,189"/><area shape="rect" id="node41" href="a00041.html" title="glass.hpp" alt="" coords="718,83,796,111"/><area shape="rect" id="node42" href="a00042.html" title="glossy.hpp" alt="" coords="431,83,515,111"/><area shape="rect" id="node17" href="a00062.html" title="texture.hpp" alt="" coords="585,393,673,421"/><area shape="rect" id="node3" href="a00040.html" title="geometry.hpp" alt="" coords="1444,238,1545,266"/><area shape="rect" id="node15" href="a00050.html" title="material.hpp" alt="" coords="658,315,752,343"/><area shape="rect" id="node4" href="a00056.html" title="ray.hpp" alt="" coords="926,315,991,343"/><area shape="rect" id="node19" href="a00047.html" title="isect.hpp" alt="" coords="945,238,1020,266"/><area shape="rect" id="node8" href="a00035.html" title="color.hpp" alt="" coords="770,470,845,498"/><area shape="rect" id="node10" href="a00039.html" title="diff_geom.hpp" alt="" coords="1231,470,1336,498"/><area shape="rect" id="node12" href="a00046.html" title="intervalset.hpp" alt="" coords="1661,315,1768,343"/><area shape="rect" id="node5" href="a00065.html" title="vector3d.hpp" alt="" coords="1105,547,1203,575"/><area shape="rect" id="node13" href="a00045.html" title="intervaloperators.hpp" alt="" coords="1572,393,1717,421"/><area shape="rect" id="node16" href="a00033.html" title="bsdf.hpp" alt="" coords="697,393,769,421"/><area shape="rect" id="node21" href="a00048.html" title="light.hpp" alt="" coords="1084,393,1155,421"/><area shape="rect" id="node22" href="a00034.html" title="camera.hpp" alt="" coords="1227,238,1319,266"/><area shape="rect" id="node23" href="a00055.html" title="primitive.hpp" alt="" coords="1017,161,1113,189"/></map>
+</div>
+</div>
+<p><a href="a00057_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gad67f595be55be0bc50b4ec08a9c74192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192">set_camera</a> (float pos_x_, float pos_y_, float pos_z_, float aim_x_, float aim_y_, float aim_z_, float up_x_, float up_y_, float up_z_, float fov_, int x_res_, int y_res_)</td></tr>
+<tr class="memdesc:gad67f595be55be0bc50b4ec08a9c74192"><td class="mdescLeft">&#160;</td><td class="mdescRight">to set the parameters of the camera  <a href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gad67f595be55be0bc50b4ec08a9c74192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7338897b0e82076338fb7dd7cadeaddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc">add_light</a> (float pos_x_, float pos_y_, float pos_z_, float r_, float g_, float b_)</td></tr>
+<tr class="memdesc:ga7338897b0e82076338fb7dd7cadeaddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">to add a light to the scene  <a href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga7338897b0e82076338fb7dd7cadeaddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8b0ecdd64116491706ebede06c13b54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#gaf8b0ecdd64116491706ebede06c13b54">create_plane</a> (float pos_x_, float pos_y_, float pos_z_, float normal_x_, float normal_y_, float normal_z_)</td></tr>
+<tr class="memdesc:gaf8b0ecdd64116491706ebede06c13b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a plane  <a href="a00070.html#gaf8b0ecdd64116491706ebede06c13b54">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gaf8b0ecdd64116491706ebede06c13b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2da051b943f32009496f94737261c248"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga2da051b943f32009496f94737261c248">create_sphere</a> (float pos_x_, float pos_y_, float pos_z_, float radius_)</td></tr>
+<tr class="memdesc:ga2da051b943f32009496f94737261c248"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a sphere  <a href="a00070.html#ga2da051b943f32009496f94737261c248">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga2da051b943f32009496f94737261c248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd60bd9dfe9afb36b127decf9145287d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d">create_cylinder</a> (float pos_x_, float pos_y_, float pos_z_, float axis_x_, float axis_y_, float axis_z_, float radius_, float length_)</td></tr>
+<tr class="memdesc:gabd60bd9dfe9afb36b127decf9145287d"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a cylinder  <a href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gabd60bd9dfe9afb36b127decf9145287d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27c1a3eeb2869e55865f2cc6d3e717f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga27c1a3eeb2869e55865f2cc6d3e717f1">create_cone</a> (float pos_x_, float pos_y_, float pos_z_, float vertex_x_, float vertex_y_, float vertex_z_, float radius_)</td></tr>
+<tr class="memdesc:ga27c1a3eeb2869e55865f2cc6d3e717f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a cone  <a href="a00070.html#ga27c1a3eeb2869e55865f2cc6d3e717f1">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga27c1a3eeb2869e55865f2cc6d3e717f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97f60add9f9b7177df6c8f2f2372561a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga97f60add9f9b7177df6c8f2f2372561a">create_box</a> (float pos_x_, float pos_y_, float pos_z_, float x_base_x_, float x_base_y_, float x_base_z_, float y_base_x_, float y_base_y_, float y_base_z_, float extent_x_, float extent_y_, float extent_z_)</td></tr>
+<tr class="memdesc:ga97f60add9f9b7177df6c8f2f2372561a"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a box  <a href="a00070.html#ga97f60add9f9b7177df6c8f2f2372561a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga97f60add9f9b7177df6c8f2f2372561a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad720b183f0a7c5b1d366a86fae48ff5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00021.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#gad720b183f0a7c5b1d366a86fae48ff5e">create_matte_mat</a> (float kd_r_, float kd_g_, float kd_b_)</td></tr>
+<tr class="memdesc:gad720b183f0a7c5b1d366a86fae48ff5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a matte material  <a href="a00070.html#gad720b183f0a7c5b1d366a86fae48ff5e">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gad720b183f0a7c5b1d366a86fae48ff5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e9b1752bc3635d8e03aeedce96f1378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00021.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378">create_plastic_mat</a> (float kd_r_, float kd_g_, float kd_b_, float ks_r_, float ks_g_, float ks_b_, float shininess_)</td></tr>
+<tr class="memdesc:ga5e9b1752bc3635d8e03aeedce96f1378"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a plastic material  <a href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga5e9b1752bc3635d8e03aeedce96f1378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29d1d8af09f26bf8a39980f456a18a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00021.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga29d1d8af09f26bf8a39980f456a18a10">create_glossy_mat</a> (float kd_r_, float kd_g_, float kd_b_, float ks_r_, float ks_g_, float ks_b_, float kr_r_, float kr_g_, float kr_b_, float shininess_, float ior_)</td></tr>
+<tr class="memdesc:ga29d1d8af09f26bf8a39980f456a18a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a glossy material  <a href="a00070.html#ga29d1d8af09f26bf8a39980f456a18a10">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga29d1d8af09f26bf8a39980f456a18a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e84d93db3d16480aa51e9d9cc16d843"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00021.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga7e84d93db3d16480aa51e9d9cc16d843">create_metal_mat</a> (float kd_r_, float kd_g_, float kd_b_, float kr_r_, float kr_g_, float kr_b_)</td></tr>
+<tr class="memdesc:ga7e84d93db3d16480aa51e9d9cc16d843"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a metal-like material  <a href="a00070.html#ga7e84d93db3d16480aa51e9d9cc16d843">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga7e84d93db3d16480aa51e9d9cc16d843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga064ee1f6da1924df4e37334c456ea18f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00021.html">Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f">create_glass_mat</a> (float ks_r_, float ks_g_, float ks_b_, float kt_r_, float kt_g_, float kt_b_, float ior_)</td></tr>
+<tr class="memdesc:ga064ee1f6da1924df4e37334c456ea18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">to create a glass-like material  <a href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga064ee1f6da1924df4e37334c456ea18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf3f8ea1c8bf943db640af01230ed0f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7">add_object</a> (<a class="el" href="a00014.html">Geometry</a> *geom_, <a class="el" href="a00021.html">Material</a> *mat_)</td></tr>
+<tr class="memdesc:gadf3f8ea1c8bf943db640af01230ed0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">to add a new object to the scene, from its geometry and its material  <a href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gadf3f8ea1c8bf943db640af01230ed0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5102ec4e0cd297fb1e649f5dde3bd029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029">make_default_scene</a> (int xsize, int ysize)</td></tr>
+<tr class="memdesc:ga5102ec4e0cd297fb1e649f5dde3bd029"><td class="mdescLeft">&#160;</td><td class="mdescRight">to initialize the scene with the default one.  <a href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga5102ec4e0cd297fb1e649f5dde3bd029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16d4353577e7adc824650320333c7245"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#ga16d4353577e7adc824650320333c7245">nb_lights</a> ()</td></tr>
+<tr class="separator:ga16d4353577e7adc824650320333c7245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade62171a2f3b305905e5b0ada32357ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00020.html">Light</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html#gade62171a2f3b305905e5b0ada32357ff">get_light</a> (int i_)</td></tr>
+<tr class="separator:gade62171a2f3b305905e5b0ada32357ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a694e21c663d5c72182c15e34118f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ga0a694e21c663d5c72182c15e34118f23">get_image_resolution</a> (int *p_x_res_, int *p_y_res_)</td></tr>
+<tr class="memdesc:ga0a694e21c663d5c72182c15e34118f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">to get the resolution of the image  <a href="a00074.html#ga0a694e21c663d5c72182c15e34118f23">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga0a694e21c663d5c72182c15e34118f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8cb8aef586b50a39b449ebb804acee60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00027.html">Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#ga8cb8aef586b50a39b449ebb804acee60">camera_ray</a> (int x_, int y_)</td></tr>
+<tr class="memdesc:ga8cb8aef586b50a39b449ebb804acee60"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the ray for the given pixel  <a href="a00071.html#ga8cb8aef586b50a39b449ebb804acee60">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga8cb8aef586b50a39b449ebb804acee60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa971dcbc0062c359e8464f84662b0bd4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#gaa971dcbc0062c359e8464f84662b0bd4">intersect_scene</a> (<a class="el" href="a00027.html">Ray</a> *p_ray_, <a class="el" href="a00019.html">Isect</a> *p_isect_)</td></tr>
+<tr class="memdesc:gaa971dcbc0062c359e8464f84662b0bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">intersect a given ray with the scene.  <a href="a00071.html#gaa971dcbc0062c359e8464f84662b0bd4">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gaa971dcbc0062c359e8464f84662b0bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdd7145eb904844de4296af68d315e39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#gafdd7145eb904844de4296af68d315e39">test_visibility</a> (<a class="el" href="a00019.html">Isect</a> isect_, <a class="el" href="a00020.html">Light</a> *light_)</td></tr>
+<tr class="memdesc:gafdd7145eb904844de4296af68d315e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">test the visibility between an intersection and a light  <a href="a00071.html#gafdd7145eb904844de4296af68d315e39">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gafdd7145eb904844de4296af68d315e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac588aae49805e61713de3d50ce6f04cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#gac588aae49805e61713de3d50ce6f04cd">ray_depth</a> (<a class="el" href="a00027.html">Ray</a> ray_)</td></tr>
+<tr class="memdesc:gac588aae49805e61713de3d50ce6f04cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">the depth of the ray in the ray tree  <a href="a00071.html#gac588aae49805e61713de3d50ce6f04cd">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gac588aae49805e61713de3d50ce6f04cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69e5c6dd970eec59a78918a79badfbc8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#ga69e5c6dd970eec59a78918a79badfbc8">ray_importance</a> (<a class="el" href="a00027.html">Ray</a> ray_)</td></tr>
+<tr class="memdesc:ga69e5c6dd970eec59a78918a79badfbc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">the importance of the ray  <a href="a00071.html#ga69e5c6dd970eec59a78918a79badfbc8">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga69e5c6dd970eec59a78918a79badfbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade20962f791f22292f6eb7f169d464e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#gade20962f791f22292f6eb7f169d464e2">black</a> ()</td></tr>
+<tr class="memdesc:gade20962f791f22292f6eb7f169d464e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a black color  <a href="a00072.html#gade20962f791f22292f6eb7f169d464e2">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gade20962f791f22292f6eb7f169d464e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8442f299f5a4fad5e1ffe8b54ce3a852"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ga8442f299f5a4fad5e1ffe8b54ce3a852">init_color</a> (float r_, float g_, float b_)</td></tr>
+<tr class="memdesc:ga8442f299f5a4fad5e1ffe8b54ce3a852"><td class="mdescLeft">&#160;</td><td class="mdescRight">init a color  <a href="a00072.html#ga8442f299f5a4fad5e1ffe8b54ce3a852">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga8442f299f5a4fad5e1ffe8b54ce3a852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2360109ceed6102f17ff17c573743395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ga2360109ceed6102f17ff17c573743395">multiply_color_color</a> (<a class="el" href="a00007.html">Color</a> c1_, <a class="el" href="a00007.html">Color</a> c2_)</td></tr>
+<tr class="memdesc:ga2360109ceed6102f17ff17c573743395"><td class="mdescLeft">&#160;</td><td class="mdescRight">multiply colors component-wise  <a href="a00072.html#ga2360109ceed6102f17ff17c573743395">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga2360109ceed6102f17ff17c573743395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef9b6318d003356d86ac547b6bc2f57b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#gaef9b6318d003356d86ac547b6bc2f57b">add_color_color</a> (<a class="el" href="a00007.html">Color</a> c1_, <a class="el" href="a00007.html">Color</a> c2_)</td></tr>
+<tr class="memdesc:gaef9b6318d003356d86ac547b6bc2f57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">add two colors  <a href="a00072.html#gaef9b6318d003356d86ac547b6bc2f57b">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gaef9b6318d003356d86ac547b6bc2f57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a9950fd49c3927a6b247f20c0f584cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html#ga8a9950fd49c3927a6b247f20c0f584cf">color_is_black</a> (<a class="el" href="a00007.html">Color</a> color_)</td></tr>
+<tr class="separator:ga8a9950fd49c3927a6b247f20c0f584cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4ff7bddd9b295164491d5126289cd83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#gaf4ff7bddd9b295164491d5126289cd83">isect_has_reflection</a> (<a class="el" href="a00019.html">Isect</a> isect_)</td></tr>
+<tr class="separator:gaf4ff7bddd9b295164491d5126289cd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba7d4545b2466ae21efe827026358eec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#gaba7d4545b2466ae21efe827026358eec">isect_has_refraction</a> (<a class="el" href="a00019.html">Isect</a> isect_)</td></tr>
+<tr class="separator:gaba7d4545b2466ae21efe827026358eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga397536f562058dee83e3be0813324e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ga397536f562058dee83e3be0813324e82">reflect</a> (<a class="el" href="a00027.html">Ray</a> ray_, <a class="el" href="a00019.html">Isect</a> isect_, <a class="el" href="a00027.html">Ray</a> *p_ray_)</td></tr>
+<tr class="memdesc:ga397536f562058dee83e3be0813324e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the reflected ray from the intersection data and the ray to the intersection  <a href="a00073.html#ga397536f562058dee83e3be0813324e82">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga397536f562058dee83e3be0813324e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c7e1aae0ca65e600b252447bc817038"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038">refract</a> (<a class="el" href="a00027.html">Ray</a> ray_, <a class="el" href="a00019.html">Isect</a> isect_, <a class="el" href="a00027.html">Ray</a> *p_ray_)</td></tr>
+<tr class="memdesc:ga1c7e1aae0ca65e600b252447bc817038"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the refracted ray from the intersection data and the ray to the intersection  <a href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga1c7e1aae0ca65e600b252447bc817038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a215078ec8db08fc79e0a491bc61b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59">direct_lighting</a> (<a class="el" href="a00027.html">Ray</a> ray_, <a class="el" href="a00019.html">Isect</a> isect_, <a class="el" href="a00020.html">Light</a> *light_)</td></tr>
+<tr class="memdesc:ga3a215078ec8db08fc79e0a491bc61b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the amount of color scattered at the intersection to the ray from the given light, assuming there is no occluder  <a href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga3a215078ec8db08fc79e0a491bc61b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf909032cf0b1ef56a88bdfc416ac4ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#gacf909032cf0b1ef56a88bdfc416ac4ea">set_pixel_color</a> (int x_, int y_, <a class="el" href="a00007.html">Color</a> color_)</td></tr>
+<tr class="memdesc:gacf909032cf0b1ef56a88bdfc416ac4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">to set the color of the given pixel  <a href="a00074.html#gacf909032cf0b1ef56a88bdfc416ac4ea">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gacf909032cf0b1ef56a88bdfc416ac4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee5a58a341bc2053065b4fa8c8950577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#gaee5a58a341bc2053065b4fa8c8950577">save_image</a> (const char *file_name_)</td></tr>
+<tr class="memdesc:gaee5a58a341bc2053065b4fa8c8950577"><td class="mdescLeft">&#160;</td><td class="mdescRight">to save the image to a file  <a href="a00074.html#gaee5a58a341bc2053065b4fa8c8950577">Plus de détails...</a><br/></td></tr>
+<tr class="separator:gaee5a58a341bc2053065b4fa8c8950577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68bc73e2206f80129b14b4505d7ddc0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html#ga68bc73e2206f80129b14b4505d7ddc0b">save_png</a> (const char *file_name_)</td></tr>
+<tr class="separator:ga68bc73e2206f80129b14b4505d7ddc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eda5cac4c7d6203bf2e1798c0b4f124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a6eda5cac4c7d6203bf2e1798c0b4f124">create_csg_intersection</a> (<a class="el" href="a00014.html">Geometry</a> *a, <a class="el" href="a00014.html">Geometry</a> *b)</td></tr>
+<tr class="separator:a6eda5cac4c7d6203bf2e1798c0b4f124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0d7fc79bead2d9745acc2d10c506bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a4d0d7fc79bead2d9745acc2d10c506bf">create_csg_union</a> (<a class="el" href="a00014.html">Geometry</a> *a, <a class="el" href="a00014.html">Geometry</a> *b)</td></tr>
+<tr class="separator:a4d0d7fc79bead2d9745acc2d10c506bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca30508a9802f1a60bc67185dcaa8fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html">Geometry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#abca30508a9802f1a60bc67185dcaa8fb">create_csg_difference</a> (<a class="el" href="a00014.html">Geometry</a> *a, <a class="el" href="a00014.html">Geometry</a> *b)</td></tr>
+<tr class="separator:abca30508a9802f1a60bc67185dcaa8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b386cecf574f60252672c88d408be09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00030.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a1b386cecf574f60252672c88d408be09">create_texture</a> (const char *filename)</td></tr>
+<tr class="separator:a1b386cecf574f60252672c88d408be09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aab84ef508ba02254f00c7cd02f420b28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00028.html">Scene</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#aab84ef508ba02254f00c7cd02f420b28">g_scene</a></td></tr>
+<tr class="memdesc:aab84ef508ba02254f00c7cd02f420b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene.  <a href="#aab84ef508ba02254f00c7cd02f420b28">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aab84ef508ba02254f00c7cd02f420b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea4ea2eb2676e84509a7f4c5ce43dda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00006.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a8ea4ea2eb2676e84509a7f4c5ce43dda">g_camera</a></td></tr>
+<tr class="memdesc:a8ea4ea2eb2676e84509a7f4c5ce43dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera.  <a href="#a8ea4ea2eb2676e84509a7f4c5ce43dda">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a8ea4ea2eb2676e84509a7f4c5ce43dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfc067701db6262297c2bbec15927cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00017.html">Image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#adcfc067701db6262297c2bbec15927cd">g_p_img</a> = NULL</td></tr>
+<tr class="memdesc:adcfc067701db6262297c2bbec15927cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resulting image.  <a href="#adcfc067701db6262297c2bbec15927cd">Plus de détails...</a><br/></td></tr>
+<tr class="separator:adcfc067701db6262297c2bbec15927cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="abca30508a9802f1a60bc67185dcaa8fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00014.html">Geometry</a>* create_csg_difference </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00014.html">Geometry</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00014.html">Geometry</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00602">602</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6eda5cac4c7d6203bf2e1798c0b4f124"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00014.html">Geometry</a>* create_csg_intersection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00014.html">Geometry</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00014.html">Geometry</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00594">594</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d0d7fc79bead2d9745acc2d10c506bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00014.html">Geometry</a>* create_csg_union </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00014.html">Geometry</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00014.html">Geometry</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00598">598</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b386cecf574f60252672c88d408be09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00030.html">Texture</a>* create_texture </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00608">608</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00049_source.html#l00109">make_textured_scene()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00057_a1b386cecf574f60252672c88d408be09_icgraph.png" border="0" usemap="#a00057_a1b386cecf574f60252672c88d408be09_icgraph" alt=""/></div>
+<map name="a00057_a1b386cecf574f60252672c88d408be09_icgraph" id="a00057_a1b386cecf574f60252672c88d408be09_icgraph">
+<area shape="rect" id="node2" href="a00049.html#a322944f24b18d5647a07cefea27d8861" title="make_textured_scene" alt="" coords="160,5,312,33"/><area shape="rect" id="node3" href="a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="360,5,410,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a8ea4ea2eb2676e84509a7f4c5ce43dda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00006.html">Camera</a> g_camera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The camera. </p>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00028">28</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcfc067701db6262297c2bbec15927cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00017.html">Image</a>* g_p_img = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The resulting image. </p>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00031">31</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00051">set_camera()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab84ef508ba02254f00c7cd02f420b28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00028.html">Scene</a> g_scene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The scene. </p>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00025">25</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2143d69be6627e7c0180aa018df36282.html">coreraytracer</a></li><li class="navelem"><a class="el" href="a00057.html">raytracing.cpp</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:46 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

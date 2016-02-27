@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer:  Fichier source de ray.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00056_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ray.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00056.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00065.html">vector3d.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00035.html">color.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="a00027.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00027.html" title="Ray definition. ">Ray</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="a00027.html#a759c3eacef0226c3503d34e3650023db">   15</a></span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a759c3eacef0226c3503d34e3650023db">m_ori</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="a00027.html#a304eff5a256a59b8a224f45f39160965">   16</a></span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a304eff5a256a59b8a224f45f39160965">m_dir</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="a00027.html#a03a8666bba98c8fd8de5d0158a95ae61">   18</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="a00027.html#a03a8666bba98c8fd8de5d0158a95ae61">m_depth</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="a00027.html#ac3d0e59749dd628506e08bbbe8aae073">   19</a></span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00027.html#ac3d0e59749dd628506e08bbbe8aae073">m_importance</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="a00027.html#a3e8def5ba8bd6b37243bac648fb038bf">   21</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00027.html#a3e8def5ba8bd6b37243bac648fb038bf">m_max_t</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="a00027.html#ad3b5a2f862e930d67a3f4ad6446435d6">   23</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#ad3b5a2f862e930d67a3f4ad6446435d6">dP_dx</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="a00027.html#a34e141e2c6a0e2af13a2180d87a51890">   24</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a34e141e2c6a0e2af13a2180d87a51890">dP_dy</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="a00027.html#a7e951182a92020474e9b3750af5ad3d2">   25</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a7e951182a92020474e9b3750af5ad3d2">dD_dx</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="a00027.html#a83c6ec22f271c8d1648e6d892117a46d">   26</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a83c6ec22f271c8d1648e6d892117a46d">dD_dy</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="a00027.html#a2e3d2c29f2df4ab3da10da79d4acb852">   32</a></span>&#160;    <a class="code" href="a00027.html#a2e3d2c29f2df4ab3da10da79d4acb852">Ray</a> () : <a class="code" href="a00027.html#a03a8666bba98c8fd8de5d0158a95ae61">m_depth</a> (0), <a class="code" href="a00027.html#a3e8def5ba8bd6b37243bac648fb038bf">m_max_t</a> (std::numeric_limits&lt;float&gt;::max()) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="a00027.html#a08fba96a8d1a9608c37e204e75a10e03">   38</a></span>&#160;        <a class="code" href="a00027.html#a08fba96a8d1a9608c37e204e75a10e03" title="for a camera ray ">Ray</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; ori_, <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; dir_) : <a class="code" href="a00027.html#a759c3eacef0226c3503d34e3650023db">m_ori</a> (ori_), <a class="code" href="a00027.html#a304eff5a256a59b8a224f45f39160965">m_dir</a> (dir_),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                                                           <a class="code" href="a00027.html#a03a8666bba98c8fd8de5d0158a95ae61">m_depth</a> (0), <a class="code" href="a00027.html#ac3d0e59749dd628506e08bbbe8aae073">m_importance</a> (1.f),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                       <a class="code" href="a00027.html#a3e8def5ba8bd6b37243bac648fb038bf">m_max_t</a> (std::numeric_limits&lt;float&gt;::max()) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="a00027.html#a9b83a1125d03edbfa178e8766d7b9f58">   49</a></span>&#160;        <a class="code" href="a00027.html#a9b83a1125d03edbfa178e8766d7b9f58" title="for a ray obtained from another ray after scattering at a surface ">Ray</a> (<span class="keyword">const</span> <a class="code" href="a00027.html" title="Ray definition. ">Ray</a>&amp; previous_ray_,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                 <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; bsdf_value_,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                 <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; ori_,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                 <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; dir_) : <a class="code" href="a00027.html#a759c3eacef0226c3503d34e3650023db">m_ori</a> (ori_), <a class="code" href="a00027.html#a304eff5a256a59b8a224f45f39160965">m_dir</a> (dir_),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                 <a class="code" href="a00027.html#a03a8666bba98c8fd8de5d0158a95ae61">m_depth</a> (previous_ray_.<a class="code" href="a00027.html#a5aca258edd0f8365436fbe2ff5305cd2">depth</a>() + 1),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                 <a class="code" href="a00027.html#ac3d0e59749dd628506e08bbbe8aae073">m_importance</a> (previous_ray_.<a class="code" href="a00027.html#af8e83498490cec0ce58b715533910bb5">importance</a>() * bsdf_value_),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                 <a class="code" href="a00027.html#a3e8def5ba8bd6b37243bac648fb038bf">m_max_t</a> (std::numeric_limits&lt;float&gt;::max()),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                 <a class="code" href="a00027.html#ad3b5a2f862e930d67a3f4ad6446435d6">dP_dx</a>(previous_ray_.<a class="code" href="a00027.html#ad3b5a2f862e930d67a3f4ad6446435d6">dP_dx</a>), <a class="code" href="a00027.html#a34e141e2c6a0e2af13a2180d87a51890">dP_dy</a>(previous_ray_.<a class="code" href="a00027.html#a34e141e2c6a0e2af13a2180d87a51890">dP_dy</a>),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                 <a class="code" href="a00027.html#a7e951182a92020474e9b3750af5ad3d2">dD_dx</a>(previous_ray_.<a class="code" href="a00027.html#a7e951182a92020474e9b3750af5ad3d2">dD_dx</a>), <a class="code" href="a00027.html#a83c6ec22f271c8d1648e6d892117a46d">dD_dy</a>(previous_ray_.<a class="code" href="a00027.html#a83c6ec22f271c8d1648e6d892117a46d">dD_dy</a>) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="a00027.html#aa0271e10968c04224e2986017abb67b3">   60</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; <a class="code" href="a00027.html#aa0271e10968c04224e2986017abb67b3">ori</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00027.html#a759c3eacef0226c3503d34e3650023db">m_ori</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">   64</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; <a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00027.html#a304eff5a256a59b8a224f45f39160965">m_dir</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="a00027.html#a5aca258edd0f8365436fbe2ff5305cd2">   68</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="a00027.html#a5aca258edd0f8365436fbe2ff5305cd2">depth</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00027.html#a03a8666bba98c8fd8de5d0158a95ae61">m_depth</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="a00027.html#af8e83498490cec0ce58b715533910bb5">   72</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; <a class="code" href="a00027.html#af8e83498490cec0ce58b715533910bb5">importance</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00027.html#ac3d0e59749dd628506e08bbbe8aae073">m_importance</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="a00027.html#a8cd07a7f52236e9a1f4c92fbf5c8786a">   76</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00027.html#a8cd07a7f52236e9a1f4c92fbf5c8786a">max_t</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00027.html#a3e8def5ba8bd6b37243bac648fb038bf">m_max_t</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="a00027.html#a67bf1057835b4a923a50c82f31d46d0d">   80</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="a00027.html#a67bf1057835b4a923a50c82f31d46d0d">set_max_t</a> (<span class="keywordtype">float</span> max_t_) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="a00027.html#a3e8def5ba8bd6b37243bac648fb038bf">m_max_t</a> = max_t_;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e">   84</a></span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e">at</a> (<span class="keywordtype">float</span> t_)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00027.html#a759c3eacef0226c3503d34e3650023db">m_ori</a> + <a class="code" href="a00027.html#a304eff5a256a59b8a224f45f39160965">m_dir</a> * t_;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77">   89</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77" title="to avoid auto intersection ">ray_epsilon</a>() {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">return</span> 0.001f;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9">   93</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9">dPdx</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00027.html#ad3b5a2f862e930d67a3f4ad6446435d6">dP_dx</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f">   96</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f">dPdy</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00027.html#a34e141e2c6a0e2af13a2180d87a51890">dP_dy</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6">   99</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6">dDdx</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00027.html#a7e951182a92020474e9b3750af5ad3d2">dD_dx</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973">  102</a></span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973">dDdy</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00027.html#a83c6ec22f271c8d1648e6d892117a46d">dD_dy</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="a00027.html#a2e2d243083b80167abda5801213e935a">  106</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00027.html#a2e2d243083b80167abda5801213e935a">setdPdx</a>(<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;v)  {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="a00027.html#ad3b5a2f862e930d67a3f4ad6446435d6">dP_dx</a> = v;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="a00027.html#ac679655f534897cec2a82d88d7e2fd3f">  109</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00027.html#ac679655f534897cec2a82d88d7e2fd3f">setdPdy</a>(<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;v)  {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="a00027.html#a34e141e2c6a0e2af13a2180d87a51890">dP_dy</a> = v;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="code" href="a00027.html#a5d26fb532f4c86660b2510f1ee652398">  112</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00027.html#a5d26fb532f4c86660b2510f1ee652398">setdDdx</a>(<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;v)  {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="a00027.html#a7e951182a92020474e9b3750af5ad3d2">dD_dx</a> = v;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="a00027.html#a71bc6099f66336f342eae251540074ea">  115</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00027.html#a71bc6099f66336f342eae251540074ea">setdDdy</a>(<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;v)  {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="a00027.html#a83c6ec22f271c8d1648e6d892117a46d">dD_dy</a> = v;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="a00027.html#a7a88a22aa552960217a82d37b4e4e979">  119</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00027.html#a7a88a22aa552960217a82d37b4e4e979">propagateDifferentials</a>(<span class="keywordtype">float</span> t, <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; normal, <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;dPpdx, <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;dPpdy)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dInterx, dIntery;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">float</span> dtdx, dtdy;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">float</span> invddotn = 1.f/<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(normal);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        dInterx = <a class="code" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9">dPdx</a>() + <a class="code" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6">dDdx</a>()*t;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        dIntery = <a class="code" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f">dPdy</a>() + <a class="code" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973">dDdy</a>()*t;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        dtdx = - dInterx.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(normal) * invddotn;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        dtdy = - dIntery.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(normal) * invddotn;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        dPpdx = dInterx + <a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>() * dtdx;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        dPpdy = dIntery + <a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>() * dtdy;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2143d69be6627e7c0180aa018df36282.html">coreraytracer</a></li><li class="navelem"><a class="el" href="a00056.html">ray.hpp</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:46 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<map id="Plane::Plane" name="Plane::Plane">
+<area shape="rect" id="node2" href="$a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="392,57,560,85"/>
+<area shape="rect" id="node7" href="$a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="425,161,527,189"/>
+<area shape="rect" id="node8" href="$a00031.html#aa7c8861c8c7389319fadacf955fd8bb9" title="Vector3D::get_perpendicular" alt="" coords="153,213,343,241"/>
+<area shape="rect" id="node9" href="$a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="177,109,319,137"/>
+<area shape="rect" id="node3" href="$a00031.html#a0b11a8d75da427b27443d8a94d0d296c" title="Vector3D::Vector3D" alt="" coords="608,5,747,33"/>
+<area shape="rect" id="node4" href="$a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="632,57,722,85"/>
+<area shape="rect" id="node5" href="$a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="632,161,722,189"/>
+<area shape="rect" id="node6" href="$a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="632,109,722,137"/>
+<area shape="rect" id="node10" href="$a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="419,109,533,137"/>
+</map>

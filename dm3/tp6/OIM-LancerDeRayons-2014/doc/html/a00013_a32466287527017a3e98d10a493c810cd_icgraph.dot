@@ -1,0 +1,15 @@
+digraph "Diff_Geom::set_dTdy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Diff_Geom::set_dTdy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Cone::clip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00008.html#a7ddf59f2bc68bc7d862fc915b2983702",tooltip="clip a ray by a geometry. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Cone::get_clip_points",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00008.html#aa000dbdde858b3eb9078fe90d3ec71b2"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Cone::intersect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00008.html#a525bf376cea933bf1fb4dd47ec77c3c1",tooltip="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cone3.cpp "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Référence de la classe Scene</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00028.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00204.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Scene<div class="ingroups"><a class="el" href="a00075.html">Simple Raytracer</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="a00028.html" title="Scene definition. ">Scene</a> definition.  
+ <a href="a00028.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00059_source.html">scene.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Scene:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00205.png" border="0" usemap="#_scene_coll__map" alt="Collaboration graph"/></div>
+<map name="_scene_coll__map" id="_scene_coll__map">
+<area shape="rect" id="node2" href="a00006.html" title="Viewpoint management. " alt="" coords="6,393,124,554"/><area shape="rect" id="node3" href="a00031.html" title="3D vector manipulation " alt="" coords="9,6,121,263"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ad10176d75a9cc0da56626f682d083507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#ad10176d75a9cc0da56626f682d083507">Scene</a> ()</td></tr>
+<tr class="separator:ad10176d75a9cc0da56626f682d083507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e1b2344129de2618f3b5f1ed22dd5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a92e1b2344129de2618f3b5f1ed22dd5e">set_camera</a> (<a class="el" href="a00006.html">Camera</a> *p_camera_)</td></tr>
+<tr class="separator:a92e1b2344129de2618f3b5f1ed22dd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab20b59647f0f9ba5cc40e5943377a87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aab20b59647f0f9ba5cc40e5943377a87">add_primitive</a> (<a class="el" href="a00026.html">Primitive</a> *p_prim_)</td></tr>
+<tr class="separator:aab20b59647f0f9ba5cc40e5943377a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6403f0a1e1cb777d4b335a3eb093979d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a6403f0a1e1cb777d4b335a3eb093979d">add_light</a> (<a class="el" href="a00020.html">Light</a> *p_light_)</td></tr>
+<tr class="separator:a6403f0a1e1cb777d4b335a3eb093979d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0b06829d508e600a712244d5ad7dd6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00006.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a0f0b06829d508e600a712244d5ad7dd6">p_camera</a> () const </td></tr>
+<tr class="separator:a0f0b06829d508e600a712244d5ad7dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce64c848c70c77a5ffb822f11a78aae"><td class="memItemLeft" align="right" valign="top">const vector&lt; <a class="el" href="a00020.html">Light</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#adce64c848c70c77a5ffb822f11a78aae">p_lights</a> () const </td></tr>
+<tr class="separator:adce64c848c70c77a5ffb822f11a78aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e742b6abe8cd60df0424d6bae33946"><td class="memItemLeft" align="right" valign="top">const vector&lt; <a class="el" href="a00026.html">Primitive</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a77e742b6abe8cd60df0424d6bae33946">p_prims</a> () const </td></tr>
+<tr class="separator:a77e742b6abe8cd60df0424d6bae33946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1778fd9c133a40977e6e33f6a75b61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a0f1778fd9c133a40977e6e33f6a75b61">intersect</a> (<a class="el" href="a00027.html">Ray</a> &amp;ray_, <a class="el" href="a00019.html">Isect</a> *p_isect_) const </td></tr>
+<tr class="separator:a0f1778fd9c133a40977e6e33f6a75b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2848f8a3c18972e5d5f077ab682f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#aac2848f8a3c18972e5d5f077ab682f30">test_visibility</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;pos_, <a class="el" href="a00020.html">Light</a> *p_light_) const </td></tr>
+<tr class="memdesc:aac2848f8a3c18972e5d5f077ab682f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">test the visibility between a point and a light  <a href="#aac2848f8a3c18972e5d5f077ab682f30">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aac2848f8a3c18972e5d5f077ab682f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:ab383892092ffb2d515d1c8dd20931c6e"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="a00020.html">Light</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#ab383892092ffb2d515d1c8dd20931c6e">m_p_lights</a></td></tr>
+<tr class="separator:ab383892092ffb2d515d1c8dd20931c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9365a7de489d0b4049fdc205f2787b36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00006.html">Camera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a9365a7de489d0b4049fdc205f2787b36">m_p_camera</a></td></tr>
+<tr class="separator:a9365a7de489d0b4049fdc205f2787b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddf8f6724aef06b099c6cee0a32916f"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="a00026.html">Primitive</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html#a4ddf8f6724aef06b099c6cee0a32916f">m_p_prims</a></td></tr>
+<tr class="separator:a4ddf8f6724aef06b099c6cee0a32916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="a00028.html" title="Scene definition. ">Scene</a> definition. </p>
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00022">22</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="ad10176d75a9cc0da56626f682d083507"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Scene::Scene </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00033">33</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a6403f0a1e1cb777d4b335a3eb093979d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::add_light </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00020.html">Light</a> *&#160;</td>
+          <td class="paramname"><em>p_light_</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00044">44</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00076">add_light()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_a6403f0a1e1cb777d4b335a3eb093979d_icgraph.png" border="0" usemap="#a00028_a6403f0a1e1cb777d4b335a3eb093979d_icgraph" alt=""/></div>
+<map name="a00028_a6403f0a1e1cb777d4b335a3eb093979d_icgraph" id="a00028_a6403f0a1e1cb777d4b335a3eb093979d_icgraph">
+<area shape="rect" id="node2" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc" title="to add a light to the scene " alt="" coords="177,31,252,59"/><area shape="rect" id="node3" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029" title="to initialize the scene with the default one. " alt="" coords="305,5,450,33"/><area shape="rect" id="node4" href="a00049.html#a322944f24b18d5647a07cefea27d8861" title="make_textured_scene" alt="" coords="301,57,454,85"/><area shape="rect" id="node5" href="a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="502,57,552,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aab20b59647f0f9ba5cc40e5943377a87"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::add_primitive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00026.html">Primitive</a> *&#160;</td>
+          <td class="paramname"><em>p_prim_</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00040">40</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00252">add_object()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_aab20b59647f0f9ba5cc40e5943377a87_icgraph.png" border="0" usemap="#a00028_aab20b59647f0f9ba5cc40e5943377a87_icgraph" alt=""/></div>
+<map name="a00028_aab20b59647f0f9ba5cc40e5943377a87_icgraph" id="a00028_aab20b59647f0f9ba5cc40e5943377a87_icgraph">
+<area shape="rect" id="node2" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material " alt="" coords="201,31,287,59"/><area shape="rect" id="node3" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029" title="to initialize the scene with the default one. " alt="" coords="340,5,484,33"/><area shape="rect" id="node4" href="a00049.html#a322944f24b18d5647a07cefea27d8861" title="make_textured_scene" alt="" coords="336,57,488,85"/><area shape="rect" id="node5" href="a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="536,57,586,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f1778fd9c133a40977e6e33f6a75b61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene::intersect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00019.html">Isect</a> *&#160;</td>
+          <td class="paramname"><em>p_isect_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00060">60</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00039_source.html#l00098">Diff_Geom::dDdx()</a>, <a class="el" href="a00039_source.html#l00105">Diff_Geom::dDdy()</a>, <a class="el" href="a00047_source.html#l00026">Isect::dg()</a>, <a class="el" href="a00039_source.html#l00084">Diff_Geom::dPdx()</a>, <a class="el" href="a00039_source.html#l00091">Diff_Geom::dPdy()</a>, <a class="el" href="a00021.html#abb68e80a020e81d0130b275203b1680c">Material::evaluate()</a>, <a class="el" href="a00047_source.html#l00030">Isect::mat()</a>, <a class="el" href="a00047_source.html#l00034">Isect::setBsdf()</a>, <a class="el" href="a00056_source.html#l00112">Ray::setdDdx()</a>, <a class="el" href="a00056_source.html#l00115">Ray::setdDdy()</a>, <a class="el" href="a00056_source.html#l00106">Ray::setdPdx()</a>, et <a class="el" href="a00056_source.html#l00109">Ray::setdPdy()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00378">intersect_scene()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_a0f1778fd9c133a40977e6e33f6a75b61_cgraph.png" border="0" usemap="#a00028_a0f1778fd9c133a40977e6e33f6a75b61_cgraph" alt=""/></div>
+<map name="a00028_a0f1778fd9c133a40977e6e33f6a75b61_cgraph" id="a00028_a0f1778fd9c133a40977e6e33f6a75b61_cgraph">
+<area shape="rect" id="node2" href="a00013.html#a6ffec5fe0ac1ecc780b472a910d2017a" title="Diff_Geom::dDdx" alt="" coords="173,5,296,33"/><area shape="rect" id="node3" href="a00013.html#ae63247e057e0fa7d7517671d66181b7c" title="Diff_Geom::dDdy" alt="" coords="173,57,296,85"/><area shape="rect" id="node4" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef" title="Isect::dg" alt="" coords="199,109,271,137"/><area shape="rect" id="node5" href="a00013.html#a210b806c862ecf086982cd52189f900a" title="Diff_Geom::dPdx" alt="" coords="173,161,296,189"/><area shape="rect" id="node6" href="a00013.html#aea9c1cfd45720b9c689198653eb1136d" title="Diff_Geom::dPdy" alt="" coords="173,213,296,241"/><area shape="rect" id="node7" href="a00021.html#abb68e80a020e81d0130b275203b1680c" title="Material::evaluate" alt="" coords="171,265,298,293"/><area shape="rect" id="node8" href="a00019.html#a2cc285e0c92beefcc990ba96bc0f8a6a" title="Isect::mat" alt="" coords="195,317,274,345"/><area shape="rect" id="node9" href="a00019.html#ac37c0a40e869d82f176ad5e92b997744" title="Isect::setBsdf" alt="" coords="184,369,285,397"/><area shape="rect" id="node11" href="a00027.html#a5d26fb532f4c86660b2510f1ee652398" title="Ray::setdDdx" alt="" coords="184,421,285,449"/><area shape="rect" id="node12" href="a00027.html#a71bc6099f66336f342eae251540074ea" title="Ray::setdDdy" alt="" coords="184,473,285,501"/><area shape="rect" id="node13" href="a00027.html#a2e2d243083b80167abda5801213e935a" title="Ray::setdPdx" alt="" coords="184,525,285,553"/><area shape="rect" id="node14" href="a00027.html#ac679655f534897cec2a82d88d7e2fd3f" title="Ray::setdPdy" alt="" coords="184,577,285,605"/><area shape="rect" id="node10" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe" title="Isect::bsdf" alt="" coords="347,369,429,397"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_a0f1778fd9c133a40977e6e33f6a75b61_icgraph.png" border="0" usemap="#a00028_a0f1778fd9c133a40977e6e33f6a75b61_icgraph" alt=""/></div>
+<map name="a00028_a0f1778fd9c133a40977e6e33f6a75b61_icgraph" id="a00028_a0f1778fd9c133a40977e6e33f6a75b61_icgraph">
+<area shape="rect" id="node2" href="a00071.html#gaa971dcbc0062c359e8464f84662b0bd4" title="intersect a given ray with the scene. " alt="" coords="171,5,285,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f0b06829d508e600a712244d5ad7dd6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00006.html">Camera</a>* Scene::p_camera </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00048">48</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adce64c848c70c77a5ffb822f11a78aae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt;<a class="el" href="a00020.html">Light</a> *&gt;&amp; Scene::p_lights </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00052">52</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00345">get_light()</a>, et <a class="el" href="a00057_source.html#l00337">nb_lights()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_adce64c848c70c77a5ffb822f11a78aae_icgraph.png" border="0" usemap="#a00028_adce64c848c70c77a5ffb822f11a78aae_icgraph" alt=""/></div>
+<map name="a00028_adce64c848c70c77a5ffb822f11a78aae_icgraph" id="a00028_adce64c848c70c77a5ffb822f11a78aae_icgraph">
+<area shape="rect" id="node2" href="a00070.html#gade62171a2f3b305905e5b0ada32357ff" title="get_light" alt="" coords="167,5,239,33"/><area shape="rect" id="node3" href="a00070.html#ga16d4353577e7adc824650320333c7245" title="nb_lights" alt="" coords="165,57,240,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a77e742b6abe8cd60df0424d6bae33946"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt;<a class="el" href="a00026.html">Primitive</a> *&gt;&amp; Scene::p_prims </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00056">56</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92e1b2344129de2618f3b5f1ed22dd5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::set_camera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00006.html">Camera</a> *&#160;</td>
+          <td class="paramname"><em>p_camera_</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00036">36</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00051">set_camera()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_a92e1b2344129de2618f3b5f1ed22dd5e_icgraph.png" border="0" usemap="#a00028_a92e1b2344129de2618f3b5f1ed22dd5e_icgraph" alt=""/></div>
+<map name="a00028_a92e1b2344129de2618f3b5f1ed22dd5e_icgraph" id="a00028_a92e1b2344129de2618f3b5f1ed22dd5e_icgraph">
+<area shape="rect" id="node2" href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192" title="to set the parameters of the camera " alt="" coords="189,31,280,59"/><area shape="rect" id="node3" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029" title="to initialize the scene with the default one. " alt="" coords="332,5,476,33"/><area shape="rect" id="node4" href="a00049.html#a322944f24b18d5647a07cefea27d8861" title="make_textured_scene" alt="" coords="328,57,480,85"/><area shape="rect" id="node5" href="a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="528,57,578,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aac2848f8a3c18972e5d5f077ab682f30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scene::test_visibility </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00020.html">Light</a> *&#160;</td>
+          <td class="paramname"><em>p_light_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>test the visibility between a point and a light </p>
+<dl class="section return"><dt>Renvoie</dt><dd>true if they are mutually visible </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00090">90</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00065_source.html#l00084">Vector3D::norm()</a>, <a class="el" href="a00065_source.html#l00092">Vector3D::normalize()</a>, <a class="el" href="a00048_source.html#l00026">Light::pos()</a>, et <a class="el" href="a00056_source.html#l00080">Ray::set_max_t()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00389">test_visibility()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_aac2848f8a3c18972e5d5f077ab682f30_cgraph.png" border="0" usemap="#a00028_aac2848f8a3c18972e5d5f077ab682f30_cgraph" alt=""/></div>
+<map name="a00028_aac2848f8a3c18972e5d5f077ab682f30_cgraph" id="a00028_aac2848f8a3c18972e5d5f077ab682f30_cgraph">
+<area shape="rect" id="node2" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="384,57,498,85"/><area shape="rect" id="node6" href="a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="195,82,336,110"/><area shape="rect" id="node7" href="a00020.html#a305715f1db3acf3dbd9dbd54baaa804e" title="Light::pos" alt="" coords="226,134,305,162"/><area shape="rect" id="node8" href="a00027.html#a67bf1057835b4a923a50c82f31d46d0d" title="Ray::set_max_t" alt="" coords="208,186,322,214"/><area shape="rect" id="node3" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="547,5,637,33"/><area shape="rect" id="node4" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="547,57,637,85"/><area shape="rect" id="node5" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="547,109,637,137"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00028_aac2848f8a3c18972e5d5f077ab682f30_icgraph.png" border="0" usemap="#a00028_aac2848f8a3c18972e5d5f077ab682f30_icgraph" alt=""/></div>
+<map name="a00028_aac2848f8a3c18972e5d5f077ab682f30_icgraph" id="a00028_aac2848f8a3c18972e5d5f077ab682f30_icgraph">
+<area shape="rect" id="node2" href="a00071.html#gafdd7145eb904844de4296af68d315e39" title="test the visibility between an intersection and a light " alt="" coords="195,5,291,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a9365a7de489d0b4049fdc205f2787b36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00006.html">Camera</a>* Scene::m_p_camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00027">27</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab383892092ffb2d515d1c8dd20931c6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="a00020.html">Light</a> *&gt; Scene::m_p_lights</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00025">25</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ddf8f6724aef06b099c6cee0a32916f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="a00026.html">Primitive</a> *&gt; Scene::m_p_prims</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00059_source.html#l00029">29</a> du fichier <a class="el" href="a00059_source.html">scene.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="a00059_source.html">scene.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00028.html">Scene</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:45 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

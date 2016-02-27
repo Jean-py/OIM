@@ -1,0 +1,143 @@
+*reponsse
+
+
+question 1 : 
+gst-launch audiotestsrc  ! autoaudiosink
+
+frequence monotonale?
+frenquence 440hz
+
+Q2
+
+: Oscillator waveform
+                        flags: readable, writable, controllable
+                        Enum "GstAudioTestSrcWave" Default: 0, "sine"
+                           (0): sine             - Sine
+                           (1): square           - Square
+                           (2): saw              - Saw
+                           (3): triangle         - Triangle
+                           (4): silence          - Silence
+                           (5): white-noise      - White uniform noise
+                           (6): pink-noise       - Pink noise
+                           (7): sine-table       - Sine table
+                           (8): ticks            - Periodic Ticks
+                           (9): gaussian-noise   - White Gaussian noise
+                           (10): red-noise        - Red (brownian) noise
+                           (11): blue-noise       - Blue noise
+                           (12): violet-noise     - Violet noise
+  freq                : Frequency of test signal
+                        flags: readable, writable, controllable
+                        Double. Range:               0 -           20000 Default:             440 
+
+Sine : sinus
+square : carrée (angle droit)
+saw : scie
+triangle
+silence 
+white-noise : bruit blanc
+white-noise : bruit rose
+sine table : table sinusoidale??
+tick : tic dhorloge
+gaussian-noise : bruit de gauss
+red-noise : bruit rouge
+blue-noise : bruit bleu
+viloet-noise : bruit violet
+
+
+ Q3 
+
+gst-launch audiotestsrc freq=350 ! wavenc ! filesink location=./test.wav
+
+
+Q4 
+permet de lire le fichier audio fourni : 
+
+a) gst-launch filesrc location=./test.wav ! wavparse ! audioconvert ! audioresample  ! autoaudiosink \ audiotestsrc wave=9 ! autoaudiosink
+
+b) gst-launch filesrc location=./test.wav ! wavparse ! audioconvert ! audioresample  ! autoaudiosink \ audiotestsrc wave=9 ! autoaudiosink \ audiotestsrc wave = 8 ! autoaudiosink
+
+
+Q5
+
+
+
+>>> length(x)
+ans =  24000 
+
+Partie II 
+
+Q1
+
+
+
+
+Partie II 
+rtpjpegdepay    Description              Extracts JPEG video from RTP packets (RFC 2435)
+
+
+Q4
+
+gst-launch-1.0 -v videotestsrc ! jpegenc ! rtpjpegpay ! udpsink host=127.0.0.1 port=9001
+
+gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)JPEG, a-framerate=(string)30.000000, a-framesize=(string)320-240, payload=(int)96, ssrc=(uint)1221726687, timestamp-offset=(uint)3242565868, seqnum-offset=(uint)59556" ! rtpjpegdepay ! jpegdec ! videoconvert ! autovideosink
+
+Q5 : OGV
+
+
+ok pour video : 
+
+gst-launch-1.0 -v filesrc location=./video.ogv ! oggdemux ! theoradec ! vp8enc ! rtpvp8pay ! udpsink host=localhost port=9001
+
+
+gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)VP8-DRAFT-IETF-01, payload=(int)96, ssrc=(uint)1712158685, timestamp-offset=(uint)4248676901, seqnum-offset=(uint)35516" ! rtpvp8depay ! vp8dec ! autovideosink
+
+
+Q6 audiio+video
+
+
+
+try avec
+gst-launch-1.0 -v filesrc location=./video.ogv ! oggdemux ! theoradec ! vp8enc ! rtpvp8pay ! udpsink host=localhost port=9001 \  filesrc location=./video.ogv ! oggdemux ! rtpvorbispay  ! udpsink host=localhost port=9002
+
+
+only sound : 
+gst-launch-1.0 -v filesrc location=./video.ogv ! oggdemux  ! rtpvorbispay  ! udpsink host=localhost port=9002
+
+Son avec une ligne de ommande sans serveur et client
+  gst-launch-1.0 -v filesrc location=./video.ogv ! oggdemux ! vorbisdec ! autoaudiosink
+
+
+
+
+
+
+
+
+Cel de clem :  coté serveur
+
+gst-launch-1.0 -v filesrc location=./video.ogv ! oggdemux  ! vorbisdec ! audioresample ! vorbisenc ! rtpvorbispay ! udpsink host=localhost port=9002
+
+
+-----
+
+MUMU COTY thanks bitch
+
+gst-launch-1.0 -v filesrc location=./video.ogv ! oggdemux name=demux demux. ! queue ! theoradec ! vp8enc ! rtpvp8pay ! udpsink host=127.0.0.1 port=9001 demux. ! queue ! rtpvorbispay ! udpsink host=127.0.0.1 port=9002
+
+
+
+
+
+ gst-launch-1.0 udpsrc port=9002 caps="application/x-rtp, media=(string)audio, clock-rate=(int)48000, encoding-name=(string)VORBIS, encoding-params=(string)2, configuration=(string)"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\=\=", payload=(int)96, ssrc=(uint)3205853657, timestamp-offset=(uint)4067026976, seqnum-offset=(uint)19175" ! rtpvorbisdepay ! vorbisdec ! audioconvert ! alsasink 
+
+
+
+
+test 2* video 
+
+gst-launch-1.0 -v filesrc location=./video.ogv ! oggdemux name=demux demux. ! queue ! theoradec ! vp8enc ! rtpvp8pay ! udpsink host=127.0.0.1 port=9001 demux. ! queue ! theoradec ! vp8enc ! rtpvp8pay ! udpsink host=127.0.0.1 port=9002 
+
+
+
+ gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)VP8-DRAFT-IETF-01, payload=(int)96, ssrc=(uint)1712158685, timestamp-offset=(uint)4248676901, seqnum-offset=(uint)35516" ! rtpvp8depay ! vp8dec ! autovideosink \ gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)VP8-DRAFT-IETF-01, payload=(int)96, ssrc=(uint)1712158685, timestamp-offset=(uint)4248676901, seqnum-offset=(uint)35516" ! rtpvp8depay ! vp8dec ! autovideosink
+

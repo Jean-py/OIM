@@ -1,0 +1,2 @@
+application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)VP8-DRAFT-IETF-01,  payload=(int)96, ssrc=(uint)1712158685, timestamp-offset=(uint)4248676901,  seqnum-offset=(uint)35516
+

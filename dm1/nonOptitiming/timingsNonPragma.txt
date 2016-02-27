@@ -1,0 +1,15 @@
+nonlocalmean ./test_files/noisy/lena-s15.pgm 3 0.791962
+nonlocalmean ./test_files/noisy/lena-s15.pgm 5 4.500687
+nonlocalmean ./test_files/noisy/lena-s15.pgm 7 14.755913
+nonlocalmean ./test_files/noisy/lena-s15.pgm 9 35.045714 
+nonlocalmean ./test_files/noisy/lena-s15.pgm 11 73.711782
+nonlocalmean ./test_files/noisy/lena-s15.pgm 13 139.194335
+nonlocalmean ./test_files/noisy/lena-s15.pgm 15 238.026816
+nonlocalmean ./test_files/noisy/lena-s15.pgm 17 389.112516 
+nonlocalmean ./test_files/noisy/lena-s15.pgm 19 602.244353
+
+
+nonlocalmean ./test_files/noisy/lena-s15.pgm 23 890.813403
+nonlocalmean ./test_files/noisy/lena-s15.pgm 25 1230.053202
+nonlocalmean ./test_files/noisy/lena-s15.pgm 27 1692.997528
+

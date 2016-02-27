@@ -1,0 +1,8 @@
+<map id="Isect::dg" name="Isect::dg">
+<area shape="rect" id="node2" href="$a00073.html#ga3a215078ec8db08fc79e0a491bc61b59" title="compute the amount of color scattered at the intersection to the ray from the given light..." alt="" coords="132,5,236,33"/>
+<area shape="rect" id="node3" href="$a00028.html#a0f1778fd9c133a40977e6e33f6a75b61" title="Scene::intersect" alt="" coords="126,57,242,85"/>
+<area shape="rect" id="node5" href="$a00073.html#ga397536f562058dee83e3be0813324e82" title="compute the reflected ray from the intersection data and the ray to the intersection ..." alt="" coords="155,109,213,137"/>
+<area shape="rect" id="node6" href="$a00073.html#ga1c7e1aae0ca65e600b252447bc817038" title="compute the refracted ray from the intersection data and the ray to the intersection ..." alt="" coords="154,161,214,189"/>
+<area shape="rect" id="node7" href="$a00071.html#gafdd7145eb904844de4296af68d315e39" title="test the visibility between an intersection and a light " alt="" coords="136,213,232,241"/>
+<area shape="rect" id="node4" href="$a00071.html#gaa971dcbc0062c359e8464f84662b0bd4" title="intersect a given ray with the scene. " alt="" coords="291,57,405,85"/>
+</map>

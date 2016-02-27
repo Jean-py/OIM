@@ -1,0 +1,601 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Référence de la classe Color</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00007.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="#friends">Amis</a> &#124;
+<a href="a00149.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Color<div class="ingroups"><a class="el" href="a00075.html">Simple Raytracer</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="a00007.html" title="Color management. ">Color</a> management.  
+ <a href="a00007.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00035_source.html">color.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Color:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00150.png" border="0" usemap="#_color_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a9a742cbe9f9f4037f5d9f4e81a9b2428"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a9a742cbe9f9f4037f5d9f4e81a9b2428">Color</a> ()</td></tr>
+<tr class="separator:a9a742cbe9f9f4037f5d9f4e81a9b2428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866f5b3f4192cdd953900b3bdae4b2cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a866f5b3f4192cdd953900b3bdae4b2cd">Color</a> (const <a class="el" href="a00007.html">Color</a> &amp;other)</td></tr>
+<tr class="separator:a866f5b3f4192cdd953900b3bdae4b2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d27314877c0f737c4fe76612486cfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a63d27314877c0f737c4fe76612486cfa">Color</a> (float v_)</td></tr>
+<tr class="separator:a63d27314877c0f737c4fe76612486cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a9f1af6b0e33aac1f46d348d241c52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a92a9f1af6b0e33aac1f46d348d241c52">Color</a> (float r_, float g_, float b_)</td></tr>
+<tr class="separator:a92a9f1af6b0e33aac1f46d348d241c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada85564386200034b6991cdf732e5fc8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ada85564386200034b6991cdf732e5fc8">operator[]</a> (int i_) const </td></tr>
+<tr class="separator:ada85564386200034b6991cdf732e5fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7128adc74f8de23b922a70eceea09ef0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a7128adc74f8de23b922a70eceea09ef0">operator+</a> (const <a class="el" href="a00007.html">Color</a> &amp;other_) const </td></tr>
+<tr class="separator:a7128adc74f8de23b922a70eceea09ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac7755b39d4e96e843741a62bdba24e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a9ac7755b39d4e96e843741a62bdba24e">operator*</a> (const <a class="el" href="a00007.html">Color</a> &amp;other_) const </td></tr>
+<tr class="separator:a9ac7755b39d4e96e843741a62bdba24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c38c4d10fe8f465cdc18843c8c7811"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a53c38c4d10fe8f465cdc18843c8c7811">operator*</a> (float v_) const </td></tr>
+<tr class="separator:a53c38c4d10fe8f465cdc18843c8c7811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd9a00e50cad82c55c405c9683da443"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#addd9a00e50cad82c55c405c9683da443">is_zero</a> () const </td></tr>
+<tr class="separator:addd9a00e50cad82c55c405c9683da443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43c458dc1c46ffc762b7e9cb726ef3e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#ab43c458dc1c46ffc762b7e9cb726ef3e">avg</a> () const </td></tr>
+<tr class="separator:ab43c458dc1c46ffc762b7e9cb726ef3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:acb389290a7593696678b1def98e35dfd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#acb389290a7593696678b1def98e35dfd">m_comps</a> [3]</td></tr>
+<tr class="memdesc:acb389290a7593696678b1def98e35dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 = r, 1 = g, 2 = b  <a href="#acb389290a7593696678b1def98e35dfd">Plus de détails...</a><br/></td></tr>
+<tr class="separator:acb389290a7593696678b1def98e35dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Amis</h2></td></tr>
+<tr class="memitem:a925e7fe8e988d80b2f430ac498711a4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00007.html#a925e7fe8e988d80b2f430ac498711a4d">operator*</a> (float v_, const <a class="el" href="a00007.html">Color</a> &amp;c)</td></tr>
+<tr class="separator:a925e7fe8e988d80b2f430ac498711a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="a00007.html" title="Color management. ">Color</a> management. </p>
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00006">6</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a9a742cbe9f9f4037f5d9f4e81a9b2428"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color::Color </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00015">15</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+<p>Référencé par <a class="el" href="a00035_source.html#l00049">operator*()</a>, et <a class="el" href="a00035_source.html#l00043">operator+()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00007_a9a742cbe9f9f4037f5d9f4e81a9b2428_icgraph.png" border="0" usemap="#a00007_a9a742cbe9f9f4037f5d9f4e81a9b2428_icgraph" alt=""/></div>
+<map name="a00007_a9a742cbe9f9f4037f5d9f4e81a9b2428_icgraph" id="a00007_a9a742cbe9f9f4037f5d9f4e81a9b2428_icgraph">
+<area shape="rect" id="node2" href="a00007.html#a9ac7755b39d4e96e843741a62bdba24e" title="Color::operator*" alt="" coords="149,5,264,33"/><area shape="rect" id="node3" href="a00007.html#a7128adc74f8de23b922a70eceea09ef0" title="Color::operator+" alt="" coords="148,57,266,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a866f5b3f4192cdd953900b3bdae4b2cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color::Color </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00021">21</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63d27314877c0f737c4fe76612486cfa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color::Color </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v_</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00027">27</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92a9f1af6b0e33aac1f46d348d241c52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color::Color </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>g_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00033">33</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="ab43c458dc1c46ffc762b7e9cb726ef3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Color::avg </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00069">69</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00407">ray_importance()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00007_ab43c458dc1c46ffc762b7e9cb726ef3e_icgraph.png" border="0" usemap="#a00007_ab43c458dc1c46ffc762b7e9cb726ef3e_icgraph" alt=""/></div>
+<map name="a00007_ab43c458dc1c46ffc762b7e9cb726ef3e_icgraph" id="a00007_ab43c458dc1c46ffc762b7e9cb726ef3e_icgraph">
+<area shape="rect" id="node2" href="a00071.html#ga69e5c6dd970eec59a78918a79badfbc8" title="the importance of the ray " alt="" coords="137,5,250,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="addd9a00e50cad82c55c405c9683da443"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Color::is_zero </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00065">65</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00455">color_is_black()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00007_addd9a00e50cad82c55c405c9683da443_icgraph.png" border="0" usemap="#a00007_addd9a00e50cad82c55c405c9683da443_icgraph" alt=""/></div>
+<map name="a00007_addd9a00e50cad82c55c405c9683da443_icgraph" id="a00007_addd9a00e50cad82c55c405c9683da443_icgraph">
+<area shape="rect" id="node2" href="a00072.html#ga8a9950fd49c3927a6b247f20c0f584cf" title="color_is_black" alt="" coords="158,5,264,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ac7755b39d4e96e843741a62bdba24e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> Color::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>other_</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00049">49</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00015">Color()</a>, et <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00007_a9ac7755b39d4e96e843741a62bdba24e_cgraph.png" border="0" usemap="#a00007_a9ac7755b39d4e96e843741a62bdba24e_cgraph" alt=""/></div>
+<map name="a00007_a9ac7755b39d4e96e843741a62bdba24e_cgraph" id="a00007_a9ac7755b39d4e96e843741a62bdba24e_cgraph">
+<area shape="rect" id="node2" href="a00007.html#a9a742cbe9f9f4037f5d9f4e81a9b2428" title="Color::Color" alt="" coords="171,5,264,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a53c38c4d10fe8f465cdc18843c8c7811"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> Color::operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v_</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00055">55</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00015">Color()</a>, et <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00007_a53c38c4d10fe8f465cdc18843c8c7811_cgraph.png" border="0" usemap="#a00007_a53c38c4d10fe8f465cdc18843c8c7811_cgraph" alt=""/></div>
+<map name="a00007_a53c38c4d10fe8f465cdc18843c8c7811_cgraph" id="a00007_a53c38c4d10fe8f465cdc18843c8c7811_cgraph">
+<area shape="rect" id="node2" href="a00007.html#a9a742cbe9f9f4037f5d9f4e81a9b2428" title="Color::Color" alt="" coords="171,5,264,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7128adc74f8de23b922a70eceea09ef0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> Color::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>other_</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00043">43</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00015">Color()</a>, et <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00007_a7128adc74f8de23b922a70eceea09ef0_cgraph.png" border="0" usemap="#a00007_a7128adc74f8de23b922a70eceea09ef0_cgraph" alt=""/></div>
+<map name="a00007_a7128adc74f8de23b922a70eceea09ef0_cgraph" id="a00007_a7128adc74f8de23b922a70eceea09ef0_cgraph">
+<area shape="rect" id="node2" href="a00007.html#a9a742cbe9f9f4037f5d9f4e81a9b2428" title="Color::Color" alt="" coords="174,5,266,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ada85564386200034b6991cdf732e5fc8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Color::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i_</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00039">39</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00035_source.html#l00010">m_comps</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions amies et associées</h2>
+<a class="anchor" id="a925e7fe8e988d80b2f430ac498711a4d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00061">61</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="acb389290a7593696678b1def98e35dfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Color::m_comps[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>0 = r, 1 = g, 2 = b </p>
+
+<p>Définition à la ligne <a class="el" href="a00035_source.html#l00010">10</a> du fichier <a class="el" href="a00035_source.html">color.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00035_source.html#l00069">avg()</a>, <a class="el" href="a00035_source.html#l00015">Color()</a>, <a class="el" href="a00035_source.html#l00065">is_zero()</a>, <a class="el" href="a00035_source.html#l00049">operator*()</a>, <a class="el" href="a00035_source.html#l00043">operator+()</a>, et <a class="el" href="a00035_source.html#l00039">operator[]()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="a00035_source.html">color.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00007.html">Color</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:47 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

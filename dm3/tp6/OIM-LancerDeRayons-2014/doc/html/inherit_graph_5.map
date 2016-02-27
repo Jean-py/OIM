@@ -1,0 +1,11 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$a00014.html" title="Abstract class for geometric object. " alt="" coords="5,187,85,215"/>
+<area shape="rect" id="node2" href="$a00004.html" title="Box geometric object. " alt="" coords="163,5,224,33"/>
+<area shape="rect" id="node3" href="$a00008.html" title="Cone geometric object. " alt="" coords="167,57,220,85"/>
+<area shape="rect" id="node4" href="$a00009.html" title="CSGDifference" alt="" coords="138,109,249,137"/>
+<area shape="rect" id="node5" href="$a00010.html" title="Syntaxe d&#39;un arbre CSG : Opérateurs terminaux Primitive : Sphére = (sp pos_x pos_y pos_z radius) – sp..." alt="" coords="134,161,253,189"/>
+<area shape="rect" id="node6" href="$a00011.html" title="CSGUnion" alt="" coords="151,213,236,241"/>
+<area shape="rect" id="node7" href="$a00012.html" title="Cylinder geometric object. " alt="" coords="158,265,228,293"/>
+<area shape="rect" id="node8" href="$a00024.html" title="Plane geometric object. " alt="" coords="166,317,221,345"/>
+<area shape="rect" id="node9" href="$a00029.html" title="Sphere geometric object. " alt="" coords="161,369,225,397"/>
+</map>

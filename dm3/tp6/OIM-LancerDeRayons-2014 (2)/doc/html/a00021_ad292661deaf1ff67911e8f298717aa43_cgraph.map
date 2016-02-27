@@ -1,0 +1,9 @@
+<map id="Material::getTextureColor" name="Material::getTextureColor">
+<area shape="rect" id="node2" href="$a00030.html#a15376a1db3093522b4402220b771ad04" title="Texture::getPixel" alt="" coords="224,57,344,85"/>
+<area shape="rect" id="node3" href="$a00030.html#a8094e6e1fc9cdf547321f357d818a2bd" title="Texture::integrateMipMap" alt="" coords="393,5,565,33"/>
+<area shape="rect" id="node7" href="$a00030.html#a7f7a4bf88646efb0805b8326d4994b50" title="Texture::integrateExplicit" alt="" coords="614,107,781,135"/>
+<area shape="rect" id="node4" href="$a00030.html#a12d1fa7928a770eb113b12000a0d3633" title="Texture::interpolate" alt="" coords="630,55,765,83"/>
+<area shape="rect" id="node5" href="$a00063.html#aa82c0e54572b2cc47433b2e7f00f13fc" title="interpolateTexture Get a texel linearly interpolated from its neighbors " alt="" coords="830,55,957,83"/>
+<area shape="rect" id="node6" href="$a00063.html#ad6c74e0d655725b60d1c0ac068664137" title="getTexel Get a single texel from a texture. " alt="" coords="1006,82,1077,110"/>
+<area shape="rect" id="node8" href="$a00063.html#a79512e8201e923fec16ccc8a8d7113b2" title="integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x de..." alt="" coords="835,107,952,135"/>
+</map>

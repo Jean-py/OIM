@@ -1,0 +1,48 @@
+<map id="Vector3D::z" name="Vector3D::z">
+<area shape="rect" id="node2" href="$a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="328,527,496,555"/>
+<area shape="rect" id="node17" href="$a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="150,983,252,1011"/>
+<area shape="rect" id="node12" href="$a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="854,1143,978,1187"/>
+<area shape="rect" id="node37" href="$a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="144,370,258,398"/>
+<area shape="rect" id="node3" href="$a00004.html#a8f8332814cea35a037da663f820cae0b" title="Box3D::Box3D" alt="" coords="619,421,728,449"/>
+<area shape="rect" id="node4" href="$a00006.html#ab64d39987eeb083cae664ba62f761967" title="fov in degrees " alt="" coords="612,629,735,657"/>
+<area shape="rect" id="node5" href="$a00008.html#a95399f5c92a51c5a65178ab5d270dedf" title="Cone::computenormal" alt="" coords="597,525,750,553"/>
+<area shape="rect" id="node10" href="$a00008.html#af9101cf744e482bef43943270c5fbffb" title="Cone::computenormalDifferential" alt="" coords="565,681,781,709"/>
+<area shape="rect" id="node11" href="$a00012.html#a2d585ce8b14de9e1611e0accc107e518" title="Cylinder::fillCylindrical\lDiffGeom" alt="" coords="597,941,749,985"/>
+<area shape="rect" id="node15" href="$a00024.html#aa174951fb18c608b8d29cfede77cc0ba" title="Plane::Plane" alt="" coords="625,473,722,501"/>
+<area shape="rect" id="node16" href="$a00024.html#a7c0ba60dc93567610573fe9b1c0fe26c" title="Plane::settangent" alt="" coords="611,577,736,605"/>
+<area shape="rect" id="node6" href="$a00008.html#a64fe0f4498b58abcbc0c1701c1c8c904" title="Cone::fillConicalDiffGeom" alt="" coords="829,733,1003,761"/>
+<area shape="rect" id="node7" href="$a00008.html#aa000dbdde858b3eb9078fe90d3ec71b2" title="Cone::get_clip_points" alt="" coords="1051,879,1200,907"/>
+<area shape="rect" id="node8" href="$a00008.html#a7ddf59f2bc68bc7d862fc915b2983702" title="clip a ray by a geometry. " alt="" coords="1264,879,1344,907"/>
+<area shape="rect" id="node9" href="$a00008.html#a525bf376cea933bf1fb4dd47ec77c3c1" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cone3.cpp " alt="" coords="1248,1017,1360,1045"/>
+<area shape="rect" id="node13" href="$a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="1077,1177,1174,1205"/>
+<area shape="rect" id="node14" href="$a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="1061,1125,1189,1153"/>
+<area shape="rect" id="node18" href="$a00029.html#ac78e1c4b2d124b9df40f3688231f5b45" title="clip a ray by a geometry. " alt="" coords="627,837,719,865"/>
+<area shape="rect" id="node19" href="$a00004.html#ae9726a96fc8d4b778bcfd9ba8fd693a1" title="clip a ray by a geometry. " alt="" coords="368,1422,456,1450"/>
+<area shape="rect" id="node20" href="$a00008.html#a178cde17ec76cf7166a766a27d60636f" title="Cone::computeConicalTexInfo" alt="" coords="312,631,512,659"/>
+<area shape="rect" id="node21" href="$a00012.html#a92147892ccb160276ef50997c1303ae2" title="Cylinder::computeCylindrical\lTexInfo" alt="" coords="317,890,507,934"/>
+<area shape="rect" id="node22" href="$a00012.html#adad45f440e3fa3b0d0f1f2d05495aeb3" title="Cylinder::computePlanarTexInfo" alt="" coords="307,1061,517,1089"/>
+<area shape="rect" id="node24" href="$a00073.html#ga3a215078ec8db08fc79e0a491bc61b59" title="compute the amount of color scattered at the intersection to the ray from the given light..." alt="" coords="622,1499,725,1527"/>
+<area shape="rect" id="node25" href="$a00005.html#a89754b621acdd482f06a0b11c0ecdf3a" title="directions leave from the point " alt="" coords="355,1474,469,1502"/>
+<area shape="rect" id="node26" href="$a00024.html#a8972d45fdd4d58cc736ce779da8e000a" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="617,785,730,813"/>
+<area shape="rect" id="node28" href="$a00029.html#acb1c5b063489f881872e6faf155c4c18" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="612,1113,734,1141"/>
+<area shape="rect" id="node29" href="$a00004.html#ad5a9451718d7e98f7425aee8e00dcfbf" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Box3.cpp " alt="" coords="352,683,472,711"/>
+<area shape="rect" id="node30" href="$a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="321,838,503,866"/>
+<area shape="rect" id="node31" href="$a00006.html#a98275b6232248a9c1691cd9500d8134d" title="Camera::ray_for_pixel" alt="" coords="597,369,750,397"/>
+<area shape="rect" id="node33" href="$a00073.html#ga397536f562058dee83e3be0813324e82" title="compute the reflected ray from the intersection data and the ray to the intersection ..." alt="" coords="645,1241,702,1269"/>
+<area shape="rect" id="node34" href="$a00005.html#a0c1293b4a879f5797f9befcaef2c4c99" title="BSDF::reflect_dir" alt="" coords="351,1266,473,1294"/>
+<area shape="rect" id="node35" href="$a00073.html#ga1c7e1aae0ca65e600b252447bc817038" title="compute the refracted ray from the intersection data and the ray to the intersection ..." alt="" coords="644,1343,703,1371"/>
+<area shape="rect" id="node36" href="$a00005.html#a072b04d8fc38b94911e023dcb3a0c28f" title="BSDF::refract_dir" alt="" coords="350,1318,474,1346"/>
+<area shape="rect" id="node23" href="$a00012.html#a177615c862c903affe4865063e2fb802" title="Cylinder::fillPlanarDiffGeom" alt="" coords="581,1061,766,1089"/>
+<area shape="rect" id="node27" href="$a00024.html#ab07fd72491019dfdce875eaa677ba18f" title="clip a ray by a geometry. " alt="" coords="875,827,957,855"/>
+<area shape="rect" id="node32" href="$a00071.html#ga8cb8aef586b50a39b449ebb804acee60" title="compute the ray for the given pixel " alt="" coords="870,369,962,397"/>
+<area shape="rect" id="node38" href="$a00030.html#a09fbbcee092db9bb6fc53a815a6685c0" title="Texture::computeMipmapLevel" alt="" coords="311,134,513,162"/>
+<area shape="rect" id="node44" href="$a00008.html#a13e25255d6de2ec3662eeafe88d50eee" title="Cone::Cone" alt="" coords="627,317,720,345"/>
+<area shape="rect" id="node45" href="$a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="341,421,483,449"/>
+<area shape="rect" id="node46" href="$a00028.html#aac2848f8a3c18972e5d5f077ab682f30" title="test the visibility between a point and a light " alt="" coords="603,265,744,293"/>
+<area shape="rect" id="node39" href="$a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="617,57,730,85"/>
+<area shape="rect" id="node40" href="$a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="617,109,729,137"/>
+<area shape="rect" id="node41" href="$a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="617,161,730,189"/>
+<area shape="rect" id="node42" href="$a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="614,213,733,241"/>
+<area shape="rect" id="node43" href="$a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="613,5,733,33"/>
+<area shape="rect" id="node47" href="$a00071.html#gafdd7145eb904844de4296af68d315e39" title="test the visibility between an intersection and a light " alt="" coords="868,265,964,293"/>
+</map>

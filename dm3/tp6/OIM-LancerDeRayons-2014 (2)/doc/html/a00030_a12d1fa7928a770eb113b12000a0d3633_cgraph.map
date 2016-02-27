@@ -1,0 +1,4 @@
+<map id="Texture::interpolate" name="Texture::interpolate">
+<area shape="rect" id="node2" href="$a00063.html#aa82c0e54572b2cc47433b2e7f00f13fc" title="interpolateTexture Get a texel linearly interpolated from its neighbors " alt="" coords="190,5,317,33"/>
+<area shape="rect" id="node3" href="$a00063.html#ad6c74e0d655725b60d1c0ac068664137" title="getTexel Get a single texel from a texture. " alt="" coords="366,5,437,33"/>
+</map>

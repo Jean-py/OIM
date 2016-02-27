@@ -1,0 +1,11 @@
+<map id="IntervalSet::bounds" name="IntervalSet::bounds">
+<area shape="rect" id="node2" href="$a00010.html#ab037a625412ab7566ceb204d869917d6" title="clip a ray by a geometry. " alt="" coords="191,5,337,33"/>
+<area shape="rect" id="node4" href="$a00011.html#af10ef9b38d6f02403ccc1586bfd042ef" title="clip a ray by a geometry. " alt="" coords="208,109,320,137"/>
+<area shape="rect" id="node6" href="$a00009.html#abb5077f37138af94f364e00810f83955" title="clip a ray by a geometry. " alt="" coords="195,213,333,241"/>
+<area shape="rect" id="node8" href="$a00008.html#a7ddf59f2bc68bc7d862fc915b2983702" title="clip a ray by a geometry. " alt="" coords="436,315,516,343"/>
+<area shape="rect" id="node9" href="$a00008.html#aa000dbdde858b3eb9078fe90d3ec71b2" title="Cone::get_clip_points" alt="" coords="189,367,339,395"/>
+<area shape="rect" id="node3" href="$a00010.html#ac01d3ea8671959a3b44087687bd2d278" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="388,31,564,59"/>
+<area shape="rect" id="node5" href="$a00011.html#acca00fa585a6bec21b20671df79fe030" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="405,149,547,177"/>
+<area shape="rect" id="node7" href="$a00009.html#a4df21af1e7d7a34ccd724c849de31cfc" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="392,226,560,254"/>
+<area shape="rect" id="node10" href="$a00008.html#a525bf376cea933bf1fb4dd47ec77c3c1" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cone3.cpp " alt="" coords="420,367,532,395"/>
+</map>

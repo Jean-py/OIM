@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer:  Fichier source de raytracing.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00057_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">raytracing.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00057.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00058.html">raytracing.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00059.html">scene.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00043.html">image.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00053.html">plane.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00060.html">sphere.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00038.html">cylinder.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00036.html">cone.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00032.html">box.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00037.html">csg.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00051.html">matte.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00054.html">plastic.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00052.html">metal.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00041.html">glass.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00042.html">glossy.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00062.html">texture.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//====================</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//global variables</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="a00057.html#aab84ef508ba02254f00c7cd02f420b28">   25</a></span>&#160;<a class="code" href="a00028.html" title="Scene definition. ">Scene</a> <a class="code" href="a00057.html#aab84ef508ba02254f00c7cd02f420b28" title="The scene. ">g_scene</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="a00057.html#a8ea4ea2eb2676e84509a7f4c5ce43dda">   28</a></span>&#160;<a class="code" href="a00006.html" title="Viewpoint management. ">Camera</a> <a class="code" href="a00057.html#a8ea4ea2eb2676e84509a7f4c5ce43dda" title="The camera. ">g_camera</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="a00057.html#adcfc067701db6262297c2bbec15927cd">   31</a></span>&#160;<a class="code" href="a00017.html">Image</a> * <a class="code" href="a00057.html#adcfc067701db6262297c2bbec15927cd" title="The resulting image. ">g_p_img</a> = NULL;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//====================</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//scene description</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192" title="to set the parameters of the camera ">set_camera</a> (<span class="keywordtype">float</span> pos_x_, <span class="keywordtype">float</span> pos_y_, <span class="keywordtype">float</span> pos_z_,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                 <span class="keywordtype">float</span> aim_x_, <span class="keywordtype">float</span> aim_y_, <span class="keywordtype">float</span> aim_z_,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                 <span class="keywordtype">float</span> up_x_, <span class="keywordtype">float</span> up_y_, <span class="keywordtype">float</span> up_z_,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                 <span class="keywordtype">float</span> fov_, <span class="keywordtype">int</span> x_res_, <span class="keywordtype">int</span> y_res_) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        g_camera = <a class="code" href="a00006.html" title="Viewpoint management. ">Camera</a> (<a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (pos_x_, pos_y_, pos_z_),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                           <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (aim_x_, aim_y_, aim_z_),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                           <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (up_x_, up_y_, up_z_),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                           fov_, x_res_, y_res_);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        g_scene.<a class="code" href="a00028.html#a92e1b2344129de2618f3b5f1ed22dd5e">set_camera</a> (&amp;g_camera);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">delete</span> <a class="code" href="a00057.html#adcfc067701db6262297c2bbec15927cd" title="The resulting image. ">g_p_img</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        g_p_img = <span class="keyword">new</span> <a class="code" href="a00017.html">Image</a> (x_res_, y_res_);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc" title="to add a light to the scene ">add_light</a> (<span class="keywordtype">float</span> pos_x_, <span class="keywordtype">float</span> pos_y_, <span class="keywordtype">float</span> pos_z_,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                <span class="keywordtype">float</span> r_, <span class="keywordtype">float</span> g_, <span class="keywordtype">float</span> b_) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        g_scene.<a class="code" href="a00028.html#a6403f0a1e1cb777d4b335a3eb093979d">add_light</a> (<span class="keyword">new</span> <a class="code" href="a00020.html" title="Light source definition. ">Light</a> (<a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (pos_x_, pos_y_, pos_z_),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                                  <a class="code" href="a00007.html" title="Color management. ">Color</a> (r_, g_, b_)));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="a00070.html#gaf8b0ecdd64116491706ebede06c13b54">   92</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * <a class="code" href="a00070.html#gaf8b0ecdd64116491706ebede06c13b54" title="to create a plane ">create_plane</a> (<span class="keywordtype">float</span> pos_x_, <span class="keywordtype">float</span> pos_y_, <span class="keywordtype">float</span> pos_z_,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                 <span class="keywordtype">float</span> normal_x_, <span class="keywordtype">float</span> normal_y_, <span class="keywordtype">float</span> normal_z_) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00024.html" title="Plane geometric object. ">Plane</a> (<a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (pos_x_, pos_y_, pos_z_),</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                          <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (normal_x_, normal_y_, normal_z_));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="a00070.html#ga2da051b943f32009496f94737261c248">  106</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * <a class="code" href="a00070.html#ga2da051b943f32009496f94737261c248" title="to create a sphere ">create_sphere</a> (<span class="keywordtype">float</span> pos_x_, <span class="keywordtype">float</span> pos_y_, <span class="keywordtype">float</span> pos_z_,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                  <span class="keywordtype">float</span> radius_) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00029.html" title="Sphere geometric object. ">Sphere</a> (<a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (pos_x_, pos_y_, pos_z_), radius_);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="code" href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d">  123</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * <a class="code" href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d" title="to create a cylinder ">create_cylinder</a> (<span class="keywordtype">float</span> pos_x_, <span class="keywordtype">float</span> pos_y_, <span class="keywordtype">float</span> pos_z_,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                            <span class="keywordtype">float</span> axis_x_, <span class="keywordtype">float</span> axis_y_, <span class="keywordtype">float</span> axis_z_,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                            <span class="keywordtype">float</span> radius_, <span class="keywordtype">float</span> length_) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00012.html" title="Cylinder geometric object. ">Cylinder</a> (<a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (pos_x_, pos_y_, pos_z_), <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> (axis_x_, axis_y_, axis_z_), radius_, length_);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="code" href="a00070.html#ga27c1a3eeb2869e55865f2cc6d3e717f1">  141</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * <a class="code" href="a00070.html#ga27c1a3eeb2869e55865f2cc6d3e717f1" title="to create a cone ">create_cone</a> (<span class="keywordtype">float</span> pos_x_, <span class="keywordtype">float</span> pos_y_, <span class="keywordtype">float</span> pos_z_,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                        <span class="keywordtype">float</span> vertex_x_, <span class="keywordtype">float</span> vertex_y_, <span class="keywordtype">float</span> vertex_z_,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                        <span class="keywordtype">float</span> radius_){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00008.html" title="Cone geometric object. ">Cone</a> (<a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>(pos_x_, pos_y_, pos_z_), <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>(vertex_x_, vertex_y_, vertex_z_), radius_);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="code" href="a00070.html#ga97f60add9f9b7177df6c8f2f2372561a">  163</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * <a class="code" href="a00070.html#ga97f60add9f9b7177df6c8f2f2372561a" title="to create a box ">create_box</a> (<span class="keywordtype">float</span> pos_x_, <span class="keywordtype">float</span> pos_y_, <span class="keywordtype">float</span> pos_z_,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                       <span class="keywordtype">float</span> x_base_x_, <span class="keywordtype">float</span> x_base_y_, <span class="keywordtype">float</span> x_base_z_,</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                       <span class="keywordtype">float</span> y_base_x_, <span class="keywordtype">float</span> y_base_y_, <span class="keywordtype">float</span> y_base_z_,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                       <span class="keywordtype">float</span> extent_x_, <span class="keywordtype">float</span> extent_y_, <span class="keywordtype">float</span> extent_z_</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                       ){</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00004.html" title="Box geometric object. ">Box3D</a> (<a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>(pos_x_, pos_y_, pos_z_),</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>(x_base_x_, x_base_y_, x_base_z_),</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>(y_base_x_, y_base_y_, y_base_z_),</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>(extent_x_, extent_y_, extent_z_));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="code" href="a00070.html#gad720b183f0a7c5b1d366a86fae48ff5e">  181</a></span>&#160;<a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * <a class="code" href="a00070.html#gad720b183f0a7c5b1d366a86fae48ff5e" title="to create a matte material ">create_matte_mat</a> (<span class="keywordtype">float</span> kd_r_, <span class="keywordtype">float</span> kd_g_, <span class="keywordtype">float</span> kd_b_) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00022.html" title="Matte material. ">Matte</a> (<a class="code" href="a00007.html" title="Color management. ">Color</a> (kd_r_, kd_g_, kd_b_));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="code" href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378">  196</a></span>&#160;<a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * <a class="code" href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378" title="to create a plastic material ">create_plastic_mat</a> (<span class="keywordtype">float</span> kd_r_, <span class="keywordtype">float</span> kd_g_, <span class="keywordtype">float</span> kd_b_,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                                           <span class="keywordtype">float</span> ks_r_, <span class="keywordtype">float</span> ks_g_, <span class="keywordtype">float</span> ks_b_,</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                                           <span class="keywordtype">float</span> shininess_) {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00025.html" title="Plastic material. ">Plastic</a> (<a class="code" href="a00007.html" title="Color management. ">Color</a> (kd_r_, kd_g_, kd_b_),</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                                <a class="code" href="a00007.html" title="Color management. ">Color</a> (ks_r_, ks_g_, ks_b_),</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                                shininess_);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="code" href="a00070.html#ga29d1d8af09f26bf8a39980f456a18a10">  204</a></span>&#160;<a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * <a class="code" href="a00070.html#ga29d1d8af09f26bf8a39980f456a18a10" title="to create a glossy material ">create_glossy_mat</a> (<span class="keywordtype">float</span> kd_r_, <span class="keywordtype">float</span> kd_g_, <span class="keywordtype">float</span> kd_b_,</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                               <span class="keywordtype">float</span> ks_r_, <span class="keywordtype">float</span> ks_g_, <span class="keywordtype">float</span> ks_b_, <span class="keywordtype">float</span> kr_r_, <span class="keywordtype">float</span> kr_g_, <span class="keywordtype">float</span> kr_b_,</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                               <span class="keywordtype">float</span> shininess_, <span class="keywordtype">float</span> ior_){</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00016.html" title="Plastic material. ">Glossy</a>(<a class="code" href="a00007.html" title="Color management. ">Color</a> (kd_r_, kd_g_, kd_b_),</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                      <a class="code" href="a00007.html" title="Color management. ">Color</a> (ks_r_, ks_g_, ks_b_), <a class="code" href="a00007.html" title="Color management. ">Color</a> (kr_r_, kr_g_, kr_b_), ior_,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                      shininess_);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="code" href="a00070.html#ga7e84d93db3d16480aa51e9d9cc16d843">  222</a></span>&#160;<a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * <a class="code" href="a00070.html#ga7e84d93db3d16480aa51e9d9cc16d843" title="to create a metal-like material ">create_metal_mat</a> (<span class="keywordtype">float</span> kd_r_, <span class="keywordtype">float</span> kd_g_, <span class="keywordtype">float</span> kd_b_,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                         <span class="keywordtype">float</span> kr_r_, <span class="keywordtype">float</span> kr_g_, <span class="keywordtype">float</span> kr_b_) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00023.html" title="Metallic material. ">Metal</a> (<a class="code" href="a00007.html" title="Color management. ">Color</a> (kd_r_, kd_g_, kd_b_),</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                                          <a class="code" href="a00007.html" title="Color management. ">Color</a> (kr_r_, kr_g_, kr_b_));</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="code" href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f">  239</a></span>&#160;<a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * <a class="code" href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f" title="to create a glass-like material ">create_glass_mat</a> (<span class="keywordtype">float</span> ks_r_, <span class="keywordtype">float</span> ks_g_, <span class="keywordtype">float</span> ks_b_,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                                         <span class="keywordtype">float</span> kt_r_, <span class="keywordtype">float</span> kt_g_, <span class="keywordtype">float</span> kt_b_,</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                                         <span class="keywordtype">float</span> ior_) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00015.html" title="Glass material. ">Glass</a> (<a class="code" href="a00007.html" title="Color management. ">Color</a> (ks_r_, ks_g_, ks_b_),</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                          <a class="code" href="a00007.html" title="Color management. ">Color</a> (kt_r_, kt_g_, kt_b_),</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                          ior_);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7">  252</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * geom_, <a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * mat_) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        g_scene.<a class="code" href="a00028.html#aab20b59647f0f9ba5cc40e5943377a87">add_primitive</a> (<span class="keyword">new</span> <a class="code" href="a00026.html" title="Primitive object : base component of a scene. ">Primitive</a> (geom_, mat_));</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="code" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029">  259</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029" title="to initialize the scene with the default one. ">make_default_scene</a> (<span class="keywordtype">int</span> xsize, <span class="keywordtype">int</span> ysize) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="comment">//camera</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192" title="to set the parameters of the camera ">set_camera</a> (0.f, 2.f, -6.f,</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                0.f, 0.f, 0.f,</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                0.f, 1.f, 0.f,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                90.f, xsize, ysize);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="comment">//objects</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * matte = <a class="code" href="a00070.html#gad720b183f0a7c5b1d366a86fae48ff5e" title="to create a matte material ">create_matte_mat</a> (1.f, 0.2f, 0.2f);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * plastic = <a class="code" href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378" title="to create a plastic material ">create_plastic_mat</a> (0.6f, 0.5f, 0.5f,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                                      0.6f, 0.5f, 0.5f,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                                      100.f);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * groundMaterial = <a class="code" href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378" title="to create a plastic material ">create_plastic_mat</a> (0.6f, 0.6f, 0.6f,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                                      0.2f, 0.2f, 0.2f,</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                                      40.f);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * metal = <a class="code" href="a00070.html#ga7e84d93db3d16480aa51e9d9cc16d843" title="to create a metal-like material ">create_metal_mat</a> (0.2f, 0.2f, 0.2f,</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                                 1.f, 1.f, 1.f);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * glass = <a class="code" href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f" title="to create a glass-like material ">create_glass_mat</a> (1.f, 1.f, 1.f,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                             1.f, 1.f, 1.f,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                             1.25f);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <a class="code" href="a00021.html" title="Abstract class for material. ">Material</a> * transp = <a class="code" href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f" title="to create a glass-like material ">create_glass_mat</a> (1.f, 1.f, 1.f,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                              1.f, 1.f, 1.f,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                              1.f);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * sphere1 = <a class="code" href="a00070.html#ga2da051b943f32009496f94737261c248" title="to create a sphere ">create_sphere</a> (-1.f, 0.f, -1.f, 1.f);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * sphere2 = <a class="code" href="a00070.html#ga2da051b943f32009496f94737261c248" title="to create a sphere ">create_sphere</a> (-1.f, 0.f, 1.f, 1.f);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * sphere3 = <a class="code" href="a00070.html#ga2da051b943f32009496f94737261c248" title="to create a sphere ">create_sphere</a> (1.f, 0.f, -1.f, 1.f);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * sphere4 = <a class="code" href="a00070.html#ga2da051b943f32009496f94737261c248" title="to create a sphere ">create_sphere</a> (1.f, 0.f, 1.f, 1.f);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * sphere_top = <a class="code" href="a00070.html#ga2da051b943f32009496f94737261c248" title="to create a sphere ">create_sphere</a> (0.f, 1.414f, 0.f, 1.f);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * plane = <a class="code" href="a00070.html#gaf8b0ecdd64116491706ebede06c13b54" title="to create a plane ">create_plane</a> (0.f, -1.f, 0.f,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                         0.f, 1.f, 0.f);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * cylinder1 = <a class="code" href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d" title="to create a cylinder ">create_cylinder</a>(0.f, 2.f, -0.25f,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                               1.f, -1.f, -1.f,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                               .25f, 3.f );</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> * cylinder2 = <a class="code" href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d" title="to create a cylinder ">create_cylinder</a>(0.f, 2.f, -0.25f,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                               1.f, 1.f, 1.f,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                               .25f, 3.f );</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (sphere1, metal);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (sphere2, matte);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (sphere3, glass);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (sphere4, plastic);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (sphere_top, transp);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (plane, groundMaterial);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (cylinder1, plastic);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <a class="code" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7" title="to add a new object to the scene, from its geometry and its material ">add_object</a> (cylinder2, plastic);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="comment">//lights</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <a class="code" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc" title="to add a light to the scene ">add_light</a> (4.f, 2.f, 10.f,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                    0.5f, 0.5f, 0.5f);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; <span class="comment">//                          0.1f, 0.1f, 0.9f);</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc" title="to add a light to the scene ">add_light</a> (0.f, 5.f, -1.5f,</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                           1.5f, 1.5f, 1.5f);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <a class="code" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc" title="to add a light to the scene ">add_light</a> (-4.f, 5.f, -2.f,</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                   0.5f, 0.5f, 0.5f);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">//                           0.9f, 0.1f, 0.1f);</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">//====================</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">//access to scene elements</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno"><a class="code" href="a00070.html#ga16d4353577e7adc824650320333c7245">  337</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00070.html#ga16d4353577e7adc824650320333c7245">nb_lights</a> () {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">return</span> g_scene.<a class="code" href="a00028.html#adce64c848c70c77a5ffb822f11a78aae">p_lights</a>().size();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="code" href="a00070.html#gade62171a2f3b305905e5b0ada32357ff">  345</a></span>&#160;<a class="code" href="a00020.html" title="Light source definition. ">Light</a> * <a class="code" href="a00070.html#gade62171a2f3b305905e5b0ada32357ff">get_light</a> (<span class="keywordtype">int</span> i_) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">return</span> g_scene.<a class="code" href="a00028.html#adce64c848c70c77a5ffb822f11a78aae">p_lights</a>()[i_];</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="code" href="a00074.html#ga0a694e21c663d5c72182c15e34118f23">  354</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00074.html#ga0a694e21c663d5c72182c15e34118f23" title="to get the resolution of the image ">get_image_resolution</a> (<span class="keywordtype">int</span> * p_x_res_, <span class="keywordtype">int</span> * p_y_res_) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        *p_x_res_ = g_camera.<a class="code" href="a00006.html#afb6742de1f5a9bcbd80041485b5917eb">x_res</a>();</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        *p_y_res_ = g_camera.<a class="code" href="a00006.html#a8206d3f96cc607fbd43037ef017defc2">y_res</a>();</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;}</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">//====================</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">//rays-related operations</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="code" href="a00071.html#ga8cb8aef586b50a39b449ebb804acee60">  368</a></span>&#160;<a class="code" href="a00027.html" title="Ray definition. ">Ray</a> <a class="code" href="a00071.html#ga8cb8aef586b50a39b449ebb804acee60" title="compute the ray for the given pixel ">camera_ray</a> (<span class="keywordtype">int</span> x_, <span class="keywordtype">int</span> y_) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">return</span> g_camera.<a class="code" href="a00006.html#a98275b6232248a9c1691cd9500d8134d">ray_for_pixel</a> (x_, y_);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;}</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="code" href="a00071.html#gaa971dcbc0062c359e8464f84662b0bd4">  378</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00071.html#gaa971dcbc0062c359e8464f84662b0bd4" title="intersect a given ray with the scene. ">intersect_scene</a> (<a class="code" href="a00027.html" title="Ray definition. ">Ray</a> * p_ray_, <a class="code" href="a00019.html" title="Intersection point definition. ">Isect</a> * p_isect_) {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">return</span> g_scene.<a class="code" href="a00028.html#a0f1778fd9c133a40977e6e33f6a75b61">intersect</a> (*p_ray_, p_isect_) ? 1 : 0;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;}</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="code" href="a00071.html#gafdd7145eb904844de4296af68d315e39">  389</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00071.html#gafdd7145eb904844de4296af68d315e39" title="test the visibility between an intersection and a light ">test_visibility</a> (<a class="code" href="a00019.html" title="Intersection point definition. ">Isect</a> isect_, <a class="code" href="a00020.html" title="Light source definition. ">Light</a> * light_) {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">return</span> g_scene.<a class="code" href="a00028.html#aac2848f8a3c18972e5d5f077ab682f30" title="test the visibility between a point and a light ">test_visibility</a> (isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a">pos</a>(), light_) ? 1 : 0;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="code" href="a00071.html#gac588aae49805e61713de3d50ce6f04cd">  398</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00071.html#gac588aae49805e61713de3d50ce6f04cd" title="the depth of the ray in the ray tree ">ray_depth</a> (<a class="code" href="a00027.html" title="Ray definition. ">Ray</a> ray_) {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span> ray_.<a class="code" href="a00027.html#a5aca258edd0f8365436fbe2ff5305cd2">depth</a>();</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;}</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno"><a class="code" href="a00071.html#ga69e5c6dd970eec59a78918a79badfbc8">  407</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="a00071.html#ga69e5c6dd970eec59a78918a79badfbc8" title="the importance of the ray ">ray_importance</a> (<a class="code" href="a00027.html" title="Ray definition. ">Ray</a> ray_) {</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">return</span> ray_.<a class="code" href="a00027.html#af8e83498490cec0ce58b715533910bb5">importance</a>().<a class="code" href="a00007.html#ab43c458dc1c46ffc762b7e9cb726ef3e">avg</a>();</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">//====================</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">//color-related</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="code" href="a00072.html#gade20962f791f22292f6eb7f169d464e2">  417</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00072.html#gade20962f791f22292f6eb7f169d464e2" title="return a black color ">black</a>() {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno"><a class="code" href="a00072.html#ga8442f299f5a4fad5e1ffe8b54ce3a852">  427</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00072.html#ga8442f299f5a4fad5e1ffe8b54ce3a852" title="init a color ">init_color</a>(<span class="keywordtype">float</span> r_, <span class="keywordtype">float</span> g_, <span class="keywordtype">float</span> b_) {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (r_, g_, b_);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno"><a class="code" href="a00072.html#ga2360109ceed6102f17ff17c573743395">  437</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00072.html#ga2360109ceed6102f17ff17c573743395" title="multiply colors component-wise ">multiply_color_color</a> (<a class="code" href="a00007.html" title="Color management. ">Color</a> c1_, <a class="code" href="a00007.html" title="Color management. ">Color</a> c2_) {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">return</span> c1_ * c2_;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  </div>
+<div class="line"><a name="l00447"></a><span class="lineno"><a class="code" href="a00072.html#gaef9b6318d003356d86ac547b6bc2f57b">  447</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00072.html#gaef9b6318d003356d86ac547b6bc2f57b" title="add two colors ">add_color_color</a> (<a class="code" href="a00007.html" title="Color management. ">Color</a> c1_, <a class="code" href="a00007.html" title="Color management. ">Color</a> c2_) {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">return</span> c1_ + c2_;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;}</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno"><a class="code" href="a00072.html#ga8a9950fd49c3927a6b247f20c0f584cf">  455</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00072.html#ga8a9950fd49c3927a6b247f20c0f584cf">color_is_black</a> (<a class="code" href="a00007.html" title="Color management. ">Color</a> color_) {</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">return</span> color_.<a class="code" href="a00007.html#addd9a00e50cad82c55c405c9683da443">is_zero</a>() ? 1 : 0;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment">//====================</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment">//light-transport</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno"><a class="code" href="a00073.html#gaf4ff7bddd9b295164491d5126289cd83">  468</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00073.html#gaf4ff7bddd9b295164491d5126289cd83">isect_has_reflection</a> (<a class="code" href="a00019.html" title="Intersection point definition. ">Isect</a> isect_) {</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="keywordflow">return</span> isect_.<a class="code" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe">bsdf</a>().<a class="code" href="a00005.html#a770df55c2f2ba844764b341e93ea41f7">has_reflection</a>();</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;}</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
+<div class="line"><a name="l00477"></a><span class="lineno"><a class="code" href="a00073.html#gaba7d4545b2466ae21efe827026358eec">  477</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00073.html#gaba7d4545b2466ae21efe827026358eec">isect_has_refraction</a> (<a class="code" href="a00019.html" title="Intersection point definition. ">Isect</a> isect_) {</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">return</span> isect_.<a class="code" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe">bsdf</a>().<a class="code" href="a00005.html#aca1d179bc6d6a06b395f8768019cc4f0">has_refraction</a>();</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;}</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
+<div class="line"><a name="l00488"></a><span class="lineno"><a class="code" href="a00073.html#ga397536f562058dee83e3be0813324e82">  488</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00073.html#ga397536f562058dee83e3be0813324e82" title="compute the reflected ray from the intersection data and the ray to the intersection ...">reflect</a> (<a class="code" href="a00027.html" title="Ray definition. ">Ray</a> ray_, <a class="code" href="a00019.html" title="Intersection point definition. ">Isect</a> isect_, <a class="code" href="a00027.html" title="Ray definition. ">Ray</a> * p_ray_) {</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> refl_dir;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> fs = isect_.<a class="code" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe">bsdf</a>().<a class="code" href="a00005.html#a0c1293b4a879f5797f9befcaef2c4c99">reflect_dir</a> (-ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>(), &amp;refl_dir);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        *p_ray_ = <a class="code" href="a00027.html" title="Ray definition. ">Ray</a> (ray_, fs, isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a">pos</a>(), refl_dir);</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="comment">// Update ray differentials on p_ray_</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dPpdx = ray_.<a class="code" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9">dPdx</a>();</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dPpdy = ray_.<a class="code" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f">dPdy</a>();</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordtype">float</span> dDdotNdx = ray_.<a class="code" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6">dDdx</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) + ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a31611ca29f29bc7c000ddcdd483e8177">dNdx</a>());</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <span class="keywordtype">float</span> dDdotNdy = ray_.<a class="code" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973">dDdy</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) + ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5957467c675f5066939dc92bea0ea738">dNdy</a>());</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dDpdx(ray_.<a class="code" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6">dDdx</a>() - ((isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a31611ca29f29bc7c000ddcdd483e8177">dNdx</a>()*ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) +  isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>() * dDdotNdx) *  2.f) );</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dDpdy(ray_.<a class="code" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973">dDdy</a>() - ((isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5957467c675f5066939dc92bea0ea738">dNdy</a>()*ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) +  isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>() * dDdotNdy) *  2.f) );</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#a2e2d243083b80167abda5801213e935a">setdPdx</a>(dPpdx);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#ac679655f534897cec2a82d88d7e2fd3f">setdPdy</a>(dPpdy);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#a5d26fb532f4c86660b2510f1ee652398">setdDdx</a>(dDpdx);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#a71bc6099f66336f342eae251540074ea">setdDdy</a>(dDpdy);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        <span class="keywordflow">return</span> fs * fabsf (isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (refl_dir)); <span class="comment">//cos(theta) here for easier use</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  </div>
+<div class="line"><a name="l00520"></a><span class="lineno"><a class="code" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038">  520</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038" title="compute the refracted ray from the intersection data and the ray to the intersection ...">refract</a> (<a class="code" href="a00027.html" title="Ray definition. ">Ray</a> ray_, <a class="code" href="a00019.html" title="Intersection point definition. ">Isect</a> isect_, <a class="code" href="a00027.html" title="Ray definition. ">Ray</a> * p_ray_) {</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> refr_dir;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> fs = isect_.<a class="code" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe">bsdf</a>().<a class="code" href="a00005.html#a072b04d8fc38b94911e023dcb3a0c28f">refract_dir</a> (-ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>(), &amp;refr_dir);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        *p_ray_ = <a class="code" href="a00027.html" title="Ray definition. ">Ray</a> (ray_, fs, isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a">pos</a>(), refr_dir);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="comment">//Update ray differentials on p_ray_</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keywordtype">bool</span> entering = (ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) &gt; 0.f);</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordtype">float</span> ior=isect_.<a class="code" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe">bsdf</a>().<a class="code" href="a00005.html#a40748b3fdb9139f3819660637a127172">getIor</a>(entering);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordtype">float</span> mu = ior * ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) - refr_dir.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>());</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dPpdx = ray_.<a class="code" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9">dPdx</a>();</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dPpdy = ray_.<a class="code" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f">dPdy</a>();</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordtype">float</span> dDdotNdx = ray_.<a class="code" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6">dDdx</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) + ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a31611ca29f29bc7c000ddcdd483e8177">dNdx</a>());</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordtype">float</span> dDdotNdy = ray_.<a class="code" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973">dDdy</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>()) + ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5957467c675f5066939dc92bea0ea738">dNdy</a>());</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordtype">float</span> dmudx = (ior - (ior*ior*ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>())/ refr_dir.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>())))*dDdotNdx;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <span class="keywordtype">float</span> dmudy = (ior - (ior*ior*ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>())/ refr_dir.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>())))*dDdotNdy;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dDpdx( ray_.<a class="code" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6">dDdx</a>() * ior - (isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a31611ca29f29bc7c000ddcdd483e8177">dNdx</a>() * mu + isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>() * dmudx) );</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dDpdy( ray_.<a class="code" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973">dDdy</a>() * ior - (isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5957467c675f5066939dc92bea0ea738">dNdy</a>() * mu + isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>() * dmudy) );</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#a2e2d243083b80167abda5801213e935a">setdPdx</a>(dPpdx);</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#ac679655f534897cec2a82d88d7e2fd3f">setdPdy</a>(dPpdy);</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#a5d26fb532f4c86660b2510f1ee652398">setdDdx</a>(dDpdx);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    p_ray_-&gt;<a class="code" href="a00027.html#a71bc6099f66336f342eae251540074ea">setdDdy</a>(dDpdy);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <span class="keywordflow">return</span> fs * fabsf (isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (refr_dir)); <span class="comment">//cos(theta) here for easier use</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;}</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
+<div class="line"><a name="l00559"></a><span class="lineno"><a class="code" href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59">  559</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59" title="compute the amount of color scattered at the intersection to the ray from the given light...">direct_lighting</a> (<a class="code" href="a00027.html" title="Ray definition. ">Ray</a> ray_, <a class="code" href="a00019.html" title="Intersection point definition. ">Isect</a> isect_, <a class="code" href="a00020.html" title="Light source definition. ">Light</a> * light_) {</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> dir_to_light = (light_-&gt;<a class="code" href="a00020.html#a305715f1db3acf3dbd9dbd54baaa804e">pos</a>() - isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a">pos</a>()).normalize();</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="keywordflow">return</span> isect_.<a class="code" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe">bsdf</a>().<a class="code" href="a00005.html#a89754b621acdd482f06a0b11c0ecdf3a" title="directions leave from the point ">evaluate</a> (-ray_.<a class="code" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17">dir</a>(), dir_to_light) * light_-&gt;<a class="code" href="a00020.html#a67501efbaeb33e1392fedb8b0d768ac8">le</a>() *</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        fabsf (isect_.<a class="code" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef">dg</a>().<a class="code" href="a00013.html#a5032f917f066531ab12142806d5cb023">normal</a>().<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (dir_to_light));</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;}</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="comment">//====================</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="comment">//Image management</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno"><a class="code" href="a00074.html#gacf909032cf0b1ef56a88bdfc416ac4ea">  575</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00074.html#gacf909032cf0b1ef56a88bdfc416ac4ea" title="to set the color of the given pixel ">set_pixel_color</a> (<span class="keywordtype">int</span> x_, <span class="keywordtype">int</span> y_, <a class="code" href="a00007.html" title="Color management. ">Color</a> color_) {</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        g_p_img-&gt;<a class="code" href="a00017.html#a21a63d2b2768bab69266ca3dab6fb85d">pixel</a> (x_, y_) = color_;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;}</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno"><a class="code" href="a00074.html#gaee5a58a341bc2053065b4fa8c8950577">  583</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00074.html#gaee5a58a341bc2053065b4fa8c8950577" title="to save the image to a file ">save_image</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * file_name_) {</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        g_p_img-&gt;<a class="code" href="a00017.html#a4494a1ac16eb45ef862806694c8aa3d3">write_to_exr_file</a> (std::string (file_name_));</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;}</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno"><a class="code" href="a00074.html#ga68bc73e2206f80129b14b4505d7ddc0b">  587</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00074.html#ga68bc73e2206f80129b14b4505d7ddc0b">save_png</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * file_name_) {</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    g_p_img-&gt;<a class="code" href="a00017.html#aadfdc51089edb77c36b25f582ff6cb65">write_to_png_file</a>(file_name_);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;}</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="comment">//------------------</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="comment">// CSG</span></div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div>
+<div class="line"><a name="l00594"></a><span class="lineno"><a class="code" href="a00058.html#a6eda5cac4c7d6203bf2e1798c0b4f124">  594</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *<a class="code" href="a00057.html#a6eda5cac4c7d6203bf2e1798c0b4f124">create_csg_intersection</a>(<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *a, <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *b){</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00010.html" title="Syntaxe d&#39;un arbre CSG : Opérateurs terminaux Primitive : Sphére = (sp pos_x pos_y pos_z radius) – sp...">CSGIntersection</a>(a,b);</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;}</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;</div>
+<div class="line"><a name="l00598"></a><span class="lineno"><a class="code" href="a00058.html#a4d0d7fc79bead2d9745acc2d10c506bf">  598</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *<a class="code" href="a00057.html#a4d0d7fc79bead2d9745acc2d10c506bf">create_csg_union</a>(<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *a, <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *b){</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00011.html">CSGUnion</a>(a,b);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;}</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;</div>
+<div class="line"><a name="l00602"></a><span class="lineno"><a class="code" href="a00058.html#abca30508a9802f1a60bc67185dcaa8fb">  602</a></span>&#160;<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *<a class="code" href="a00057.html#abca30508a9802f1a60bc67185dcaa8fb">create_csg_difference</a>(<a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *a, <a class="code" href="a00014.html" title="Abstract class for geometric object. ">Geometry</a> *b){</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="a00009.html">CSGDifference</a>(a,b);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;}</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="comment">//------------------</span></div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="comment">// Texture</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno"><a class="code" href="a00058.html#a1b386cecf574f60252672c88d408be09">  608</a></span>&#160;<a class="code" href="a00030.html" title="Texture definition. ">Texture</a> *<a class="code" href="a00057.html#a1b386cecf574f60252672c88d408be09">create_texture</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename){</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        <a class="code" href="a00030.html" title="Texture definition. ">Texture</a> *tex;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        tex = <span class="keyword">new</span> <a class="code" href="a00030.html" title="Texture definition. ">Texture</a>(filename);</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keywordflow">return</span> tex;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;}</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2143d69be6627e7c0180aa018df36282.html">coreraytracer</a></li><li class="navelem"><a class="el" href="a00057.html">raytracing.cpp</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:46 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Référence de la classe BSDF</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00005.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-static-methods">Fonctions membres publiques statiques</a> &#124;
+<a href="#pri-types">Types privés</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00145.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe BSDF<div class="ingroups"><a class="el" href="a00075.html">Simple Raytracer</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Reflectance representation and evaluation.  
+ <a href="a00005.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00033_source.html">bsdf.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de BSDF:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146.png" border="0" usemap="#_b_s_d_f_coll__map" alt="Collaboration graph"/></div>
+<map name="_b_s_d_f_coll__map" id="_b_s_d_f_coll__map">
+<area shape="rect" id="node2" href="a00007.html" title="Color management. " alt="" coords="5,22,104,247"/><area shape="rect" id="node3" href="a00031.html" title="3D vector manipulation " alt="" coords="129,6,241,263"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a269624a07342f9d2ea5c9c71b10d0797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">BSDF</a> ()</td></tr>
+<tr class="separator:a269624a07342f9d2ea5c9c71b10d0797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89754b621acdd482f06a0b11c0ecdf3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a89754b621acdd482f06a0b11c0ecdf3a">evaluate</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;to_eye_, const <a class="el" href="a00031.html">Vector3D</a> &amp;to_light_) const </td></tr>
+<tr class="memdesc:a89754b621acdd482f06a0b11c0ecdf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">directions leave from the point  <a href="#a89754b621acdd482f06a0b11c0ecdf3a">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a89754b621acdd482f06a0b11c0ecdf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770df55c2f2ba844764b341e93ea41f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a770df55c2f2ba844764b341e93ea41f7">has_reflection</a> () const </td></tr>
+<tr class="separator:a770df55c2f2ba844764b341e93ea41f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1d179bc6d6a06b395f8768019cc4f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#aca1d179bc6d6a06b395f8768019cc4f0">has_refraction</a> () const </td></tr>
+<tr class="separator:aca1d179bc6d6a06b395f8768019cc4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1293b4a879f5797f9befcaef2c4c99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a0c1293b4a879f5797f9befcaef2c4c99">reflect_dir</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;to_eye_, <a class="el" href="a00031.html">Vector3D</a> *p_to_light_) const </td></tr>
+<tr class="separator:a0c1293b4a879f5797f9befcaef2c4c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072b04d8fc38b94911e023dcb3a0c28f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a072b04d8fc38b94911e023dcb3a0c28f">refract_dir</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;to_eye_, <a class="el" href="a00031.html">Vector3D</a> *p_to_light_) const </td></tr>
+<tr class="separator:a072b04d8fc38b94911e023dcb3a0c28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40748b3fdb9139f3819660637a127172"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a40748b3fdb9139f3819660637a127172">getIor</a> (bool entering) const </td></tr>
+<tr class="separator:a40748b3fdb9139f3819660637a127172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Fonctions membres publiques statiques</h2></td></tr>
+<tr class="memitem:a9dd8bf6529b8cc159f570600bbee872c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00005.html">BSDF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a9dd8bf6529b8cc159f570600bbee872c">init_diffuse</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;normal_, const <a class="el" href="a00007.html">Color</a> &amp;kd_)</td></tr>
+<tr class="separator:a9dd8bf6529b8cc159f570600bbee872c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa834a440a78af61ef56984c3fcc79f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00005.html">BSDF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#aaa834a440a78af61ef56984c3fcc79f8">init_blinn_phong</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;normal_, const <a class="el" href="a00007.html">Color</a> &amp;kd_, const <a class="el" href="a00007.html">Color</a> &amp;ks_, float shininess_)</td></tr>
+<tr class="separator:aaa834a440a78af61ef56984c3fcc79f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5721ae7c30efb1e90beb7ea6b49d9ca4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00005.html">BSDF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a5721ae7c30efb1e90beb7ea6b49d9ca4">init_pure_refl</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;normal_, const <a class="el" href="a00007.html">Color</a> &amp;kd_, const <a class="el" href="a00007.html">Color</a> &amp;kr_)</td></tr>
+<tr class="separator:a5721ae7c30efb1e90beb7ea6b49d9ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654638fb3e8f649825aea76416fe5a6d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00005.html">BSDF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a654638fb3e8f649825aea76416fe5a6d">init_fresnel</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;normal_, const <a class="el" href="a00007.html">Color</a> &amp;kr_, const <a class="el" href="a00007.html">Color</a> &amp;kt_, float ior_)</td></tr>
+<tr class="separator:a654638fb3e8f649825aea76416fe5a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0d4c3f673c7eab346a625678cec31f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00005.html">BSDF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#abc0d4c3f673c7eab346a625678cec31f">init_glossy</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;normal_, const <a class="el" href="a00007.html">Color</a> &amp;kd_, const <a class="el" href="a00007.html">Color</a> &amp;ks_, const <a class="el" href="a00007.html">Color</a> &amp;kr_, float shininess_, float ior_)</td></tr>
+<tr class="separator:abc0d4c3f673c7eab346a625678cec31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Types privés</h2></td></tr>
+<tr class="memitem:a852f0629069a83f4852b3edcd01cf60e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a> { <br/>
+&#160;&#160;<a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa87f530394aa0ce82a30c78df742f433">DIFFUSE</a>, 
+<a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea3b73141a0f09c8761912e2edd4189bed">BLINN_PHONG</a>, 
+<a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea5af1a05cf55a29813f9fc99f37d17177">GLOSSY</a>, 
+<a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea92e7ebf798d62551ba2d81f22bbd370e">PURE_REFL</a>, 
+<br/>
+&#160;&#160;<a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6">FRESNEL</a>
+<br/>
+ }</td></tr>
+<tr class="separator:a852f0629069a83f4852b3edcd01cf60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a49adf3e02a71382167669b97263d6321"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a49adf3e02a71382167669b97263d6321">BSDF</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;normal_, const <a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a> &amp;model_, const <a class="el" href="a00007.html">Color</a> &amp;kd_, const <a class="el" href="a00007.html">Color</a> &amp;ks_, float shininess_, const <a class="el" href="a00007.html">Color</a> &amp;kr_, const <a class="el" href="a00007.html">Color</a> &amp;kt_, float ior_)</td></tr>
+<tr class="memdesc:a49adf3e02a71382167669b97263d6321"><td class="mdescLeft">&#160;</td><td class="mdescRight">meta-constructor  <a href="#a49adf3e02a71382167669b97263d6321">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a49adf3e02a71382167669b97263d6321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a34f10e0396208521fbe1698804589234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#a34f10e0396208521fbe1698804589234">m_normal</a></td></tr>
+<tr class="memdesc:a34f10e0396208521fbe1698804589234"><td class="mdescLeft">&#160;</td><td class="mdescRight">points toward the outside of the object  <a href="#a34f10e0396208521fbe1698804589234">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a34f10e0396208521fbe1698804589234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf1f70e649aed91eb0196f978d17ff4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a></td></tr>
+<tr class="separator:acdf1f70e649aed91eb0196f978d17ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4f5c45b5d74fe04f9f6e34284304e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4">m_kd</a></td></tr>
+<tr class="memdesc:abd4f5c45b5d74fe04f9f6e34284304e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">kd for diffuse, phong and pure_refl, divided by pi for normalization  <a href="#abd4f5c45b5d74fe04f9f6e34284304e4">Plus de détails...</a><br/></td></tr>
+<tr class="separator:abd4f5c45b5d74fe04f9f6e34284304e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a613ac0a7859f05dcb44ee250065c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ac9a613ac0a7859f05dcb44ee250065c8">m_ks</a></td></tr>
+<tr class="memdesc:ac9a613ac0a7859f05dcb44ee250065c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ks and shininess for phong  <a href="#ac9a613ac0a7859f05dcb44ee250065c8">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ac9a613ac0a7859f05dcb44ee250065c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3982e7ed366dca25cd3125b80a1001f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a></td></tr>
+<tr class="separator:ad3982e7ed366dca25cd3125b80a1001f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0565c84cf33ca5c9f56310ddd0d5e0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#af0565c84cf33ca5c9f56310ddd0d5e0f">m_kr</a></td></tr>
+<tr class="memdesc:af0565c84cf33ca5c9f56310ddd0d5e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">reflection, refraction and ior for fresnel  <a href="#af0565c84cf33ca5c9f56310ddd0d5e0f">Plus de détails...</a><br/></td></tr>
+<tr class="separator:af0565c84cf33ca5c9f56310ddd0d5e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9099c59d7589cbf0cc01c74f1de6c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#acf9099c59d7589cbf0cc01c74f1de6c1">m_kt</a></td></tr>
+<tr class="separator:acf9099c59d7589cbf0cc01c74f1de6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7ad5ebee66c23d47d1025d96501cca"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a></td></tr>
+<tr class="separator:aad7ad5ebee66c23d47d1025d96501cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Reflectance representation and evaluation. </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00008">8</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
+<a class="anchor" id="a852f0629069a83f4852b3edcd01cf60e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">BSDF::Model</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a852f0629069a83f4852b3edcd01cf60eaa87f530394aa0ce82a30c78df742f433"></a>DIFFUSE</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a852f0629069a83f4852b3edcd01cf60ea3b73141a0f09c8761912e2edd4189bed"></a>BLINN_PHONG</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a852f0629069a83f4852b3edcd01cf60ea5af1a05cf55a29813f9fc99f37d17177"></a>GLOSSY</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a852f0629069a83f4852b3edcd01cf60ea92e7ebf798d62551ba2d81f22bbd370e"></a>PURE_REFL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6"></a>FRESNEL</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00014">14</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a49adf3e02a71382167669b97263d6321"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BSDF::BSDF </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>model_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kd_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>ks_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>shininess_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kr_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kt_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ior_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>meta-constructor </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00038">38</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a269624a07342f9d2ea5c9c71b10d0797"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BSDF::BSDF </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00048">48</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00060">init_blinn_phong()</a>, <a class="el" href="a00033_source.html#l00054">init_diffuse()</a>, <a class="el" href="a00033_source.html#l00073">init_fresnel()</a>, <a class="el" href="a00033_source.html#l00079">init_glossy()</a>, et <a class="el" href="a00033_source.html#l00067">init_pure_refl()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a269624a07342f9d2ea5c9c71b10d0797_icgraph.png" border="0" usemap="#a00005_a269624a07342f9d2ea5c9c71b10d0797_icgraph" alt=""/></div>
+<map name="a00005_a269624a07342f9d2ea5c9c71b10d0797_icgraph" id="a00005_a269624a07342f9d2ea5c9c71b10d0797_icgraph">
+<area shape="rect" id="node2" href="a00005.html#aaa834a440a78af61ef56984c3fcc79f8" title="BSDF::init_blinn_phong" alt="" coords="155,5,317,33"/><area shape="rect" id="node4" href="a00005.html#a9dd8bf6529b8cc159f570600bbee872c" title="BSDF::init_diffuse" alt="" coords="172,57,300,85"/><area shape="rect" id="node6" href="a00005.html#a654638fb3e8f649825aea76416fe5a6d" title="BSDF::init_fresnel" alt="" coords="172,109,300,137"/><area shape="rect" id="node8" href="a00005.html#abc0d4c3f673c7eab346a625678cec31f" title="BSDF::init_glossy" alt="" coords="173,161,299,189"/><area shape="rect" id="node10" href="a00005.html#a5721ae7c30efb1e90beb7ea6b49d9ca4" title="BSDF::init_pure_refl" alt="" coords="165,213,307,241"/><area shape="rect" id="node3" href="a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="366,5,485,33"/><area shape="rect" id="node5" href="a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="369,57,482,85"/><area shape="rect" id="node7" href="a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="369,109,482,137"/><area shape="rect" id="node9" href="a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="365,161,485,189"/><area shape="rect" id="node11" href="a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="369,213,481,241"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a89754b621acdd482f06a0b11c0ecdf3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> BSDF::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to_eye_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to_light_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>directions leave from the point </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00092">92</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00016">BLINN_PHONG</a>, <a class="el" href="a00033_source.html#l00015">DIFFUSE</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00033_source.html#l00019">FRESNEL</a>, <a class="el" href="a00033_source.html#l00017">GLOSSY</a>, <a class="el" href="a00033_source.html#l00033">m_ior</a>, <a class="el" href="a00033_source.html#l00025">m_kd</a>, <a class="el" href="a00033_source.html#l00028">m_ks</a>, <a class="el" href="a00033_source.html#l00022">m_model</a>, <a class="el" href="a00033_source.html#l00012">m_normal</a>, <a class="el" href="a00033_source.html#l00029">m_shininess</a>, et <a class="el" href="a00033_source.html#l00018">PURE_REFL</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00559">direct_lighting()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a89754b621acdd482f06a0b11c0ecdf3a_cgraph.png" border="0" usemap="#a00005_a89754b621acdd482f06a0b11c0ecdf3a_cgraph" alt=""/></div>
+<map name="a00005_a89754b621acdd482f06a0b11c0ecdf3a_cgraph" id="a00005_a89754b621acdd482f06a0b11c0ecdf3a_cgraph">
+<area shape="rect" id="node2" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="169,57,271,85"/><area shape="rect" id="node3" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="320,5,410,33"/><area shape="rect" id="node4" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="320,57,410,85"/><area shape="rect" id="node5" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="320,109,410,137"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a89754b621acdd482f06a0b11c0ecdf3a_icgraph.png" border="0" usemap="#a00005_a89754b621acdd482f06a0b11c0ecdf3a_icgraph" alt=""/></div>
+<map name="a00005_a89754b621acdd482f06a0b11c0ecdf3a_icgraph" id="a00005_a89754b621acdd482f06a0b11c0ecdf3a_icgraph">
+<area shape="rect" id="node2" href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59" title="compute the amount of color scattered at the intersection to the ray from the given light..." alt="" coords="168,5,272,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a40748b3fdb9139f3819660637a127172"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSDF::getIor </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>entering</em>)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00225">225</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00033">m_ior</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00520">refract()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a40748b3fdb9139f3819660637a127172_icgraph.png" border="0" usemap="#a00005_a40748b3fdb9139f3819660637a127172_icgraph" alt=""/></div>
+<map name="a00005_a40748b3fdb9139f3819660637a127172_icgraph" id="a00005_a40748b3fdb9139f3819660637a127172_icgraph">
+<area shape="rect" id="node2" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038" title="compute the refracted ray from the intersection data and the ray to the intersection ..." alt="" coords="152,5,211,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a770df55c2f2ba844764b341e93ea41f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BSDF::has_reflection </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00141">141</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00019">FRESNEL</a>, <a class="el" href="a00033_source.html#l00017">GLOSSY</a>, <a class="el" href="a00033_source.html#l00022">m_model</a>, et <a class="el" href="a00033_source.html#l00018">PURE_REFL</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00468">isect_has_reflection()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a770df55c2f2ba844764b341e93ea41f7_icgraph.png" border="0" usemap="#a00005_a770df55c2f2ba844764b341e93ea41f7_icgraph" alt=""/></div>
+<map name="a00005_a770df55c2f2ba844764b341e93ea41f7_icgraph" id="a00005_a770df55c2f2ba844764b341e93ea41f7_icgraph">
+<area shape="rect" id="node2" href="a00073.html#gaf4ff7bddd9b295164491d5126289cd83" title="isect_has_reflection" alt="" coords="200,5,339,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aca1d179bc6d6a06b395f8768019cc4f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BSDF::has_refraction </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00146">146</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00019">FRESNEL</a>, et <a class="el" href="a00033_source.html#l00022">m_model</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00477">isect_has_refraction()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_aca1d179bc6d6a06b395f8768019cc4f0_icgraph.png" border="0" usemap="#a00005_aca1d179bc6d6a06b395f8768019cc4f0_icgraph" alt=""/></div>
+<map name="a00005_aca1d179bc6d6a06b395f8768019cc4f0_icgraph" id="a00005_aca1d179bc6d6a06b395f8768019cc4f0_icgraph">
+<area shape="rect" id="node2" href="a00073.html#gaba7d4545b2466ae21efe827026358eec" title="isect_has_refraction" alt="" coords="203,5,344,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa834a440a78af61ef56984c3fcc79f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00005.html">BSDF</a> BSDF::init_blinn_phong </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kd_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>ks_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>shininess_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00060">60</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00016">BLINN_PHONG</a>, et <a class="el" href="a00033_source.html#l00048">BSDF()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00054_source.html#l00020">Plastic::evaluate()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_aaa834a440a78af61ef56984c3fcc79f8_cgraph.png" border="0" usemap="#a00005_aaa834a440a78af61ef56984c3fcc79f8_cgraph" alt=""/></div>
+<map name="a00005_aaa834a440a78af61ef56984c3fcc79f8_cgraph" id="a00005_aaa834a440a78af61ef56984c3fcc79f8_cgraph">
+<area shape="rect" id="node2" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797" title="BSDF::BSDF" alt="" coords="217,5,317,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_aaa834a440a78af61ef56984c3fcc79f8_icgraph.png" border="0" usemap="#a00005_aaa834a440a78af61ef56984c3fcc79f8_icgraph" alt=""/></div>
+<map name="a00005_aaa834a440a78af61ef56984c3fcc79f8_icgraph" id="a00005_aaa834a440a78af61ef56984c3fcc79f8_icgraph">
+<area shape="rect" id="node2" href="a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="217,5,335,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dd8bf6529b8cc159f570600bbee872c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00005.html">BSDF</a> BSDF::init_diffuse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kd_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00054">54</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00048">BSDF()</a>, et <a class="el" href="a00033_source.html#l00015">DIFFUSE</a>.</p>
+
+<p>Référencé par <a class="el" href="a00051_source.html#l00018">Matte::evaluate()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a9dd8bf6529b8cc159f570600bbee872c_cgraph.png" border="0" usemap="#a00005_a9dd8bf6529b8cc159f570600bbee872c_cgraph" alt=""/></div>
+<map name="a00005_a9dd8bf6529b8cc159f570600bbee872c_cgraph" id="a00005_a9dd8bf6529b8cc159f570600bbee872c_cgraph">
+<area shape="rect" id="node2" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797" title="BSDF::BSDF" alt="" coords="182,5,282,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a9dd8bf6529b8cc159f570600bbee872c_icgraph.png" border="0" usemap="#a00005_a9dd8bf6529b8cc159f570600bbee872c_icgraph" alt=""/></div>
+<map name="a00005_a9dd8bf6529b8cc159f570600bbee872c_icgraph" id="a00005_a9dd8bf6529b8cc159f570600bbee872c_icgraph">
+<area shape="rect" id="node2" href="a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="181,5,294,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a654638fb3e8f649825aea76416fe5a6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00005.html">BSDF</a> BSDF::init_fresnel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kr_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kt_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ior_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00073">73</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00048">BSDF()</a>, et <a class="el" href="a00033_source.html#l00019">FRESNEL</a>.</p>
+
+<p>Référencé par <a class="el" href="a00041_source.html#l00019">Glass::evaluate()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a654638fb3e8f649825aea76416fe5a6d_cgraph.png" border="0" usemap="#a00005_a654638fb3e8f649825aea76416fe5a6d_cgraph" alt=""/></div>
+<map name="a00005_a654638fb3e8f649825aea76416fe5a6d_cgraph" id="a00005_a654638fb3e8f649825aea76416fe5a6d_cgraph">
+<area shape="rect" id="node2" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797" title="BSDF::BSDF" alt="" coords="185,5,285,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a654638fb3e8f649825aea76416fe5a6d_icgraph.png" border="0" usemap="#a00005_a654638fb3e8f649825aea76416fe5a6d_icgraph" alt=""/></div>
+<map name="a00005_a654638fb3e8f649825aea76416fe5a6d_icgraph" id="a00005_a654638fb3e8f649825aea76416fe5a6d_icgraph">
+<area shape="rect" id="node2" href="a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="185,5,298,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abc0d4c3f673c7eab346a625678cec31f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00005.html">BSDF</a> BSDF::init_glossy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kd_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>ks_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kr_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>shininess_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ior_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00079">79</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00048">BSDF()</a>, et <a class="el" href="a00033_source.html#l00017">GLOSSY</a>.</p>
+
+<p>Référencé par <a class="el" href="a00042_source.html#l00022">Glossy::evaluate()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_abc0d4c3f673c7eab346a625678cec31f_cgraph.png" border="0" usemap="#a00005_abc0d4c3f673c7eab346a625678cec31f_cgraph" alt=""/></div>
+<map name="a00005_abc0d4c3f673c7eab346a625678cec31f_cgraph" id="a00005_abc0d4c3f673c7eab346a625678cec31f_cgraph">
+<area shape="rect" id="node2" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797" title="BSDF::BSDF" alt="" coords="182,5,282,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_abc0d4c3f673c7eab346a625678cec31f_icgraph.png" border="0" usemap="#a00005_abc0d4c3f673c7eab346a625678cec31f_icgraph" alt=""/></div>
+<map name="a00005_abc0d4c3f673c7eab346a625678cec31f_icgraph" id="a00005_abc0d4c3f673c7eab346a625678cec31f_icgraph">
+<area shape="rect" id="node2" href="a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="181,5,301,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5721ae7c30efb1e90beb7ea6b49d9ca4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00005.html">BSDF</a> BSDF::init_pure_refl </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kd_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00007.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>kr_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>hack for the IOR, should use different Fresnel equations </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00067">67</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00033_source.html#l00048">BSDF()</a>, et <a class="el" href="a00033_source.html#l00018">PURE_REFL</a>.</p>
+
+<p>Référencé par <a class="el" href="a00052_source.html#l00018">Metal::evaluate()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_cgraph.png" border="0" usemap="#a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_cgraph" alt=""/></div>
+<map name="a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_cgraph" id="a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_cgraph">
+<area shape="rect" id="node2" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797" title="BSDF::BSDF" alt="" coords="195,5,295,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_icgraph.png" border="0" usemap="#a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_icgraph" alt=""/></div>
+<map name="a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_icgraph" id="a00005_a5721ae7c30efb1e90beb7ea6b49d9ca4_icgraph">
+<area shape="rect" id="node2" href="a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="195,5,307,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c1293b4a879f5797f9befcaef2c4c99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> BSDF::reflect_dir </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to_eye_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>p_to_light_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00151">151</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00033_source.html#l00033">m_ior</a>, <a class="el" href="a00033_source.html#l00032">m_kr</a>, et <a class="el" href="a00033_source.html#l00012">m_normal</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00488">reflect()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a0c1293b4a879f5797f9befcaef2c4c99_cgraph.png" border="0" usemap="#a00005_a0c1293b4a879f5797f9befcaef2c4c99_cgraph" alt=""/></div>
+<map name="a00005_a0c1293b4a879f5797f9befcaef2c4c99_cgraph" id="a00005_a0c1293b4a879f5797f9befcaef2c4c99_cgraph">
+<area shape="rect" id="node2" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="177,57,279,85"/><area shape="rect" id="node3" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="328,5,418,33"/><area shape="rect" id="node4" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="328,57,418,85"/><area shape="rect" id="node5" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="328,109,418,137"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a0c1293b4a879f5797f9befcaef2c4c99_icgraph.png" border="0" usemap="#a00005_a0c1293b4a879f5797f9befcaef2c4c99_icgraph" alt=""/></div>
+<map name="a00005_a0c1293b4a879f5797f9befcaef2c4c99_icgraph" id="a00005_a0c1293b4a879f5797f9befcaef2c4c99_icgraph">
+<area shape="rect" id="node2" href="a00073.html#ga397536f562058dee83e3be0813324e82" title="compute the reflected ray from the intersection data and the ray to the intersection ..." alt="" coords="177,5,234,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a072b04d8fc38b94911e023dcb3a0c28f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> BSDF::refract_dir </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>to_eye_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00031.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>p_to_light_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00189">189</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00033_source.html#l00033">m_ior</a>, <a class="el" href="a00033_source.html#l00032">m_kt</a>, et <a class="el" href="a00033_source.html#l00012">m_normal</a>.</p>
+
+<p>Référencé par <a class="el" href="a00057_source.html#l00520">refract()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a072b04d8fc38b94911e023dcb3a0c28f_cgraph.png" border="0" usemap="#a00005_a072b04d8fc38b94911e023dcb3a0c28f_cgraph" alt=""/></div>
+<map name="a00005_a072b04d8fc38b94911e023dcb3a0c28f_cgraph" id="a00005_a072b04d8fc38b94911e023dcb3a0c28f_cgraph">
+<area shape="rect" id="node2" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="180,57,282,85"/><area shape="rect" id="node3" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="331,5,421,33"/><area shape="rect" id="node4" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="331,57,421,85"/><area shape="rect" id="node5" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="331,109,421,137"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00005_a072b04d8fc38b94911e023dcb3a0c28f_icgraph.png" border="0" usemap="#a00005_a072b04d8fc38b94911e023dcb3a0c28f_icgraph" alt=""/></div>
+<map name="a00005_a072b04d8fc38b94911e023dcb3a0c28f_icgraph" id="a00005_a072b04d8fc38b94911e023dcb3a0c28f_icgraph">
+<area shape="rect" id="node2" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038" title="compute the refracted ray from the intersection data and the ray to the intersection ..." alt="" coords="178,5,238,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="aad7ad5ebee66c23d47d1025d96501cca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSDF::m_ior</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00033">33</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00092">evaluate()</a>, <a class="el" href="a00033_source.html#l00225">getIor()</a>, <a class="el" href="a00033_source.html#l00151">reflect_dir()</a>, et <a class="el" href="a00033_source.html#l00189">refract_dir()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd4f5c45b5d74fe04f9f6e34284304e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> BSDF::m_kd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>kd for diffuse, phong and pure_refl, divided by pi for normalization </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00025">25</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00092">evaluate()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0565c84cf33ca5c9f56310ddd0d5e0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> BSDF::m_kr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reflection, refraction and ior for fresnel </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00032">32</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00151">reflect_dir()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9a613ac0a7859f05dcb44ee250065c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> BSDF::m_ks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ks and shininess for phong </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00028">28</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00092">evaluate()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf9099c59d7589cbf0cc01c74f1de6c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> BSDF::m_kt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00032">32</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00189">refract_dir()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acdf1f70e649aed91eb0196f978d17ff4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a> BSDF::m_model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00022">22</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00092">evaluate()</a>, <a class="el" href="a00033_source.html#l00141">has_reflection()</a>, et <a class="el" href="a00033_source.html#l00146">has_refraction()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34f10e0396208521fbe1698804589234"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> BSDF::m_normal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>points toward the outside of the object </p>
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00012">12</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00092">evaluate()</a>, <a class="el" href="a00033_source.html#l00151">reflect_dir()</a>, et <a class="el" href="a00033_source.html#l00189">refract_dir()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3982e7ed366dca25cd3125b80a1001f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSDF::m_shininess</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00033_source.html#l00029">29</a> du fichier <a class="el" href="a00033_source.html">bsdf.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00033_source.html#l00092">evaluate()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="a00033_source.html">bsdf.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00005.html">BSDF</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:47 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

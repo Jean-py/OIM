@@ -1,0 +1,5 @@
+<map id="Cylinder::fillPlanarDiffGeom" name="Cylinder::fillPlanarDiffGeom">
+<area shape="rect" id="node2" href="$a00012.html#a646e440049ec43067444b2efa0c6b860" title="Cylinder::get_clip\l_points" alt="" coords="241,23,364,67"/>
+<area shape="rect" id="node3" href="$a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="413,5,541,33"/>
+<area shape="rect" id="node4" href="$a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="429,57,526,85"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Isect::bsdf" name="Isect::bsdf">
+<area shape="rect" id="node2" href="$a00073.html#ga3a215078ec8db08fc79e0a491bc61b59" title="compute the amount of color scattered at the intersection to the ray from the given light..." alt="" coords="155,5,258,33"/>
+<area shape="rect" id="node3" href="$a00073.html#gaf4ff7bddd9b295164491d5126289cd83" title="isect_has_reflection" alt="" coords="137,57,276,85"/>
+<area shape="rect" id="node4" href="$a00073.html#gaba7d4545b2466ae21efe827026358eec" title="isect_has_refraction" alt="" coords="136,109,277,137"/>
+<area shape="rect" id="node5" href="$a00073.html#ga397536f562058dee83e3be0813324e82" title="compute the reflected ray from the intersection data and the ray to the intersection ..." alt="" coords="178,161,235,189"/>
+<area shape="rect" id="node6" href="$a00073.html#ga1c7e1aae0ca65e600b252447bc817038" title="compute the refracted ray from the intersection data and the ray to the intersection ..." alt="" coords="177,213,236,241"/>
+<area shape="rect" id="node7" href="$a00019.html#ac37c0a40e869d82f176ad5e92b997744" title="Isect::setBsdf" alt="" coords="156,265,257,293"/>
+<area shape="rect" id="node8" href="$a00028.html#a0f1778fd9c133a40977e6e33f6a75b61" title="Scene::intersect" alt="" coords="326,265,442,293"/>
+<area shape="rect" id="node9" href="$a00071.html#gaa971dcbc0062c359e8464f84662b0bd4" title="intersect a given ray with the scene. " alt="" coords="491,265,605,293"/>
+</map>

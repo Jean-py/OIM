@@ -1,0 +1,14 @@
+<map id="getTexel" name="getTexel">
+<area shape="rect" id="node2" href="$a00064.html#a79512e8201e923fec16ccc8a8d7113b2" title="integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x de..." alt="" coords="131,57,248,85"/>
+<area shape="rect" id="node11" href="$a00064.html#aa82c0e54572b2cc47433b2e7f00f13fc" title="interpolateTexture Get a texel linearly interpolated from its neighbors " alt="" coords="126,109,253,137"/>
+<area shape="rect" id="node3" href="$a00030.html#a7f7a4bf88646efb0805b8326d4994b50" title="Texture::integrateExplicit" alt="" coords="489,57,655,85"/>
+<area shape="rect" id="node4" href="$a00030.html#a15376a1db3093522b4402220b771ad04" title="Texture::getPixel" alt="" coords="707,109,827,137"/>
+<area shape="rect" id="node5" href="$a00021.html#ad292661deaf1ff67911e8f298717aa43" title="Material::getTextureColor" alt="" coords="875,109,1045,137"/>
+<area shape="rect" id="node6" href="$a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="1097,5,1210,33"/>
+<area shape="rect" id="node7" href="$a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="1093,57,1213,85"/>
+<area shape="rect" id="node8" href="$a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="1097,109,1210,137"/>
+<area shape="rect" id="node9" href="$a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="1097,161,1209,189"/>
+<area shape="rect" id="node10" href="$a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="1094,213,1213,241"/>
+<area shape="rect" id="node12" href="$a00030.html#a12d1fa7928a770eb113b12000a0d3633" title="Texture::interpolate" alt="" coords="302,109,437,137"/>
+<area shape="rect" id="node13" href="$a00030.html#a8094e6e1fc9cdf547321f357d818a2bd" title="Texture::integrateMipMap" alt="" coords="486,161,658,189"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Cylinder::get_clip_points" name="Cylinder::get_clip_points">
+<area shape="rect" id="node2" href="$a00012.html#a39e9a7ebf491149b58fc079e250f18bb" title="clip a ray by a geometry. " alt="" coords="194,5,291,33"/>
+<area shape="rect" id="node3" href="$a00012.html#aaf9bb0e9f800879eaa31070c9f7eb687" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() &#160;adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cylinder3.cpp " alt="" coords="179,57,307,85"/>
+</map>

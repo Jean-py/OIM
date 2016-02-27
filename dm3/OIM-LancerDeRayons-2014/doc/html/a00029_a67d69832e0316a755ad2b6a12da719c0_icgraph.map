@@ -1,0 +1,4 @@
+<map id="Sphere::computeTexInfo" name="Sphere::computeTexInfo">
+<area shape="rect" id="node2" href="$a00029.html#ac78e1c4b2d124b9df40f3688231f5b45" title="clip a ray by a geometry. " alt="" coords="234,5,326,33"/>
+<area shape="rect" id="node3" href="$a00029.html#acb1c5b063489f881872e6faf155c4c18" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="219,57,341,85"/>
+</map>

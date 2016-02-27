@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Référence du fichier texturefetch.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00064.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier texturefetch.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="a00035_source.html">color.hpp</a>&quot;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de texturefetch.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00136.png" border="0" usemap="#texturefetch_8hpp" alt=""/></div>
+<map name="texturefetch_8hpp" id="texturefetch_8hpp">
+<area shape="rect" id="node2" href="a00035.html" title="color.hpp" alt="" coords="5,83,80,111"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00137.png" border="0" usemap="#texturefetch_8hppdep" alt=""/></div>
+<map name="texturefetch_8hppdep" id="texturefetch_8hppdep">
+<area shape="rect" id="node2" href="a00063.html" title="texturefetch.cpp" alt="" coords="5,83,120,111"/><area shape="rect" id="node3" href="a00061.html" title="texture.cpp" alt="" coords="144,83,231,111"/></map>
+</div>
+</div>
+<p><a href="a00064_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ad6c74e0d655725b60d1c0ac068664137"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#ad6c74e0d655725b60d1c0ac068664137">getTexel</a> (unsigned char *pixels, int width, int height, int depth, int column, int row)</td></tr>
+<tr class="memdesc:ad6c74e0d655725b60d1c0ac068664137"><td class="mdescLeft">&#160;</td><td class="mdescRight">getTexel Get a single texel from a texture.  <a href="#ad6c74e0d655725b60d1c0ac068664137">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ad6c74e0d655725b60d1c0ac068664137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82c0e54572b2cc47433b2e7f00f13fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#aa82c0e54572b2cc47433b2e7f00f13fc">interpolateTexture</a> (unsigned char *pixels, int width, int height, int depth, float s, float t)</td></tr>
+<tr class="memdesc:aa82c0e54572b2cc47433b2e7f00f13fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">interpolateTexture Get a texel linearly interpolated from its neighbors  <a href="#aa82c0e54572b2cc47433b2e7f00f13fc">Plus de détails...</a><br/></td></tr>
+<tr class="separator:aa82c0e54572b2cc47433b2e7f00f13fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79512e8201e923fec16ccc8a8d7113b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a79512e8201e923fec16ccc8a8d7113b2">integrateTexture</a> (unsigned char *pixels, int width, int height, int depth, float s, float t, int deltas, int deltat)</td></tr>
+<tr class="memdesc:a79512e8201e923fec16ccc8a8d7113b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x deltat)  <a href="#a79512e8201e923fec16ccc8a8d7113b2">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a79512e8201e923fec16ccc8a8d7113b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbce8cb9f75d7bbfc5601b5cf0c1b01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a2bbce8cb9f75d7bbfc5601b5cf0c1b01">prefilterTexture</a> (unsigned char **imagearray, int width, int height, int depth, int nblevels)</td></tr>
+<tr class="memdesc:a2bbce8cb9f75d7bbfc5601b5cf0c1b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">prefilterTexture Compute an array of images with geometrically decreasing resolution from the original image.  <a href="#a2bbce8cb9f75d7bbfc5601b5cf0c1b01">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a2bbce8cb9f75d7bbfc5601b5cf0c1b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="ad6c74e0d655725b60d1c0ac068664137"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> getTexel </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getTexel Get a single texel from a texture. </p>
+<p>This function access the texture at coordinates (row, column) and fetch the value of the corresponding texel (pixel from a texture) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixels</td><td>The image to access, organized as a linear array of texel arranged by row </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the image </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of the image (number of component by texel) </td></tr>
+    <tr><td class="paramname">column</td><td>Column coordinate of the requested texel </td></tr>
+    <tr><td class="paramname">row</td><td>Row coordinate of the requested texel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>The value of the texel </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00076.html#_todo000004">A faire:</a></b></dt><dd>Transfom the 2D coordinates in a 1D index and get the corresponding texel value </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00019">19</a> du fichier <a class="el" href="a00063_source.html">texturefetch.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00063_source.html#l00055">integrateTexture()</a>, et <a class="el" href="a00063_source.html#l00035">interpolateTexture()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00064_ad6c74e0d655725b60d1c0ac068664137_icgraph.png" border="0" usemap="#a00064_ad6c74e0d655725b60d1c0ac068664137_icgraph" alt=""/></div>
+<map name="a00064_ad6c74e0d655725b60d1c0ac068664137_icgraph" id="a00064_ad6c74e0d655725b60d1c0ac068664137_icgraph">
+<area shape="rect" id="node2" href="a00064.html#a79512e8201e923fec16ccc8a8d7113b2" title="integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x de..." alt="" coords="131,57,248,85"/><area shape="rect" id="node11" href="a00064.html#aa82c0e54572b2cc47433b2e7f00f13fc" title="interpolateTexture Get a texel linearly interpolated from its neighbors " alt="" coords="126,109,253,137"/><area shape="rect" id="node3" href="a00030.html#a7f7a4bf88646efb0805b8326d4994b50" title="Texture::integrateExplicit" alt="" coords="489,57,655,85"/><area shape="rect" id="node4" href="a00030.html#a15376a1db3093522b4402220b771ad04" title="Texture::getPixel" alt="" coords="707,109,827,137"/><area shape="rect" id="node5" href="a00021.html#ad292661deaf1ff67911e8f298717aa43" title="Material::getTextureColor" alt="" coords="875,109,1045,137"/><area shape="rect" id="node6" href="a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="1097,5,1210,33"/><area shape="rect" id="node7" href="a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="1093,57,1213,85"/><area shape="rect" id="node8" href="a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="1097,109,1210,137"/><area shape="rect" id="node9" href="a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="1097,161,1209,189"/><area shape="rect" id="node10" href="a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="1094,213,1213,241"/><area shape="rect" id="node12" href="a00030.html#a12d1fa7928a770eb113b12000a0d3633" title="Texture::interpolate" alt="" coords="302,109,437,137"/><area shape="rect" id="node13" href="a00030.html#a8094e6e1fc9cdf547321f357d818a2bd" title="Texture::integrateMipMap" alt="" coords="486,161,658,189"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a79512e8201e923fec16ccc8a8d7113b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> integrateTexture </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deltas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deltat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x deltat) </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixels</td><td>The image to access, organized as a linear array of texel arranged by row </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the image </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of the image (number of component by texel) </td></tr>
+    <tr><td class="paramname">s</td><td>The column coordinate of the requested texel as a floating point </td></tr>
+    <tr><td class="paramname">t</td><td>The row coordinate of the requested texel as a floating point </td></tr>
+    <tr><td class="paramname">deltas</td><td>The size, in the column dimension, of the neighborood </td></tr>
+    <tr><td class="paramname">deltat</td><td>The size, in the row dimension, of the neighborood </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00076.html#_todo000006">A faire:</a></b></dt><dd></dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00055">55</a> du fichier <a class="el" href="a00063_source.html">texturefetch.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00063_source.html#l00019">getTexel()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00061_source.html#l00280">Texture::integrateExplicit()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00064_a79512e8201e923fec16ccc8a8d7113b2_cgraph.png" border="0" usemap="#a00064_a79512e8201e923fec16ccc8a8d7113b2_cgraph" alt=""/></div>
+<map name="a00064_a79512e8201e923fec16ccc8a8d7113b2_cgraph" id="a00064_a79512e8201e923fec16ccc8a8d7113b2_cgraph">
+<area shape="rect" id="node2" href="a00063.html#ad6c74e0d655725b60d1c0ac068664137" title="getTexel Get a single texel from a texture. " alt="" coords="171,5,242,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00064_a79512e8201e923fec16ccc8a8d7113b2_icgraph.png" border="0" usemap="#a00064_a79512e8201e923fec16ccc8a8d7113b2_icgraph" alt=""/></div>
+<map name="a00064_a79512e8201e923fec16ccc8a8d7113b2_icgraph" id="a00064_a79512e8201e923fec16ccc8a8d7113b2_icgraph">
+<area shape="rect" id="node2" href="a00030.html#a7f7a4bf88646efb0805b8326d4994b50" title="Texture::integrateExplicit" alt="" coords="171,109,338,137"/><area shape="rect" id="node3" href="a00030.html#a15376a1db3093522b4402220b771ad04" title="Texture::getPixel" alt="" coords="387,109,507,137"/><area shape="rect" id="node4" href="a00021.html#ad292661deaf1ff67911e8f298717aa43" title="Material::getTextureColor" alt="" coords="555,109,725,137"/><area shape="rect" id="node5" href="a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="777,5,890,33"/><area shape="rect" id="node6" href="a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="773,57,893,85"/><area shape="rect" id="node7" href="a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="777,109,890,137"/><area shape="rect" id="node8" href="a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="777,161,889,189"/><area shape="rect" id="node9" href="a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="774,213,893,241"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa82c0e54572b2cc47433b2e7f00f13fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> interpolateTexture </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>interpolateTexture Get a texel linearly interpolated from its neighbors </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixels</td><td>The image to access, organized as a linear array of texel arranged by row </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the image </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of the image (number of component by texel) </td></tr>
+    <tr><td class="paramname">s</td><td>The column coordinate of the requested texel as a floating point </td></tr>
+    <tr><td class="paramname">t</td><td>The row coordinate of the requested texel as a floating point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>The value of the interpolated texel </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a00076.html#_todo000005">A faire:</a></b></dt><dd>From the floating point coordinates, compute the integer part and the fractional part. The integer part is the used to acces the 4 texels implied in the interpolation (One texel and its 3 up and right neighors), the fractional part is used to linearly interpolate from neighbors. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00035">35</a> du fichier <a class="el" href="a00063_source.html">texturefetch.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00063_source.html#l00019">getTexel()</a>.</p>
+
+<p>Référencé par <a class="el" href="a00061_source.html#l00299">Texture::interpolate()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00064_aa82c0e54572b2cc47433b2e7f00f13fc_cgraph.png" border="0" usemap="#a00064_aa82c0e54572b2cc47433b2e7f00f13fc_cgraph" alt=""/></div>
+<map name="a00064_aa82c0e54572b2cc47433b2e7f00f13fc_cgraph" id="a00064_aa82c0e54572b2cc47433b2e7f00f13fc_cgraph">
+<area shape="rect" id="node2" href="a00063.html#ad6c74e0d655725b60d1c0ac068664137" title="getTexel Get a single texel from a texture. " alt="" coords="182,5,253,33"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00064_aa82c0e54572b2cc47433b2e7f00f13fc_icgraph.png" border="0" usemap="#a00064_aa82c0e54572b2cc47433b2e7f00f13fc_icgraph" alt=""/></div>
+<map name="a00064_aa82c0e54572b2cc47433b2e7f00f13fc_icgraph" id="a00064_aa82c0e54572b2cc47433b2e7f00f13fc_icgraph">
+<area shape="rect" id="node2" href="a00030.html#a12d1fa7928a770eb113b12000a0d3633" title="Texture::interpolate" alt="" coords="182,109,317,137"/><area shape="rect" id="node3" href="a00030.html#a15376a1db3093522b4402220b771ad04" title="Texture::getPixel" alt="" coords="587,109,707,137"/><area shape="rect" id="node10" href="a00030.html#a8094e6e1fc9cdf547321f357d818a2bd" title="Texture::integrateMipMap" alt="" coords="366,134,538,162"/><area shape="rect" id="node4" href="a00021.html#ad292661deaf1ff67911e8f298717aa43" title="Material::getTextureColor" alt="" coords="755,109,925,137"/><area shape="rect" id="node5" href="a00015.html#a94c040eef9f806af10a25f3bbdd78819" title="Glass::evaluate" alt="" coords="977,5,1090,33"/><area shape="rect" id="node6" href="a00016.html#aa512c7e4d7e7e5f5ae05a3114aaf753e" title="Glossy::evaluate" alt="" coords="973,57,1093,85"/><area shape="rect" id="node7" href="a00022.html#a5b3254ffd73cd1f7f574868b10374bf8" title="Matte::evaluate" alt="" coords="977,109,1090,137"/><area shape="rect" id="node8" href="a00023.html#a3c6190f266c9043c8a1cc157e9647780" title="Metal::evaluate" alt="" coords="977,161,1089,189"/><area shape="rect" id="node9" href="a00025.html#a0ab6450feff5ca3f1f4e3527030e20cb" title="Plastic::evaluate" alt="" coords="974,213,1093,241"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bbce8cb9f75d7bbfc5601b5cf0c1b01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool prefilterTexture </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>imagearray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nblevels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prefilterTexture Compute an array of images with geometrically decreasing resolution from the original image. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imagearray</td><td>The array of images to compute. element at index 0 in this array is the full resolution image and must not be modified </td></tr>
+    <tr><td class="paramname">width</td><td>Width of the full resolution image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the full resolution image </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of the image (number of component by texel) </td></tr>
+    <tr><td class="paramname">nblevels</td><td>Number of level to compute : nblevels = log2(min(width, height)) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>if the array may be filled, return true, else return false </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00063_source.html#l00068">68</a> du fichier <a class="el" href="a00063_source.html">texturefetch.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00061_source.html#l00171">Texture::buildmipmaps()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00064_a2bbce8cb9f75d7bbfc5601b5cf0c1b01_icgraph.png" border="0" usemap="#a00064_a2bbce8cb9f75d7bbfc5601b5cf0c1b01_icgraph" alt=""/></div>
+<map name="a00064_a2bbce8cb9f75d7bbfc5601b5cf0c1b01_icgraph" id="a00064_a2bbce8cb9f75d7bbfc5601b5cf0c1b01_icgraph">
+<area shape="rect" id="node2" href="a00030.html#a1a5b708cdae443e68e6a12f03f11cbbf" title="Texture::buildmipmaps" alt="" coords="163,5,317,33"/><area shape="rect" id="node3" href="a00030.html#a527fed2088b0fdb8b9384c7137623104" title="Texture::prefilter" alt="" coords="366,5,482,33"/><area shape="rect" id="node4" href="a00049.html#a322944f24b18d5647a07cefea27d8861" title="make_textured_scene" alt="" coords="530,5,683,33"/><area shape="rect" id="node5" href="a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="731,5,781,33"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2143d69be6627e7c0180aa018df36282.html">coreraytracer</a></li><li class="navelem"><a class="el" href="a00064.html">texturefetch.hpp</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:46 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

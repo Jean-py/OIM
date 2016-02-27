@@ -1,0 +1,36 @@
+ 
+gst-launch filesrc location=./drlp090_d027.mp3 ! mp3parse ! ffdec_mp3 ! audioconvert ! audioresample ! vorbisenc ! oggmux ! filesink location=./o.ogg
+ 
+derniere question
+
+gst-launch-0.10 filesrc location=./trailer_400p.ogg ! oggdemux name=demux { avimux name=mux ! filesink location=./traile2r.avi } { demux. ! queue ! vorbisdec ! audioconvert ! volume volume=0.5 ! level ! lame ! queue ! mux. } { demux. ! queue ! theoradec ! videoscale ! video/x-raw-yuv, height=240, width=320 ! mpeg2enc ! mux.
+
+
+//envois sur la carte son autoaudiosink
+//echo : 
+gst-launch filesrc location=./extrait.wav ! wavparse  ! audioconvert ! volume volume=0.6 ! audioecho delay=4 intensity=0.88 ! audioresample  ! autoaudiosink
+
+
+//filtre passe bas
+gst-launch filesrc location=./extrait.wav ! wavparse  ! audioconvert ! volume volume=0.6 ! audioecho delay=4 intensity=1 ! audiocheblimit cutoff=200 ! audioresample  ! autoaudiosink
+
+
+//filtre passe haut
+ gst-launch filesrc location=./parolebruitee.wav ! wavparse  ! audioconvert ! volume volume=0.6 ! audiocheblimit mode=1 cutoff=1000 ! audioresample  ! autoaudiosink
+
+
+//supression de voix
+gst-launch filesrc location=./extrait.wav ! wavparse  ! audioconvert ! volume volume=0.6 ! audioecho delay=4 intensity=1 ! audiochebband mode=1 lower-frequency=100 upper-frequency=8000 ! audioresample  ! autoaudiosink
+
+//modification de la photo en niveau de gris
+gst-launch filesrc location=./2CV.jpg ! jpegdec ! freeze ! videobalance saturation=0 ! autovideosink
+
+
+//modification de la photo en video 
+gst-launch filesrc location=./2CV.jpg ! jpegdec ! freeze ! videobalance saturation=0 ! autovideosink
+
+//snow
+gst-launch-1.0 -v videotestsrc pattern=ball ! video/x-raw,width=600,height=400 ! autovideosink
+
+
+gst-launch videotestsrc ! videocrop top=180 left=240 ! autovideosink

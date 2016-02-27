@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer:  Fichier source de bsdf.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00033_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">bsdf.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00033.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00035.html">color.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00065.html">vector3d.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="a00005.html" title="Reflectance representation and evaluation. ">BSDF</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234">   12</a></span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">   14</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa87f530394aa0ce82a30c78df742f433">   15</a></span>&#160;                <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa87f530394aa0ce82a30c78df742f433">DIFFUSE</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea3b73141a0f09c8761912e2edd4189bed">   16</a></span>&#160;                <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea3b73141a0f09c8761912e2edd4189bed">BLINN_PHONG</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea5af1a05cf55a29813f9fc99f37d17177">   17</a></span>&#160;        <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea5af1a05cf55a29813f9fc99f37d17177">GLOSSY</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea92e7ebf798d62551ba2d81f22bbd370e">   18</a></span>&#160;                <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea92e7ebf798d62551ba2d81f22bbd370e">PURE_REFL</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6">   19</a></span>&#160;                <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6">FRESNEL</a>         </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        } <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">   22</a></span>&#160;        <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a> <a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4">   25</a></span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4" title="kd for diffuse, phong and pure_refl, divided by pi for normalization ">m_kd</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="a00005.html#ac9a613ac0a7859f05dcb44ee250065c8">   28</a></span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00005.html#ac9a613ac0a7859f05dcb44ee250065c8" title="ks and shininess for phong ">m_ks</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">   29</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="a00005.html#acf9099c59d7589cbf0cc01c74f1de6c1">   32</a></span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00005.html#af0565c84cf33ca5c9f56310ddd0d5e0f" title="reflection, refraction and ior for fresnel ">m_kr</a>, <a class="code" href="a00005.html#acf9099c59d7589cbf0cc01c74f1de6c1">m_kt</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">   33</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="a00005.html#a49adf3e02a71382167669b97263d6321">   38</a></span>&#160;        <a class="code" href="a00005.html#a49adf3e02a71382167669b97263d6321" title="meta-constructor ">BSDF</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; normal_, <span class="keyword">const</span> <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60e">Model</a>&amp; model_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kd_,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                  <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; ks_, <span class="keywordtype">float</span> shininess_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kr_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kt_,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                  <span class="keywordtype">float</span> ior_)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                : <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a> (normal_), <a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a> (model_), <a class="code" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4" title="kd for diffuse, phong and pure_refl, divided by pi for normalization ">m_kd</a> (kd_ * (1.f / M_PI)), <a class="code" href="a00005.html#ac9a613ac0a7859f05dcb44ee250065c8" title="ks and shininess for phong ">m_ks</a> (ks_),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                  <a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a> (shininess_), <a class="code" href="a00005.html#af0565c84cf33ca5c9f56310ddd0d5e0f" title="reflection, refraction and ior for fresnel ">m_kr</a> (kr_), <a class="code" href="a00005.html#acf9099c59d7589cbf0cc01c74f1de6c1">m_kt</a> (kt_), <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a> (ior_) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                  </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">   48</a></span>&#160;        <a class="code" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">BSDF</a> () : <a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a> (<a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa87f530394aa0ce82a30c78df742f433">DIFFUSE</a>), <a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a> (0.f), <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a> (0.f) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//==========</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//factories</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="a00005.html#a9dd8bf6529b8cc159f570600bbee872c">   54</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00005.html" title="Reflectance representation and evaluation. ">BSDF</a> <a class="code" href="a00005.html#a9dd8bf6529b8cc159f570600bbee872c">init_diffuse</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; normal_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kd_) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">BSDF</a> (normal_, <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa87f530394aa0ce82a30c78df742f433">DIFFUSE</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                         kd_, <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), 0.f,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                         <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), 0.f);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="a00005.html#aaa834a440a78af61ef56984c3fcc79f8">   60</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00005.html" title="Reflectance representation and evaluation. ">BSDF</a> <a class="code" href="a00005.html#aaa834a440a78af61ef56984c3fcc79f8">init_blinn_phong</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; normal_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kd_,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                  <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; ks_, <span class="keywordtype">float</span> shininess_) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">BSDF</a> (normal_, <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea3b73141a0f09c8761912e2edd4189bed">BLINN_PHONG</a>,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                         kd_, ks_, shininess_,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                         <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), 0.f);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="a00005.html#a5721ae7c30efb1e90beb7ea6b49d9ca4">   67</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="a00005.html" title="Reflectance representation and evaluation. ">BSDF</a> <a class="code" href="a00005.html#a5721ae7c30efb1e90beb7ea6b49d9ca4">init_pure_refl</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; normal_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kd_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kr_) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">BSDF</a> (normal_, <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea92e7ebf798d62551ba2d81f22bbd370e">PURE_REFL</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                         kd_, <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), 0.f,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                         kr_, <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), 1.3f); </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="a00005.html#a654638fb3e8f649825aea76416fe5a6d">   73</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00005.html" title="Reflectance representation and evaluation. ">BSDF</a> <a class="code" href="a00005.html#a654638fb3e8f649825aea76416fe5a6d">init_fresnel</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; normal_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kr_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kt_, <span class="keywordtype">float</span> ior_) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">BSDF</a> (normal_, <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6">FRESNEL</a>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                     <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), 0.f,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                     kr_, kt_, ior_);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="a00005.html#abc0d4c3f673c7eab346a625678cec31f">   79</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="a00005.html" title="Reflectance representation and evaluation. ">BSDF</a> <a class="code" href="a00005.html#abc0d4c3f673c7eab346a625678cec31f">init_glossy</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; normal_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kd_,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                  <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; ks_, <span class="keyword">const</span> <a class="code" href="a00007.html" title="Color management. ">Color</a>&amp; kr_, <span class="keywordtype">float</span> shininess_, <span class="keywordtype">float</span> ior_) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00005.html#a269624a07342f9d2ea5c9c71b10d0797">BSDF</a> (normal_, <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea5af1a05cf55a29813f9fc99f37d17177">GLOSSY</a>,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                     kd_, ks_, shininess_,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                     kr_, <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f), ior_);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">//==========</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">//evaluation</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="a00005.html#a89754b621acdd482f06a0b11c0ecdf3a">   92</a></span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00005.html#a89754b621acdd482f06a0b11c0ecdf3a" title="directions leave from the point ">evaluate</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; to_eye_, <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; to_light_)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">switch</span> (<a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a>) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa87f530394aa0ce82a30c78df742f433">DIFFUSE</a>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_eye_) * <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_light_) &lt; 0.f) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                <span class="comment">//not same hemisphere</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <span class="keywordflow">return</span> <a class="code" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4" title="kd for diffuse, phong and pure_refl, divided by pi for normalization ">m_kd</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea3b73141a0f09c8761912e2edd4189bed">BLINN_PHONG</a>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_eye_) * <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_light_) &lt; 0.f) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                <span class="comment">//not same hemisphere</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        <span class="comment">//www.cs.ucl.ac.uk/staff/j.kautz/GameCourse/04_PointLights.pdf</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> half = (to_eye_ + to_light_).normalize();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4" title="kd for diffuse, phong and pure_refl, divided by pi for normalization ">m_kd</a> + <a class="code" href="a00005.html#ac9a613ac0a7859f05dcb44ee250065c8" title="ks and shininess for phong ">m_ks</a> * (std::pow ((half.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (<a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>)), <a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a>) * (<a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a> * 4) / (8.f * M_PI));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea5af1a05cf55a29813f9fc99f37d17177">GLOSSY</a>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_eye_) * <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_light_) &lt; 0.f) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <span class="comment">//not same hemisphere</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordtype">float</span> r0 = (1-<a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>)/(1+<a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                r0 = r0 * r0;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> half = (to_eye_ + to_light_).normalize();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordtype">float</span> costetha = half.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a>(to_eye_);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordtype">float</span> r = r0 + (1-r0)*std::pow((1-costetha), 5.);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="comment">//www.cs.ucl.ac.uk/staff/j.kautz/GameCourse/04_PointLights.pdf</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">return</span> (<a class="code" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4" title="kd for diffuse, phong and pure_refl, divided by pi for normalization ">m_kd</a>*(1./(M_PI)) + <a class="code" href="a00005.html#ac9a613ac0a7859f05dcb44ee250065c8" title="ks and shininess for phong ">m_ks</a> * r * (std::pow ((half.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (<a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>)), <a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a>) * (<a class="code" href="a00005.html#ad3982e7ed366dca25cd3125b80a1001f">m_shininess</a> * 4) / (8.f * M_PI)));</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="comment">//return m_kd*((r)/M_PI);</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea92e7ebf798d62551ba2d81f22bbd370e">PURE_REFL</a>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                        <span class="keywordflow">return</span> <a class="code" href="a00005.html#abd4f5c45b5d74fe04f9f6e34284304e4" title="kd for diffuse, phong and pure_refl, divided by pi for normalization ">m_kd</a>; <span class="comment">//no chance it is a reflection direction</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6">FRESNEL</a>:</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f); <span class="comment">//no chance it is a reflection direction</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                        <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f);                     </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">/*************/</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="code" href="a00005.html#a770df55c2f2ba844764b341e93ea41f7">  141</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00005.html#a770df55c2f2ba844764b341e93ea41f7">has_reflection</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a> == <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6">FRESNEL</a>) || (<a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a> == <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea92e7ebf798d62551ba2d81f22bbd370e">PURE_REFL</a>) || (<a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a> == <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60ea5af1a05cf55a29813f9fc99f37d17177">GLOSSY</a>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">/*************/</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="code" href="a00005.html#aca1d179bc6d6a06b395f8768019cc4f0">  146</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="a00005.html#aca1d179bc6d6a06b395f8768019cc4f0">has_refraction</a> ()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00005.html#acdf1f70e649aed91eb0196f978d17ff4">m_model</a> == <a class="code" href="a00005.html#a852f0629069a83f4852b3edcd01cf60eaa558f8550e4309f3ef5323b193fb43d6">FRESNEL</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="comment">/*************/</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="a00005.html#a0c1293b4a879f5797f9befcaef2c4c99">  151</a></span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00005.html#a0c1293b4a879f5797f9befcaef2c4c99">reflect_dir</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; to_eye_, <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> * p_to_light_)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordtype">float</span> cos_theta = <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_eye_);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                *p_to_light_ = -to_eye_ + <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a> * 2.f * cos_theta; <span class="comment">//not abs_cos_theta, the normal may be in the wrong sense</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keywordtype">bool</span> entering = (cos_theta &gt; 0.f);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordtype">float</span> ior_i, ior_t;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="keywordflow">if</span> (entering) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                        ior_i = 1.f; <span class="comment">//assume non-nested refractive objects</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                        ior_t = <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                        ior_i = <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                        ior_t = 1.f;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordtype">float</span> ior_ratio = ior_i / ior_t;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="keywordtype">float</span> cos_squared = 1.f - ior_ratio * ior_ratio * (1.f - cos_theta * cos_theta);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">if</span> (cos_squared &lt; 0.f) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                        <span class="comment">//no transmitted media, it is a total internal reflection</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                        <span class="comment">//(light is totally reflected instead of being transmitted).</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                        <span class="keywordflow">return</span> <a class="code" href="a00005.html#af0565c84cf33ca5c9f56310ddd0d5e0f" title="reflection, refraction and ior for fresnel ">m_kr</a>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="comment">//compute fresnel reflectance.          </span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordtype">float</span> ref_fresnel_0 = (ior_i - ior_t) / (ior_i + ior_t);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                ref_fresnel_0 *= ref_fresnel_0;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordtype">float</span> abs_cos_theta = fabsf (cos_theta);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordtype">float</span> ref_fresnel = ref_fresnel_0 + (1.f - ref_fresnel_0) * std::pow (1.f - abs_cos_theta, 5.f);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00005.html#af0565c84cf33ca5c9f56310ddd0d5e0f" title="reflection, refraction and ior for fresnel ">m_kr</a> * ref_fresnel;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="comment">/*************/</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="code" href="a00005.html#a072b04d8fc38b94911e023dcb3a0c28f">  189</a></span>&#160;        <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00005.html#a072b04d8fc38b94911e023dcb3a0c28f">refract_dir</a> (<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a>&amp; to_eye_, <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> * p_to_light_)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="keywordtype">float</span> cos_theta = <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a>.<a class="code" href="a00031.html#a293698c2fcdc50968fa63e125120bd61">dot</a> (to_eye_);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordtype">bool</span> entering = (cos_theta &gt; 0.f);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keywordtype">float</span> ior_i, ior_t;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keywordflow">if</span> (entering) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                        ior_i = 1.f; <span class="comment">//assume non-nested refractive objects</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                        ior_t = <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                        ior_i = <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                        ior_t = 1.f;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordtype">float</span> ior_ratio = ior_i / ior_t;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordtype">float</span> cos_squared = 1.f - ior_ratio * ior_ratio * (1.f - cos_theta * cos_theta);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">if</span> (cos_squared &lt; 0.f) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        <span class="comment">//no transmitted media, it is a total internal reflection</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                        <span class="comment">//(light is totally reflected instead of being transmitted).</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        <span class="keywordflow">return</span> <a class="code" href="a00007.html" title="Color management. ">Color</a> (0.f);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> normal_part = <a class="code" href="a00005.html#a34f10e0396208521fbe1698804589234" title="points toward the outside of the object ">m_normal</a> * (ior_ratio * cos_theta - (entering ? 1.f : -1.f) * std::sqrt (cos_squared));</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> eye_part = to_eye_ * ior_ratio;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                *p_to_light_ = normal_part - eye_part;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <span class="keywordtype">float</span> ref_fresnel_0 = (ior_i - ior_t) / (ior_i + ior_t);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                ref_fresnel_0 *= ref_fresnel_0;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordtype">float</span> ref_fresnel = ref_fresnel_0 + (1.f - ref_fresnel_0) * std::pow (1.f - fabsf (cos_theta), 5.f);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="a00005.html#acf9099c59d7589cbf0cc01c74f1de6c1">m_kt</a> * (1.f - ref_fresnel);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                </div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="code" href="a00005.html#a40748b3fdb9139f3819660637a127172">  225</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="a00005.html#a40748b3fdb9139f3819660637a127172">getIor</a>(<span class="keywordtype">bool</span> entering)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">if</span> (entering)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">return</span> 1.f/<a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="a00005.html#aad7ad5ebee66c23d47d1025d96501cca">m_ior</a>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2143d69be6627e7c0180aa018df36282.html">coreraytracer</a></li><li class="navelem"><a class="el" href="a00033.html">bsdf.hpp</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:46 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Membres de fichier</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li class="current"><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.html"><span>Tout</span></a></li>
+      <li><a href="globals_func.html"><span>Fonctions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Définitions&#160;de&#160;type</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_k"><span>k</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_x"><span>x</span></a></li>
+      <li><a href="#index_y"><span>y</span></a></li>
+      <li><a href="#index_z"><span>z</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Liste de tous les membres de fichier avec des liens vers les fichiers auxquels ils appartiennent :</div>
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>add_color_color()
+: <a class="el" href="a00072.html#gaef9b6318d003356d86ac547b6bc2f57b">raytracing.cpp</a>
+, <a class="el" href="a00072.html#gaef9b6318d003356d86ac547b6bc2f57b">raytracing.h</a>
+</li>
+<li>add_light()
+: <a class="el" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc">raytracing.h</a>
+, <a class="el" href="a00070.html#ga7338897b0e82076338fb7dd7cadeaddc">raytracing.cpp</a>
+</li>
+<li>add_object()
+: <a class="el" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7">raytracing.h</a>
+, <a class="el" href="a00070.html#gadf3f8ea1c8bf943db640af01230ed0f7">raytracing.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>black()
+: <a class="el" href="a00072.html#gade20962f791f22292f6eb7f169d464e2">raytracing.cpp</a>
+, <a class="el" href="a00072.html#gade20962f791f22292f6eb7f169d464e2">raytracing.h</a>
+</li>
+<li>Bound
+: <a class="el" href="a00045.html#ac2df38bf159cf483f5e87ba48af3264d">intervaloperators.hpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>camera_ray()
+: <a class="el" href="a00071.html#ga8cb8aef586b50a39b449ebb804acee60">raytracing.cpp</a>
+, <a class="el" href="a00071.html#ga8cb8aef586b50a39b449ebb804acee60">raytracing.h</a>
+</li>
+<li>color_is_black()
+: <a class="el" href="a00072.html#ga8a9950fd49c3927a6b247f20c0f584cf">raytracing.h</a>
+, <a class="el" href="a00072.html#ga8a9950fd49c3927a6b247f20c0f584cf">raytracing.cpp</a>
+</li>
+<li>compute_direct_lighting()
+: <a class="el" href="a00049.html#a9f1daa433c3bc9891cb1202a4e89080f">main.cpp</a>
+</li>
+<li>compute_image()
+: <a class="el" href="a00049.html#ab1d1ac9ba4ad1639618cfd7613fee95f">main.cpp</a>
+</li>
+<li>create_box()
+: <a class="el" href="a00070.html#ga97f60add9f9b7177df6c8f2f2372561a">raytracing.h</a>
+, <a class="el" href="a00070.html#ga97f60add9f9b7177df6c8f2f2372561a">raytracing.cpp</a>
+</li>
+<li>create_cone()
+: <a class="el" href="a00070.html#ga27c1a3eeb2869e55865f2cc6d3e717f1">raytracing.cpp</a>
+, <a class="el" href="a00070.html#ga27c1a3eeb2869e55865f2cc6d3e717f1">raytracing.h</a>
+</li>
+<li>create_csg_difference()
+: <a class="el" href="a00057.html#abca30508a9802f1a60bc67185dcaa8fb">raytracing.cpp</a>
+, <a class="el" href="a00058.html#abca30508a9802f1a60bc67185dcaa8fb">raytracing.h</a>
+</li>
+<li>create_csg_intersection()
+: <a class="el" href="a00057.html#a6eda5cac4c7d6203bf2e1798c0b4f124">raytracing.cpp</a>
+, <a class="el" href="a00058.html#a6eda5cac4c7d6203bf2e1798c0b4f124">raytracing.h</a>
+</li>
+<li>create_csg_union()
+: <a class="el" href="a00058.html#a4d0d7fc79bead2d9745acc2d10c506bf">raytracing.h</a>
+, <a class="el" href="a00057.html#a4d0d7fc79bead2d9745acc2d10c506bf">raytracing.cpp</a>
+</li>
+<li>create_cylinder()
+: <a class="el" href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d">raytracing.cpp</a>
+, <a class="el" href="a00070.html#gabd60bd9dfe9afb36b127decf9145287d">raytracing.h</a>
+</li>
+<li>create_glass_mat()
+: <a class="el" href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f">raytracing.cpp</a>
+, <a class="el" href="a00070.html#ga064ee1f6da1924df4e37334c456ea18f">raytracing.h</a>
+</li>
+<li>create_glossy_mat()
+: <a class="el" href="a00070.html#ga29d1d8af09f26bf8a39980f456a18a10">raytracing.cpp</a>
+, <a class="el" href="a00070.html#ga29d1d8af09f26bf8a39980f456a18a10">raytracing.h</a>
+</li>
+<li>create_matte_mat()
+: <a class="el" href="a00070.html#gad720b183f0a7c5b1d366a86fae48ff5e">raytracing.h</a>
+, <a class="el" href="a00070.html#gad720b183f0a7c5b1d366a86fae48ff5e">raytracing.cpp</a>
+</li>
+<li>create_metal_mat()
+: <a class="el" href="a00070.html#ga7e84d93db3d16480aa51e9d9cc16d843">raytracing.cpp</a>
+, <a class="el" href="a00070.html#ga7e84d93db3d16480aa51e9d9cc16d843">raytracing.h</a>
+</li>
+<li>create_plane()
+: <a class="el" href="a00070.html#gaf8b0ecdd64116491706ebede06c13b54">raytracing.h</a>
+, <a class="el" href="a00070.html#gaf8b0ecdd64116491706ebede06c13b54">raytracing.cpp</a>
+</li>
+<li>create_plastic_mat()
+: <a class="el" href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378">raytracing.cpp</a>
+, <a class="el" href="a00070.html#ga5e9b1752bc3635d8e03aeedce96f1378">raytracing.h</a>
+</li>
+<li>create_sphere()
+: <a class="el" href="a00070.html#ga2da051b943f32009496f94737261c248">raytracing.h</a>
+, <a class="el" href="a00070.html#ga2da051b943f32009496f94737261c248">raytracing.cpp</a>
+</li>
+<li>create_texture()
+: <a class="el" href="a00058.html#a1b386cecf574f60252672c88d408be09">raytracing.h</a>
+, <a class="el" href="a00057.html#a1b386cecf574f60252672c88d408be09">raytracing.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>difference_of_intervals()
+: <a class="el" href="a00044.html#a405c977f6831f22f9b822f0a1a2a4bb7">intervaloperators.cpp</a>
+, <a class="el" href="a00045.html#a405c977f6831f22f9b822f0a1a2a4bb7">intervaloperators.hpp</a>
+</li>
+<li>direct_lighting()
+: <a class="el" href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59">raytracing.cpp</a>
+, <a class="el" href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59">raytracing.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>FOND
+: <a class="el" href="a00049.html#a6a6a4ff78925404dd197deea2cc78cb6">main.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>g_camera
+: <a class="el" href="a00057.html#a8ea4ea2eb2676e84509a7f4c5ce43dda">raytracing.cpp</a>
+</li>
+<li>g_p_img
+: <a class="el" href="a00057.html#adcfc067701db6262297c2bbec15927cd">raytracing.cpp</a>
+</li>
+<li>g_scene
+: <a class="el" href="a00057.html#aab84ef508ba02254f00c7cd02f420b28">raytracing.cpp</a>
+</li>
+<li>GAMMA
+: <a class="el" href="a00075.html#ga8659b9de3e544ff142b153b076f30fd5">image.hpp</a>
+</li>
+<li>get_image_resolution()
+: <a class="el" href="a00074.html#ga0a694e21c663d5c72182c15e34118f23">raytracing.cpp</a>
+, <a class="el" href="a00074.html#ga0a694e21c663d5c72182c15e34118f23">raytracing.h</a>
+</li>
+<li>get_light()
+: <a class="el" href="a00070.html#gade62171a2f3b305905e5b0ada32357ff">raytracing.cpp</a>
+, <a class="el" href="a00070.html#gade62171a2f3b305905e5b0ada32357ff">raytracing.h</a>
+</li>
+<li>getTexel()
+: <a class="el" href="a00063.html#ad6c74e0d655725b60d1c0ac068664137">texturefetch.cpp</a>
+, <a class="el" href="a00064.html#ad6c74e0d655725b60d1c0ac068664137">texturefetch.hpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>init_color()
+: <a class="el" href="a00072.html#ga8442f299f5a4fad5e1ffe8b54ce3a852">raytracing.cpp</a>
+, <a class="el" href="a00072.html#ga8442f299f5a4fad5e1ffe8b54ce3a852">raytracing.h</a>
+</li>
+<li>integrateTexture()
+: <a class="el" href="a00064.html#a79512e8201e923fec16ccc8a8d7113b2">texturefetch.hpp</a>
+, <a class="el" href="a00063.html#a79512e8201e923fec16ccc8a8d7113b2">texturefetch.cpp</a>
+</li>
+<li>interpolateTexture()
+: <a class="el" href="a00063.html#aa82c0e54572b2cc47433b2e7f00f13fc">texturefetch.cpp</a>
+, <a class="el" href="a00064.html#aa82c0e54572b2cc47433b2e7f00f13fc">texturefetch.hpp</a>
+</li>
+<li>intersect_scene()
+: <a class="el" href="a00071.html#gaa971dcbc0062c359e8464f84662b0bd4">raytracing.h</a>
+, <a class="el" href="a00071.html#gaa971dcbc0062c359e8464f84662b0bd4">raytracing.cpp</a>
+</li>
+<li>intersection_of_intervals()
+: <a class="el" href="a00044.html#a26806eb167bb645a89e1b39f01dd5bca">intervaloperators.cpp</a>
+, <a class="el" href="a00045.html#a26806eb167bb645a89e1b39f01dd5bca">intervaloperators.hpp</a>
+</li>
+<li>isect_has_reflection()
+: <a class="el" href="a00073.html#gaf4ff7bddd9b295164491d5126289cd83">raytracing.cpp</a>
+, <a class="el" href="a00073.html#gaf4ff7bddd9b295164491d5126289cd83">raytracing.h</a>
+</li>
+<li>isect_has_refraction()
+: <a class="el" href="a00073.html#gaba7d4545b2466ae21efe827026358eec">raytracing.h</a>
+, <a class="el" href="a00073.html#gaba7d4545b2466ae21efe827026358eec">raytracing.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
+<li>KEYVALUE
+: <a class="el" href="a00043.html#a15956324a82088a2f23c936061145a97">image.hpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>main()
+: <a class="el" href="a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.cpp</a>
+</li>
+<li>make_default_scene()
+: <a class="el" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029">raytracing.cpp</a>
+, <a class="el" href="a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029">raytracing.h</a>
+</li>
+<li>make_textured_scene()
+: <a class="el" href="a00049.html#a322944f24b18d5647a07cefea27d8861">main.cpp</a>
+</li>
+<li>MOSAIC
+: <a class="el" href="a00049.html#a0db4c6ecc60cb9b5c79a52c8b52d6fc6">main.cpp</a>
+</li>
+<li>multiply_color_color()
+: <a class="el" href="a00072.html#ga2360109ceed6102f17ff17c573743395">raytracing.cpp</a>
+, <a class="el" href="a00072.html#ga2360109ceed6102f17ff17c573743395">raytracing.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>nb_lights()
+: <a class="el" href="a00070.html#ga16d4353577e7adc824650320333c7245">raytracing.cpp</a>
+, <a class="el" href="a00070.html#ga16d4353577e7adc824650320333c7245">raytracing.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>prefilterTexture()
+: <a class="el" href="a00063.html#a2bbce8cb9f75d7bbfc5601b5cf0c1b01">texturefetch.cpp</a>
+, <a class="el" href="a00064.html#a2bbce8cb9f75d7bbfc5601b5cf0c1b01">texturefetch.hpp</a>
+</li>
+<li>PSCALE
+: <a class="el" href="a00036.html#ac6cf65cec21b60cdfe31372f3102b97b">cone.hpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>QUADRILLAGE
+: <a class="el" href="a00049.html#a9d973f199d48f70575a94f590b347573">main.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>ray_depth()
+: <a class="el" href="a00071.html#gac588aae49805e61713de3d50ce6f04cd">raytracing.cpp</a>
+, <a class="el" href="a00071.html#gac588aae49805e61713de3d50ce6f04cd">raytracing.h</a>
+</li>
+<li>ray_importance()
+: <a class="el" href="a00071.html#ga69e5c6dd970eec59a78918a79badfbc8">raytracing.h</a>
+, <a class="el" href="a00071.html#ga69e5c6dd970eec59a78918a79badfbc8">raytracing.cpp</a>
+</li>
+<li>reflect()
+: <a class="el" href="a00073.html#ga397536f562058dee83e3be0813324e82">raytracing.cpp</a>
+, <a class="el" href="a00073.html#ga397536f562058dee83e3be0813324e82">raytracing.h</a>
+</li>
+<li>refract()
+: <a class="el" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038">raytracing.h</a>
+, <a class="el" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038">raytracing.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>save_image()
+: <a class="el" href="a00074.html#gaee5a58a341bc2053065b4fa8c8950577">raytracing.cpp</a>
+, <a class="el" href="a00074.html#gaee5a58a341bc2053065b4fa8c8950577">raytracing.h</a>
+</li>
+<li>save_png()
+: <a class="el" href="a00074.html#ga68bc73e2206f80129b14b4505d7ddc0b">raytracing.h</a>
+, <a class="el" href="a00074.html#ga68bc73e2206f80129b14b4505d7ddc0b">raytracing.cpp</a>
+</li>
+<li>set_camera()
+: <a class="el" href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192">raytracing.cpp</a>
+, <a class="el" href="a00070.html#gad67f595be55be0bc50b4ec08a9c74192">raytracing.h</a>
+</li>
+<li>set_pixel_color()
+: <a class="el" href="a00074.html#gacf909032cf0b1ef56a88bdfc416ac4ea">raytracing.h</a>
+, <a class="el" href="a00074.html#gacf909032cf0b1ef56a88bdfc416ac4ea">raytracing.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>test_visibility()
+: <a class="el" href="a00071.html#gafdd7145eb904844de4296af68d315e39">raytracing.cpp</a>
+, <a class="el" href="a00071.html#gafdd7145eb904844de4296af68d315e39">raytracing.h</a>
+</li>
+<li>trace_ray()
+: <a class="el" href="a00049.html#a0bb032ac4d4d1b49ce014a54feed764a">main.cpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>union_of_intervals()
+: <a class="el" href="a00044.html#ac6b53e72e199766315087879f7d015e5">intervaloperators.cpp</a>
+, <a class="el" href="a00045.html#ac6b53e72e199766315087879f7d015e5">intervaloperators.hpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_x"></a>- x -</h3><ul>
+<li>X
+: <a class="el" href="a00043.html#a207fd5507206d307cd63f95374fcd00d">image.hpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_y"></a>- y -</h3><ul>
+<li>Y
+: <a class="el" href="a00043.html#a798e4073d613ca5ba9618e1b3253df14">image.hpp</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_z"></a>- z -</h3><ul>
+<li>Z
+: <a class="el" href="a00043.html#a51591cf51bdd6c1f6015532422e7770e">image.hpp</a>
+</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:45 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

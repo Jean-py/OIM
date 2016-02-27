@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Référence de la classe Box3D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00004.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="a00142.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Box3D<div class="ingroups"><a class="el" href="a00075.html">Simple Raytracer</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Box geometric object.  
+ <a href="a00004.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00032_source.html">box.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de Box3D:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00143.png" border="0" usemap="#_box3_d_inherit__map" alt="Inheritance graph"/></div>
+<map name="_box3_d_inherit__map" id="_box3_d_inherit__map">
+<area shape="rect" id="node2" href="a00014.html" title="Abstract class for geometric object. " alt="" coords="4,6,107,119"/></map>
+</div>
+<div class="dynheader">
+Graphe de collaboration de Box3D:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00144.png" border="0" usemap="#_box3_d_coll__map" alt="Collaboration graph"/></div>
+<map name="_box3_d_coll__map" id="_box3_d_coll__map">
+<area shape="rect" id="node2" href="a00014.html" title="Abstract class for geometric object. " alt="" coords="4,78,107,191"/><area shape="rect" id="node3" href="a00031.html" title="3D vector manipulation " alt="" coords="132,6,244,263"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a64d5d5e8d19b94d0b932bcb346dc20b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a64d5d5e8d19b94d0b932bcb346dc20b3">Box3D</a> ()</td></tr>
+<tr class="separator:a64d5d5e8d19b94d0b932bcb346dc20b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8332814cea35a037da663f820cae0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a8f8332814cea35a037da663f820cae0b">Box3D</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;center_, const <a class="el" href="a00031.html">Vector3D</a> &amp;x_base_, const <a class="el" href="a00031.html">Vector3D</a> &amp;y_base_, const <a class="el" href="a00031.html">Vector3D</a> &amp;sizes_)</td></tr>
+<tr class="separator:a8f8332814cea35a037da663f820cae0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a9451718d7e98f7425aee8e00dcfbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ad5a9451718d7e98f7425aee8e00dcfbf">intersect</a> (<a class="el" href="a00027.html">Ray</a> &amp;ray_, <a class="el" href="a00013.html">Diff_Geom</a> *p_diff_geom_) const </td></tr>
+<tr class="memdesc:ad5a9451718d7e98f7425aee8e00dcfbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from <a href="http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Box3.cpp">http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Box3.cpp</a>  <a href="#ad5a9451718d7e98f7425aee8e00dcfbf">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ad5a9451718d7e98f7425aee8e00dcfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9726a96fc8d4b778bcfd9ba8fd693a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ae9726a96fc8d4b778bcfd9ba8fd693a1">clip</a> (<a class="el" href="a00027.html">Ray</a> &amp;ray_, <a class="el" href="a00018.html">IntervalSet</a> &amp;bounds) const </td></tr>
+<tr class="memdesc:ae9726a96fc8d4b778bcfd9ba8fd693a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">clip a ray by a geometry.  <a href="#ae9726a96fc8d4b778bcfd9ba8fd693a1">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ae9726a96fc8d4b778bcfd9ba8fd693a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00014"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00014')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques inherited from <a class="el" href="a00014.html">Geometry</a></td></tr>
+<tr class="memitem:a7fd58bab5c99530e71757539ee3384a3 inherit pub_methods_a00014"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00014.html#a7fd58bab5c99530e71757539ee3384a3">settangent</a> (const <a class="el" href="a00031.html">Vector3D</a> &amp;tg)</td></tr>
+<tr class="separator:a7fd58bab5c99530e71757539ee3384a3 inherit pub_methods_a00014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a9b6faa87b0537205d900ba98d48ef228"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a9b6faa87b0537205d900ba98d48ef228">clip</a> (float denom, float numer, float &amp;t0, float &amp;t1, unsigned char &amp;updated) const </td></tr>
+<tr class="separator:a9b6faa87b0537205d900ba98d48ef228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:ae04fa88b268fa87fc9c2824b0d08c7be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#ae04fa88b268fa87fc9c2824b0d08c7be">m_center</a></td></tr>
+<tr class="separator:ae04fa88b268fa87fc9c2824b0d08c7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e261aac94ad692d68425b74e070faa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#aa0e261aac94ad692d68425b74e070faa">m_axis</a> [3]</td></tr>
+<tr class="separator:aa0e261aac94ad692d68425b74e070faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f018b339a3612a0e29f1c0dfed4cae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00031.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00004.html#a70f018b339a3612a0e29f1c0dfed4cae">m_extent</a></td></tr>
+<tr class="separator:a70f018b339a3612a0e29f1c0dfed4cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Box geometric object. </p>
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00011">11</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a64d5d5e8d19b94d0b932bcb346dc20b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Box3D::Box3D </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00048">48</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00032_source.html#l00015">m_axis</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f8332814cea35a037da663f820cae0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Box3D::Box3D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>center_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>x_base_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>y_base_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00031.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>sizes_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00054">54</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00065_source.html#l00096">Vector3D::cross_product()</a>, <a class="el" href="a00032_source.html#l00015">m_axis</a>, et <a class="el" href="a00065_source.html#l00092">Vector3D::normalize()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00004_a8f8332814cea35a037da663f820cae0b_cgraph.png" border="0" usemap="#a00004_a8f8332814cea35a037da663f820cae0b_cgraph" alt=""/></div>
+<map name="a00004_a8f8332814cea35a037da663f820cae0b_cgraph" id="a00004_a8f8332814cea35a037da663f820cae0b_cgraph">
+<area shape="rect" id="node2" href="a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="352,57,520,85"/><area shape="rect" id="node7" href="a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="163,109,304,137"/><area shape="rect" id="node3" href="a00031.html#a0b11a8d75da427b27443d8a94d0d296c" title="Vector3D::Vector3D" alt="" coords="568,5,707,33"/><area shape="rect" id="node4" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="592,57,682,85"/><area shape="rect" id="node5" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="592,161,682,189"/><area shape="rect" id="node6" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="592,109,682,137"/><area shape="rect" id="node8" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="379,109,493,137"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="a9b6faa87b0537205d900ba98d48ef228"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Box3D::clip </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>denom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>numer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char &amp;&#160;</td>
+          <td class="paramname"><em>updated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00018">18</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00032_source.html#l00150">clip()</a>, et <a class="el" href="a00032_source.html#l00068">intersect()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00004_a9b6faa87b0537205d900ba98d48ef228_icgraph.png" border="0" usemap="#a00004_a9b6faa87b0537205d900ba98d48ef228_icgraph" alt=""/></div>
+<map name="a00004_a9b6faa87b0537205d900ba98d48ef228_icgraph" id="a00004_a9b6faa87b0537205d900ba98d48ef228_icgraph">
+<area shape="rect" id="node2" href="a00004.html#ae9726a96fc8d4b778bcfd9ba8fd693a1" title="clip a ray by a geometry. " alt="" coords="160,5,248,33"/><area shape="rect" id="node3" href="a00004.html#ad5a9451718d7e98f7425aee8e00dcfbf" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Box3.cpp " alt="" coords="144,57,264,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9726a96fc8d4b778bcfd9ba8fd693a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Box3D::clip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00018.html">IntervalSet</a> &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clip a ray by a geometry. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray_</td><td></td></tr>
+    <tr><td class="paramname">p_diff_geom_in_</td><td>The point by wich the ray enters the geometry </td></tr>
+    <tr><td class="paramname">p_diff_geom_out_</td><td>The point by wich the ray leaves the geometry </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true if the ray intersects the geometry. In and out parameters are filled by this method. The default returned value is false such that non volumic geometries do not need to implement this. </dd></dl>
+
+<p>Implémente <a class="el" href="a00014.html#a767321b776e8662e39aa32347e8918ee">Geometry</a>.</p>
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00150">150</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00046_source.html#l00015">IntervalSet::add()</a>, <a class="el" href="a00056_source.html#l00084">Ray::at()</a>, <a class="el" href="a00032_source.html#l00018">clip()</a>, <a class="el" href="a00056_source.html#l00064">Ray::dir()</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00032_source.html#l00015">m_axis</a>, <a class="el" href="a00032_source.html#l00014">m_center</a>, <a class="el" href="a00032_source.html#l00016">m_extent</a>, et <a class="el" href="a00056_source.html#l00060">Ray::ori()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00004_ae9726a96fc8d4b778bcfd9ba8fd693a1_cgraph.png" border="0" usemap="#a00004_ae9726a96fc8d4b778bcfd9ba8fd693a1_cgraph" alt=""/></div>
+<map name="a00004_ae9726a96fc8d4b778bcfd9ba8fd693a1_cgraph" id="a00004_ae9726a96fc8d4b778bcfd9ba8fd693a1_cgraph">
+<area shape="rect" id="node2" href="a00018.html#a5875b7222430d9be92a654db194d0d60" title="IntervalSet::add" alt="" coords="144,5,259,33"/><area shape="rect" id="node4" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="170,57,233,85"/><area shape="rect" id="node5" href="a00004.html#a9b6faa87b0537205d900ba98d48ef228" title="Box3D::clip" alt="" coords="157,109,246,137"/><area shape="rect" id="node6" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="168,161,235,189"/><area shape="rect" id="node7" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="150,213,252,241"/><area shape="rect" id="node11" href="a00027.html#aa0271e10968c04224e2986017abb67b3" title="Ray::ori" alt="" coords="168,265,235,293"/><area shape="rect" id="node3" href="a00013.html#ae931001b67b43308e984fee80902a17b" title="Diff_Geom::t" alt="" coords="307,5,403,33"/><area shape="rect" id="node8" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="310,161,400,189"/><area shape="rect" id="node9" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="310,213,400,241"/><area shape="rect" id="node10" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="310,265,400,293"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5a9451718d7e98f7425aee8e00dcfbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Box3D::intersect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00013.html">Diff_Geom</a> *&#160;</td>
+          <td class="paramname"><em>p_diff_geom_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from <a href="http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Box3.cpp">http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Box3.cpp</a> </p>
+
+<p>Implémente <a class="el" href="a00014.html#ae992633602643893bbd1e286e2ca98f9">Geometry</a>.</p>
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00068">68</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Références <a class="el" href="a00056_source.html#l00084">Ray::at()</a>, <a class="el" href="a00032_source.html#l00018">clip()</a>, <a class="el" href="a00056_source.html#l00064">Ray::dir()</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00032_source.html#l00015">m_axis</a>, <a class="el" href="a00032_source.html#l00014">m_center</a>, <a class="el" href="a00032_source.html#l00016">m_extent</a>, <a class="el" href="a00056_source.html#l00076">Ray::max_t()</a>, <a class="el" href="a00056_source.html#l00060">Ray::ori()</a>, <a class="el" href="a00056_source.html#l00089">Ray::ray_epsilon()</a>, <a class="el" href="a00039_source.html#l00157">Diff_Geom::set_in()</a>, <a class="el" href="a00056_source.html#l00080">Ray::set_max_t()</a>, <a class="el" href="a00039_source.html#l00142">Diff_Geom::set_normal()</a>, <a class="el" href="a00039_source.html#l00138">Diff_Geom::set_pos()</a>, et <a class="el" href="a00039_source.html#l00146">Diff_Geom::set_t()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00004_ad5a9451718d7e98f7425aee8e00dcfbf_cgraph.png" border="0" usemap="#a00004_ad5a9451718d7e98f7425aee8e00dcfbf_cgraph" alt=""/></div>
+<map name="a00004_ad5a9451718d7e98f7425aee8e00dcfbf_cgraph" id="a00004_ad5a9451718d7e98f7425aee8e00dcfbf_cgraph">
+<area shape="rect" id="node2" href="a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="222,5,285,33"/><area shape="rect" id="node3" href="a00004.html#a9b6faa87b0537205d900ba98d48ef228" title="Box3D::clip" alt="" coords="209,57,298,85"/><area shape="rect" id="node4" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="220,109,287,137"/><area shape="rect" id="node5" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="202,161,304,189"/><area shape="rect" id="node9" href="a00027.html#a8cd07a7f52236e9a1f4c92fbf5c8786a" title="Ray::max_t" alt="" coords="209,213,298,241"/><area shape="rect" id="node10" href="a00027.html#aa0271e10968c04224e2986017abb67b3" title="Ray::ori" alt="" coords="220,265,287,293"/><area shape="rect" id="node11" href="a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77" title="to avoid auto intersection " alt="" coords="193,317,314,345"/><area shape="rect" id="node12" href="a00013.html#abd160afd2ac49189a0b2f44dd4845fef" title="Diff_Geom::set_in" alt="" coords="189,369,317,397"/><area shape="rect" id="node14" href="a00027.html#a67bf1057835b4a923a50c82f31d46d0d" title="Ray::set_max_t" alt="" coords="196,421,310,449"/><area shape="rect" id="node15" href="a00013.html#a4f2c6b1f7c0699590b06378b238d7667" title="Diff_Geom::set_normal" alt="" coords="174,473,332,501"/><area shape="rect" id="node16" href="a00013.html#aa3099cd741f8252c6d846f72bcc6a250" title="Diff_Geom::set_pos" alt="" coords="184,525,323,553"/><area shape="rect" id="node17" href="a00013.html#a3e7b5cdcdacacd9af56797a4634ddf4a" title="Diff_Geom::set_t" alt="" coords="193,577,314,605"/><area shape="rect" id="node6" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="388,109,478,137"/><area shape="rect" id="node7" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="388,161,478,189"/><area shape="rect" id="node8" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="388,213,478,241"/><area shape="rect" id="node13" href="a00013.html#a6920a3cde4fcf4a5a47e36285917fec5" title="Diff_Geom::in" alt="" coords="382,369,485,397"/><area shape="rect" id="node18" href="a00013.html#ae931001b67b43308e984fee80902a17b" title="Diff_Geom::t" alt="" coords="385,577,481,605"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="aa0e261aac94ad692d68425b74e070faa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Box3D::m_axis[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00015">15</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00032_source.html#l00048">Box3D()</a>, <a class="el" href="a00032_source.html#l00150">clip()</a>, et <a class="el" href="a00032_source.html#l00068">intersect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae04fa88b268fa87fc9c2824b0d08c7be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Box3D::m_center</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00014">14</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00032_source.html#l00150">clip()</a>, et <a class="el" href="a00032_source.html#l00068">intersect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70f018b339a3612a0e29f1c0dfed4cae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">Vector3D</a> Box3D::m_extent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="a00032_source.html#l00016">16</a> du fichier <a class="el" href="a00032_source.html">box.hpp</a>.</p>
+
+<p>Référencé par <a class="el" href="a00032_source.html#l00150">clip()</a>, et <a class="el" href="a00032_source.html#l00068">intersect()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="a00032_source.html">box.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00004.html">Box3D</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:47 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

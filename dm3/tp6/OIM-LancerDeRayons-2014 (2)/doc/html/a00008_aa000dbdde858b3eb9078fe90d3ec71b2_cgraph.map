@@ -1,0 +1,51 @@
+<map id="Cone::get_clip_points" name="Cone::get_clip_points">
+<area shape="rect" id="node2" href="$a00027.html#a44792845b5e6508be5959f21a3f26e9e" title="Ray::at" alt="" coords="708,434,772,462"/>
+<area shape="rect" id="node3" href="$a00018.html#a071811cdb02ba0cf2c05140bcf466927" title="IntervalSet::bounds" alt="" coords="215,1318,351,1346"/>
+<area shape="rect" id="node4" href="$a00024.html#ab07fd72491019dfdce875eaa677ba18f" title="clip a ray by a geometry. " alt="" coords="241,798,324,826"/>
+<area shape="rect" id="node6" href="$a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="933,228,1000,256"/>
+<area shape="rect" id="node7" href="$a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="916,176,1018,204"/>
+<area shape="rect" id="node33" href="$a00008.html#a64fe0f4498b58abcbc0c1701c1c8c904" title="Cone::fillConicalDiffGeom" alt="" coords="410,280,584,308"/>
+<area shape="rect" id="node12" href="$a00027.html#aa0271e10968c04224e2986017abb67b3" title="Ray::ori" alt="" coords="706,874,774,902"/>
+<area shape="rect" id="node40" href="$a00013.html#a5e01855e24479e1ca96e90e9a3121fd6" title="Diff_Geom::set_dNdx" alt="" coords="208,1370,357,1398"/>
+<area shape="rect" id="node41" href="$a00013.html#aa86e64b1fa7e156c56d1a9609a5b1101" title="Diff_Geom::set_dNdy" alt="" coords="208,1422,357,1450"/>
+<area shape="rect" id="node42" href="$a00013.html#a4c94c9efcc00111356faaa7ae07f93ce" title="Diff_Geom::set_dTdx" alt="" coords="209,1110,356,1138"/>
+<area shape="rect" id="node43" href="$a00013.html#a32466287527017a3e98d10a493c810cd" title="Diff_Geom::set_dTdy" alt="" coords="209,1162,356,1190"/>
+<area shape="rect" id="node44" href="$a00013.html#abd160afd2ac49189a0b2f44dd4845fef" title="Diff_Geom::set_in" alt="" coords="219,1474,347,1502"/>
+<area shape="rect" id="node46" href="$a00013.html#a4f2c6b1f7c0699590b06378b238d7667" title="Diff_Geom::set_normal" alt="" coords="204,1526,362,1554"/>
+<area shape="rect" id="node47" href="$a00013.html#aa3099cd741f8252c6d846f72bcc6a250" title="Diff_Geom::set_pos" alt="" coords="213,1578,352,1606"/>
+<area shape="rect" id="node48" href="$a00013.html#a3e7b5cdcdacacd9af56797a4634ddf4a" title="Diff_Geom::set_t" alt="" coords="222,1266,343,1294"/>
+<area shape="rect" id="node49" href="$a00013.html#aa6cb598df534b6c3332b1b280ddf1b4a" title="Diff_Geom::set_u" alt="" coords="220,1006,345,1034"/>
+<area shape="rect" id="node50" href="$a00013.html#ab5531cd09ee3e2be05ecacd05e6385d1" title="Diff_Geom::set_v" alt="" coords="221,1058,345,1086"/>
+<area shape="rect" id="node5" href="$a00024.html#a8972d45fdd4d58cc736ce779da8e000a" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="441,642,554,670"/>
+<area shape="rect" id="node19" href="$a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a" title="Diff_Geom::pos" alt="" coords="440,434,554,462"/>
+<area shape="rect" id="node20" href="$a00013.html#a5032f917f066531ab12142806d5cb023" title="Diff_Geom::normal" alt="" coords="431,486,564,514"/>
+<area shape="rect" id="node21" href="$a00013.html#a31611ca29f29bc7c000ddcdd483e8177" title="Diff_Geom::dNdx" alt="" coords="436,538,559,566"/>
+<area shape="rect" id="node22" href="$a00013.html#a5957467c675f5066939dc92bea0ea738" title="Diff_Geom::dNdy" alt="" coords="436,590,559,618"/>
+<area shape="rect" id="node23" href="$a00013.html#ae931001b67b43308e984fee80902a17b" title="Diff_Geom::t" alt="" coords="692,954,788,982"/>
+<area shape="rect" id="node11" href="$a00027.html#a9484c8a3d4eeca6f9188d6ce2ca14b77" title="to avoid auto intersection " alt="" coords="680,486,800,514"/>
+<area shape="rect" id="node24" href="$a00013.html#a210b806c862ecf086982cd52189f900a" title="Diff_Geom::dPdx" alt="" coords="436,746,559,774"/>
+<area shape="rect" id="node25" href="$a00013.html#aea9c1cfd45720b9c689198653eb1136d" title="Diff_Geom::dPdy" alt="" coords="436,798,559,826"/>
+<area shape="rect" id="node26" href="$a00013.html#a6ffec5fe0ac1ecc780b472a910d2017a" title="Diff_Geom::dDdx" alt="" coords="436,850,559,878"/>
+<area shape="rect" id="node27" href="$a00013.html#ae63247e057e0fa7d7517671d66181b7c" title="Diff_Geom::dDdy" alt="" coords="436,902,559,930"/>
+<area shape="rect" id="node28" href="$a00013.html#a4571bb1840c79799f7f2533b90e5b033" title="Diff_Geom::u" alt="" coords="448,1006,547,1034"/>
+<area shape="rect" id="node29" href="$a00013.html#a0e011c1c7dcdd6585d13a1f84f3b2cd5" title="Diff_Geom::v" alt="" coords="448,1058,547,1086"/>
+<area shape="rect" id="node30" href="$a00013.html#afccf9a7535b017156a84237ef9bd3f71" title="Diff_Geom::dTdx" alt="" coords="436,1110,558,1138"/>
+<area shape="rect" id="node31" href="$a00013.html#aebdb7ea0d43eb3f84fdb8ffcf9c37c5b" title="Diff_Geom::dTdy" alt="" coords="436,1162,558,1190"/>
+<area shape="rect" id="node32" href="$a00018.html#a5875b7222430d9be92a654db194d0d60" title="IntervalSet::add" alt="" coords="440,694,555,722"/>
+<area shape="rect" id="node13" href="$a00027.html#a8cd07a7f52236e9a1f4c92fbf5c8786a" title="Ray::max_t" alt="" coords="696,796,784,824"/>
+<area shape="rect" id="node14" href="$a00027.html#a67bf1057835b4a923a50c82f31d46d0d" title="Ray::set_max_t" alt="" coords="683,692,797,720"/>
+<area shape="rect" id="node15" href="$a00027.html#a7a88a22aa552960217a82d37b4e4e979" title="Ray::propagateDifferentials" alt="" coords="649,280,831,308"/>
+<area shape="rect" id="node17" href="$a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="925,384,1008,412"/>
+<area shape="rect" id="node18" href="$a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="925,332,1008,360"/>
+<area shape="rect" id="node8" href="$a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="1302,21,1392,49"/>
+<area shape="rect" id="node9" href="$a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="1302,73,1392,101"/>
+<area shape="rect" id="node10" href="$a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="1302,125,1392,153"/>
+<area shape="rect" id="node16" href="$a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="925,280,1008,308"/>
+<area shape="rect" id="node34" href="$a00008.html#a178cde17ec76cf7166a766a27d60636f" title="Cone::computeConicalTexInfo" alt="" coords="640,176,840,204"/>
+<area shape="rect" id="node36" href="$a00008.html#a95399f5c92a51c5a65178ab5d270dedf" title="Cone::computenormal" alt="" coords="664,20,816,48"/>
+<area shape="rect" id="node39" href="$a00008.html#af9101cf744e482bef43943270c5fbffb" title="Cone::computenormalDifferential" alt="" coords="632,72,848,100"/>
+<area shape="rect" id="node35" href="$a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="1112,73,1226,101"/>
+<area shape="rect" id="node37" href="$a00031.html#abd36ddbe10a7981949ecde1d9d2f457a" title="Vector3D::cross_product" alt="" coords="1086,21,1253,49"/>
+<area shape="rect" id="node38" href="$a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="896,21,1037,49"/>
+<area shape="rect" id="node45" href="$a00013.html#a6920a3cde4fcf4a5a47e36285917fec5" title="Diff_Geom::in" alt="" coords="446,1474,549,1502"/>
+</map>

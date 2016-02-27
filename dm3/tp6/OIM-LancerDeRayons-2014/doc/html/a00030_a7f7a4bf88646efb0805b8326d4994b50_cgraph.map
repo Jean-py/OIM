@@ -1,0 +1,4 @@
+<map id="Texture::integrateExplicit" name="Texture::integrateExplicit">
+<area shape="rect" id="node2" href="$a00063.html#a79512e8201e923fec16ccc8a8d7113b2" title="integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x de..." alt="" coords="222,5,338,33"/>
+<area shape="rect" id="node3" href="$a00063.html#ad6c74e0d655725b60d1c0ac068664137" title="getTexel Get a single texel from a texture. " alt="" coords="387,5,458,33"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Ray::setdDdx" name="Ray::setdDdx">
+<area shape="rect" id="node2" href="$a00028.html#a0f1778fd9c133a40977e6e33f6a75b61" title="Scene::intersect" alt="" coords="172,5,289,33"/>
+<area shape="rect" id="node4" href="$a00006.html#a98275b6232248a9c1691cd9500d8134d" title="Camera::ray_for_pixel" alt="" coords="154,57,307,85"/>
+<area shape="rect" id="node6" href="$a00073.html#ga397536f562058dee83e3be0813324e82" title="compute the reflected ray from the intersection data and the ray to the intersection ..." alt="" coords="202,109,259,137"/>
+<area shape="rect" id="node7" href="$a00073.html#ga1c7e1aae0ca65e600b252447bc817038" title="compute the refracted ray from the intersection data and the ray to the intersection ..." alt="" coords="201,161,260,189"/>
+<area shape="rect" id="node3" href="$a00071.html#gaa971dcbc0062c359e8464f84662b0bd4" title="intersect a given ray with the scene. " alt="" coords="355,5,469,33"/>
+<area shape="rect" id="node5" href="$a00071.html#ga8cb8aef586b50a39b449ebb804acee60" title="compute the ray for the given pixel " alt="" coords="366,57,458,85"/>
+</map>

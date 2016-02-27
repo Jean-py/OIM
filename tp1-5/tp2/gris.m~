@@ -1,0 +1,13 @@
+img = double(imread('/home/21104511/Documents/master/oim/tp2/image'));
+taille = size(img);
+
+ imgg = uint8(zeros(taille(1),taille(2)));
+ for x=1:taille(1)
+     for y=1:taille(2)
+         = uint8((img(x,y,1)+img(x,y,2)+img(x,y,3)) / 3);
+          imgg(x,y)
+     end
+ end
+
+ 
+ 

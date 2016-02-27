@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer:  Fichier source de texture.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00062_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">texture.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00062.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00035.html">color.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00065.html">vector3d.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">#define TEX_LUMINANCE 0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">#define TEX_LUMINANCE_ALPHA 1</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">#define TEX_RGB 2</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">#define TEX_RGBA 3</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="a00030.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00030.html" title="Texture definition. ">Texture</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="a00030.html#af98df6a5804ac5bf2821da4320c59b22">   22</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="a00030.html#af98df6a5804ac5bf2821da4320c59b22">mPixels</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">   23</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> **<a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="a00030.html#ac3e5c3425222be7fcaf10eb9780d8850">   24</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00030.html#ac3e5c3425222be7fcaf10eb9780d8850">hasmipmap</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="a00030.html#a204a0958512e3843c3258f94dfab89d6">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00030.html#a204a0958512e3843c3258f94dfab89d6">mlodmax</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="a00030.html#aa8cf567ce941e0c0367a77cdbad1915a">   29</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="a00030.html#aa8cf567ce941e0c0367a77cdbad1915a">mSu</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="a00030.html#ace24a7cebb3dbd31fa06486787b675b5">   30</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="a00030.html#ace24a7cebb3dbd31fa06486787b675b5">mSv</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="a00030.html#aca02c9519d137e2262ec48d5057749b8">   32</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00030.html#aca02c9519d137e2262ec48d5057749b8">clamp</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00030.html#ae823015eee138329abc71a2f74fa18e6">load</a>(std::string filename);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00030.html#a8094e6e1fc9cdf547321f357d818a2bd">integrateMipMap</a>(<span class="keywordtype">int</span> level, <span class="keywordtype">float</span> s, <span class="keywordtype">float</span> t, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00030.html#a7f7a4bf88646efb0805b8326d4994b50">integrateExplicit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pixels, <span class="keywordtype">int</span> imageWidth, <span class="keywordtype">int</span> imageHeight, <span class="keywordtype">int</span> pixelFormat, <span class="keywordtype">float</span> s, <span class="keywordtype">float</span> t, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00030.html#a12d1fa7928a770eb113b12000a0d3633">interpolate</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pixels, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> s, <span class="keywordtype">int</span> t, <span class="keywordtype">float</span> ds, <span class="keywordtype">float</span> dt);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00030.html#a1a5b708cdae443e68e6a12f03f11cbbf">buildmipmaps</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a00030.html#ae97dcc52cd6757bfe077cf3e7d502fa9">Texture</a>(std::string filename);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00030.html#a09c4bcb7462f64c1d20fa69dba3cee8a">~Texture</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00030.html#a527fed2088b0fdb8b9384c7137623104">prefilter</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00030.html#a634bbf23c61283e52598a73e40bb78b4">setScale</a>(<span class="keywordtype">float</span> su, <span class="keywordtype">float</span> sv);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// u and v between 0 and 1</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00030.html#a15376a1db3093522b4402220b771ad04">getPixel</a>(<span class="keywordtype">float</span> u, <span class="keywordtype">float</span> v, <span class="keywordtype">float</span> lod, <a class="code" href="a00007.html" title="Color management. ">Color</a> &amp;color);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="a00030.html#a09fbbcee092db9bb6fc53a815a6685c0">   54</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="a00030.html#a09fbbcee092db9bb6fc53a815a6685c0">computeMipmapLevel</a>(<span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;dTdx, <span class="keyword">const</span> <a class="code" href="a00031.html" title="3D vector manipulation ">Vector3D</a> &amp;dTdy) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> std::log2(std::max(dTdx.<a class="code" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254">norm</a>()*<a class="code" href="a00030.html#a496e7ecce88213f6190dcb65659ee9b4">width</a>()*<a class="code" href="a00030.html#aa8cf567ce941e0c0367a77cdbad1915a">mSu</a>, dTdy.<a class="code" href="a00031.html#ab58e6202e20f0fd74fc35133eb780254">norm</a>()*<a class="code" href="a00030.html#a0a5592fcf3a2270578880aed20c4bde0">height</a>()*<a class="code" href="a00030.html#ace24a7cebb3dbd31fa06486787b675b5">mSv</a>));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="a00030.html#a496e7ecce88213f6190dcb65659ee9b4">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00030.html#a496e7ecce88213f6190dcb65659ee9b4">width</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="a00030.html#a0a5592fcf3a2270578880aed20c4bde0">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="a00030.html#a0a5592fcf3a2270578880aed20c4bde0">height</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a00030.html#a236619967a1c87428f9393d37cc34e31">getclamp</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00030.html#a46fbfaacd024b6c500c499c45adf1abf">setclamp</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2143d69be6627e7c0180aa018df36282.html">coreraytracer</a></li><li class="navelem"><a class="el" href="a00062.html">texture.hpp</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:46 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+/usr/bin/c++    -fPIC -Wall -Wextra -fdiagnostics-show-option -Wno-unused-parameter -std=c++11 -mmmx -msse -msse2 -msse3 -mfpmath=sse -ffast-math   -O3 -DNDEBUG -finline -DNDEBUG    CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/texturefetch.cpp.o  -o ../../bin/main -rdynamic ../coreraytracer/libraytracing.a -lIlmImf -lHalf -lIex -lpng 

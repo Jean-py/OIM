@@ -1,0 +1,6 @@
+<map id="Scene::set_camera" name="Scene::set_camera">
+<area shape="rect" id="node2" href="$a00070.html#gad67f595be55be0bc50b4ec08a9c74192" title="to set the parameters of the camera " alt="" coords="189,31,280,59"/>
+<area shape="rect" id="node3" href="$a00070.html#ga5102ec4e0cd297fb1e649f5dde3bd029" title="to initialize the scene with the default one. " alt="" coords="332,5,476,33"/>
+<area shape="rect" id="node4" href="$a00049.html#a322944f24b18d5647a07cefea27d8861" title="make_textured_scene" alt="" coords="328,57,480,85"/>
+<area shape="rect" id="node5" href="$a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="528,57,578,85"/>
+</map>

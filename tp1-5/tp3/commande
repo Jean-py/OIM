@@ -1,0 +1,12 @@
+gst-launch filesrc location=./drlp090_d027.mp3 ! mp3parse ! ffdec_mp3 ! audioconvert ! audioresample ! vorbisenc ! oggmux ! filesink location=./o.ogg
+ 
+derniere question
+
+gst-launch-0.10 filesrc location=./trailer_400p.ogg ! oggdemux name=demux { avimux name=mux ! filesink location=./traile2r.avi } { demux. ! queue ! vorbisdec ! audioconvert ! volume volume=0.5 ! level ! lame ! queue ! mux. } { demux. ! queue ! theoradec ! videoscale ! video/x-raw-yuv, height=240, width=320 ! mpeg2enc ! mux.
+
+
+//envois sur la carte son autoaudiosink
+
+gst-launch filesrc location=./extrait.wav ! wavparse  ! audioconvert ! volume volume=0.6 ! audioresample ! autoaudiosink
+
+

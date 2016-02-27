@@ -1,0 +1,5 @@
+<map id="Plane::clip" name="Plane::clip">
+<area shape="rect" id="node2" href="$a00008.html#a7ddf59f2bc68bc7d862fc915b2983702" title="clip a ray by a geometry. " alt="" coords="349,5,430,33"/>
+<area shape="rect" id="node3" href="$a00008.html#aa000dbdde858b3eb9078fe90d3ec71b2" title="Cone::get_clip_points" alt="" coords="136,57,285,85"/>
+<area shape="rect" id="node4" href="$a00008.html#a525bf376cea933bf1fb4dd47ec77c3c1" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cone3.cpp " alt="" coords="334,57,445,85"/>
+</map>

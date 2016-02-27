@@ -1,0 +1,15 @@
+<map id="Scene::intersect" name="Scene::intersect">
+<area shape="rect" id="node2" href="$a00013.html#a6ffec5fe0ac1ecc780b472a910d2017a" title="Diff_Geom::dDdx" alt="" coords="173,5,296,33"/>
+<area shape="rect" id="node3" href="$a00013.html#ae63247e057e0fa7d7517671d66181b7c" title="Diff_Geom::dDdy" alt="" coords="173,57,296,85"/>
+<area shape="rect" id="node4" href="$a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef" title="Isect::dg" alt="" coords="199,109,271,137"/>
+<area shape="rect" id="node5" href="$a00013.html#a210b806c862ecf086982cd52189f900a" title="Diff_Geom::dPdx" alt="" coords="173,161,296,189"/>
+<area shape="rect" id="node6" href="$a00013.html#aea9c1cfd45720b9c689198653eb1136d" title="Diff_Geom::dPdy" alt="" coords="173,213,296,241"/>
+<area shape="rect" id="node7" href="$a00021.html#abb68e80a020e81d0130b275203b1680c" title="Material::evaluate" alt="" coords="171,265,298,293"/>
+<area shape="rect" id="node8" href="$a00019.html#a2cc285e0c92beefcc990ba96bc0f8a6a" title="Isect::mat" alt="" coords="195,317,274,345"/>
+<area shape="rect" id="node9" href="$a00019.html#ac37c0a40e869d82f176ad5e92b997744" title="Isect::setBsdf" alt="" coords="184,369,285,397"/>
+<area shape="rect" id="node11" href="$a00027.html#a5d26fb532f4c86660b2510f1ee652398" title="Ray::setdDdx" alt="" coords="184,421,285,449"/>
+<area shape="rect" id="node12" href="$a00027.html#a71bc6099f66336f342eae251540074ea" title="Ray::setdDdy" alt="" coords="184,473,285,501"/>
+<area shape="rect" id="node13" href="$a00027.html#a2e2d243083b80167abda5801213e935a" title="Ray::setdPdx" alt="" coords="184,525,285,553"/>
+<area shape="rect" id="node14" href="$a00027.html#ac679655f534897cec2a82d88d7e2fd3f" title="Ray::setdPdy" alt="" coords="184,577,285,605"/>
+<area shape="rect" id="node10" href="$a00019.html#ad175c0c1162ae8050132013c4578d4fe" title="Isect::bsdf" alt="" coords="347,369,429,397"/>
+</map>

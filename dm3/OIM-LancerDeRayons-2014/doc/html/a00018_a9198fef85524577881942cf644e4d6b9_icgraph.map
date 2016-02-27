@@ -1,0 +1,4 @@
+<map id="IntervalSet::difference_operator" name="IntervalSet::difference_operator">
+<area shape="rect" id="node2" href="$a00009.html#abb5077f37138af94f364e00810f83955" title="clip a ray by a geometry. " alt="" coords="206,13,344,41"/>
+<area shape="rect" id="node3" href="$a00009.html#a4df21af1e7d7a34ccd724c849de31cfc" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() " alt="" coords="392,13,560,41"/>
+</map>

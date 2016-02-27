@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer: Lighting computation API</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00073.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Lighting computation API<div class="ingroups"><a class="el" href="a00069.html">Simple Raytracing API</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Application Programming Interface for lighting computation.  
+<a href="#details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de Lighting computation API:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="a00073.png" border="0" alt="" usemap="#a00073"/>
+<map name="a00073" id="a00073">
+<area shape="rect" id="node2" href="a00069.html" title="Application Programming Interface for the Very Simple Ray Tracer. " alt="" coords="6,5,160,33"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gaf4ff7bddd9b295164491d5126289cd83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#gaf4ff7bddd9b295164491d5126289cd83">isect_has_reflection</a> (<a class="el" href="a00019.html">Isect</a> isect_)</td></tr>
+<tr class="separator:gaf4ff7bddd9b295164491d5126289cd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba7d4545b2466ae21efe827026358eec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#gaba7d4545b2466ae21efe827026358eec">isect_has_refraction</a> (<a class="el" href="a00019.html">Isect</a> isect_)</td></tr>
+<tr class="separator:gaba7d4545b2466ae21efe827026358eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga397536f562058dee83e3be0813324e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ga397536f562058dee83e3be0813324e82">reflect</a> (<a class="el" href="a00027.html">Ray</a> ray_, <a class="el" href="a00019.html">Isect</a> isect_, <a class="el" href="a00027.html">Ray</a> *p_ray_)</td></tr>
+<tr class="memdesc:ga397536f562058dee83e3be0813324e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the reflected ray from the intersection data and the ray to the intersection  <a href="#ga397536f562058dee83e3be0813324e82">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga397536f562058dee83e3be0813324e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c7e1aae0ca65e600b252447bc817038"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ga1c7e1aae0ca65e600b252447bc817038">refract</a> (<a class="el" href="a00027.html">Ray</a> ray_, <a class="el" href="a00019.html">Isect</a> isect_, <a class="el" href="a00027.html">Ray</a> *p_ray_)</td></tr>
+<tr class="memdesc:ga1c7e1aae0ca65e600b252447bc817038"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the refracted ray from the intersection data and the ray to the intersection  <a href="#ga1c7e1aae0ca65e600b252447bc817038">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga1c7e1aae0ca65e600b252447bc817038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a215078ec8db08fc79e0a491bc61b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00007.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html#ga3a215078ec8db08fc79e0a491bc61b59">direct_lighting</a> (<a class="el" href="a00027.html">Ray</a> ray_, <a class="el" href="a00019.html">Isect</a> isect_, <a class="el" href="a00020.html">Light</a> *light_)</td></tr>
+<tr class="memdesc:ga3a215078ec8db08fc79e0a491bc61b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the amount of color scattered at the intersection to the ray from the given light, assuming there is no occluder  <a href="#ga3a215078ec8db08fc79e0a491bc61b59">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ga3a215078ec8db08fc79e0a491bc61b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<p>Application Programming Interface for lighting computation. </p>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="ga3a215078ec8db08fc79e0a491bc61b59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> direct_lighting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a>&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00019.html">Isect</a>&#160;</td>
+          <td class="paramname"><em>isect_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00020.html">Light</a> *&#160;</td>
+          <td class="paramname"><em>light_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the amount of color scattered at the intersection to the ray from the given light, assuming there is no occluder </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray_</td><td></td></tr>
+    <tr><td class="paramname">isect_</td><td></td></tr>
+    <tr><td class="paramname">light_</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00559">559</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00047_source.html#l00038">Isect::bsdf()</a>, <a class="el" href="a00047_source.html#l00026">Isect::dg()</a>, <a class="el" href="a00056_source.html#l00064">Ray::dir()</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00033_source.html#l00092">BSDF::evaluate()</a>, <a class="el" href="a00048_source.html#l00030">Light::le()</a>, <a class="el" href="a00039_source.html#l00076">Diff_Geom::normal()</a>, <a class="el" href="a00048_source.html#l00026">Light::pos()</a>, et <a class="el" href="a00039_source.html#l00072">Diff_Geom::pos()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00073_ga3a215078ec8db08fc79e0a491bc61b59_cgraph.png" border="0" usemap="#a00073_ga3a215078ec8db08fc79e0a491bc61b59_cgraph" alt=""/></div>
+<map name="a00073_ga3a215078ec8db08fc79e0a491bc61b59_cgraph" id="a00073_ga3a215078ec8db08fc79e0a491bc61b59_cgraph">
+<area shape="rect" id="node2" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe" title="Isect::bsdf" alt="" coords="183,5,265,33"/><area shape="rect" id="node3" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef" title="Isect::dg" alt="" coords="188,57,260,85"/><area shape="rect" id="node4" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="190,109,258,137"/><area shape="rect" id="node5" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="340,187,442,215"/><area shape="rect" id="node9" href="a00005.html#a89754b621acdd482f06a0b11c0ecdf3a" title="directions leave from the point " alt="" coords="167,213,281,241"/><area shape="rect" id="node10" href="a00020.html#a67501efbaeb33e1392fedb8b0d768ac8" title="Light::le" alt="" coords="190,265,258,293"/><area shape="rect" id="node11" href="a00013.html#a5032f917f066531ab12142806d5cb023" title="Diff_Geom::normal" alt="" coords="158,317,290,345"/><area shape="rect" id="node12" href="a00020.html#a305715f1db3acf3dbd9dbd54baaa804e" title="Light::pos" alt="" coords="184,369,264,397"/><area shape="rect" id="node13" href="a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a" title="Diff_Geom::pos" alt="" coords="167,421,281,449"/><area shape="rect" id="node6" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="491,135,581,163"/><area shape="rect" id="node7" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="491,187,581,215"/><area shape="rect" id="node8" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="491,239,581,267"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf4ff7bddd9b295164491d5126289cd83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isect_has_reflection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00019.html">Isect</a>&#160;</td>
+          <td class="paramname"><em>isect_</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isect_</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if no reflection has to be computed, 1 otherwise </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00468">468</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00047_source.html#l00038">Isect::bsdf()</a>, et <a class="el" href="a00033_source.html#l00141">BSDF::has_reflection()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00073_gaf4ff7bddd9b295164491d5126289cd83_cgraph.png" border="0" usemap="#a00073_gaf4ff7bddd9b295164491d5126289cd83_cgraph" alt=""/></div>
+<map name="a00073_gaf4ff7bddd9b295164491d5126289cd83_cgraph" id="a00073_gaf4ff7bddd9b295164491d5126289cd83_cgraph">
+<area shape="rect" id="node2" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe" title="Isect::bsdf" alt="" coords="224,5,306,33"/><area shape="rect" id="node3" href="a00005.html#a770df55c2f2ba844764b341e93ea41f7" title="BSDF::has_reflection" alt="" coords="192,57,339,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaba7d4545b2466ae21efe827026358eec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int isect_has_refraction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00019.html">Isect</a>&#160;</td>
+          <td class="paramname"><em>isect_</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isect_</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 if no refraction has to be computed, 1 otherwise </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00477">477</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00047_source.html#l00038">Isect::bsdf()</a>, et <a class="el" href="a00033_source.html#l00146">BSDF::has_refraction()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00073_gaba7d4545b2466ae21efe827026358eec_cgraph.png" border="0" usemap="#a00073_gaba7d4545b2466ae21efe827026358eec_cgraph" alt=""/></div>
+<map name="a00073_gaba7d4545b2466ae21efe827026358eec_cgraph" id="a00073_gaba7d4545b2466ae21efe827026358eec_cgraph">
+<area shape="rect" id="node2" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe" title="Isect::bsdf" alt="" coords="228,5,310,33"/><area shape="rect" id="node3" href="a00005.html#aca1d179bc6d6a06b395f8768019cc4f0" title="BSDF::has_refraction" alt="" coords="195,57,344,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga397536f562058dee83e3be0813324e82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> reflect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a>&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00019.html">Isect</a>&#160;</td>
+          <td class="paramname"><em>isect_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> *&#160;</td>
+          <td class="paramname"><em>p_ray_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the reflected ray from the intersection data and the ray to the intersection </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray_</td><td></td></tr>
+    <tr><td class="paramname">isect_</td><td></td></tr>
+    <tr><td class="paramname">p_reflected_ray_</td><td>will be filled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>proportion of reflected color </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00488">488</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00047_source.html#l00038">Isect::bsdf()</a>, <a class="el" href="a00056_source.html#l00099">Ray::dDdx()</a>, <a class="el" href="a00056_source.html#l00102">Ray::dDdy()</a>, <a class="el" href="a00047_source.html#l00026">Isect::dg()</a>, <a class="el" href="a00056_source.html#l00064">Ray::dir()</a>, <a class="el" href="a00039_source.html#l00161">Diff_Geom::dNdx()</a>, <a class="el" href="a00039_source.html#l00165">Diff_Geom::dNdy()</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00056_source.html#l00093">Ray::dPdx()</a>, <a class="el" href="a00056_source.html#l00096">Ray::dPdy()</a>, <a class="el" href="a00039_source.html#l00076">Diff_Geom::normal()</a>, <a class="el" href="a00039_source.html#l00072">Diff_Geom::pos()</a>, <a class="el" href="a00033_source.html#l00151">BSDF::reflect_dir()</a>, <a class="el" href="a00056_source.html#l00112">Ray::setdDdx()</a>, <a class="el" href="a00056_source.html#l00115">Ray::setdDdy()</a>, <a class="el" href="a00056_source.html#l00106">Ray::setdPdx()</a>, et <a class="el" href="a00056_source.html#l00109">Ray::setdPdy()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00073_ga397536f562058dee83e3be0813324e82_cgraph.png" border="0" usemap="#a00073_ga397536f562058dee83e3be0813324e82_cgraph" alt=""/></div>
+<map name="a00073_ga397536f562058dee83e3be0813324e82_cgraph" id="a00073_ga397536f562058dee83e3be0813324e82_cgraph">
+<area shape="rect" id="node2" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe" title="Isect::bsdf" alt="" coords="138,5,220,33"/><area shape="rect" id="node3" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="137,57,220,85"/><area shape="rect" id="node4" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="137,109,220,137"/><area shape="rect" id="node5" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef" title="Isect::dg" alt="" coords="143,161,215,189"/><area shape="rect" id="node6" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="145,213,212,241"/><area shape="rect" id="node7" href="a00013.html#a31611ca29f29bc7c000ddcdd483e8177" title="Diff_Geom::dNdx" alt="" coords="117,265,240,293"/><area shape="rect" id="node8" href="a00013.html#a5957467c675f5066939dc92bea0ea738" title="Diff_Geom::dNdy" alt="" coords="117,317,240,345"/><area shape="rect" id="node9" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="294,499,396,527"/><area shape="rect" id="node13" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="137,421,220,449"/><area shape="rect" id="node14" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="137,473,220,501"/><area shape="rect" id="node15" href="a00013.html#a5032f917f066531ab12142806d5cb023" title="Diff_Geom::normal" alt="" coords="112,525,245,553"/><area shape="rect" id="node16" href="a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a" title="Diff_Geom::pos" alt="" coords="122,577,236,605"/><area shape="rect" id="node17" href="a00005.html#a0c1293b4a879f5797f9befcaef2c4c99" title="BSDF::reflect_dir" alt="" coords="117,629,240,657"/><area shape="rect" id="node18" href="a00027.html#a5d26fb532f4c86660b2510f1ee652398" title="Ray::setdDdx" alt="" coords="128,681,229,709"/><area shape="rect" id="node19" href="a00027.html#a71bc6099f66336f342eae251540074ea" title="Ray::setdDdy" alt="" coords="128,733,229,761"/><area shape="rect" id="node20" href="a00027.html#a2e2d243083b80167abda5801213e935a" title="Ray::setdPdx" alt="" coords="128,785,229,813"/><area shape="rect" id="node21" href="a00027.html#ac679655f534897cec2a82d88d7e2fd3f" title="Ray::setdPdy" alt="" coords="128,837,229,865"/><area shape="rect" id="node10" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="446,447,536,475"/><area shape="rect" id="node11" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="446,499,536,527"/><area shape="rect" id="node12" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="446,551,536,579"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1c7e1aae0ca65e600b252447bc817038"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00007.html">Color</a> refract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a>&#160;</td>
+          <td class="paramname"><em>ray_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00019.html">Isect</a>&#160;</td>
+          <td class="paramname"><em>isect_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00027.html">Ray</a> *&#160;</td>
+          <td class="paramname"><em>p_ray_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the refracted ray from the intersection data and the ray to the intersection </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray_</td><td></td></tr>
+    <tr><td class="paramname">isect_</td><td></td></tr>
+    <tr><td class="paramname">p_refracted_ray_</td><td>will be filled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>proportion of refracted color. it can be black in case of total internal reflection</dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ray_</td><td></td></tr>
+    <tr><td class="paramname">isect_</td><td></td></tr>
+    <tr><td class="paramname">p_refracted_ray_</td><td>will be filled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>proportion of refracted color </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="a00057_source.html#l00520">520</a> du fichier <a class="el" href="a00057_source.html">raytracing.cpp</a>.</p>
+
+<p>Références <a class="el" href="a00047_source.html#l00038">Isect::bsdf()</a>, <a class="el" href="a00056_source.html#l00099">Ray::dDdx()</a>, <a class="el" href="a00056_source.html#l00102">Ray::dDdy()</a>, <a class="el" href="a00047_source.html#l00026">Isect::dg()</a>, <a class="el" href="a00056_source.html#l00064">Ray::dir()</a>, <a class="el" href="a00039_source.html#l00161">Diff_Geom::dNdx()</a>, <a class="el" href="a00039_source.html#l00165">Diff_Geom::dNdy()</a>, <a class="el" href="a00065_source.html#l00088">Vector3D::dot()</a>, <a class="el" href="a00056_source.html#l00093">Ray::dPdx()</a>, <a class="el" href="a00056_source.html#l00096">Ray::dPdy()</a>, <a class="el" href="a00033_source.html#l00225">BSDF::getIor()</a>, <a class="el" href="a00039_source.html#l00076">Diff_Geom::normal()</a>, <a class="el" href="a00039_source.html#l00072">Diff_Geom::pos()</a>, <a class="el" href="a00033_source.html#l00189">BSDF::refract_dir()</a>, <a class="el" href="a00056_source.html#l00112">Ray::setdDdx()</a>, <a class="el" href="a00056_source.html#l00115">Ray::setdDdy()</a>, <a class="el" href="a00056_source.html#l00106">Ray::setdPdx()</a>, et <a class="el" href="a00056_source.html#l00109">Ray::setdPdy()</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="a00073_ga1c7e1aae0ca65e600b252447bc817038_cgraph.png" border="0" usemap="#a00073_ga1c7e1aae0ca65e600b252447bc817038_cgraph" alt=""/></div>
+<map name="a00073_ga1c7e1aae0ca65e600b252447bc817038_cgraph" id="a00073_ga1c7e1aae0ca65e600b252447bc817038_cgraph">
+<area shape="rect" id="node2" href="a00019.html#ad175c0c1162ae8050132013c4578d4fe" title="Isect::bsdf" alt="" coords="138,5,220,33"/><area shape="rect" id="node3" href="a00027.html#a208d83f46a83c0c1c2646557f20528b6" title="Ray::dDdx" alt="" coords="137,57,220,85"/><area shape="rect" id="node4" href="a00027.html#a1e7203abf3bf883e9a5e739125e85973" title="Ray::dDdy" alt="" coords="137,109,220,137"/><area shape="rect" id="node5" href="a00019.html#a6709cddc48c0c8e2631c7b23437bd6ef" title="Isect::dg" alt="" coords="143,161,215,189"/><area shape="rect" id="node6" href="a00027.html#a9bfb39f0ff5a7a2330ef9749b8e97e17" title="Ray::dir" alt="" coords="145,213,212,241"/><area shape="rect" id="node7" href="a00013.html#a31611ca29f29bc7c000ddcdd483e8177" title="Diff_Geom::dNdx" alt="" coords="117,265,240,293"/><area shape="rect" id="node8" href="a00013.html#a5957467c675f5066939dc92bea0ea738" title="Diff_Geom::dNdy" alt="" coords="117,317,240,345"/><area shape="rect" id="node9" href="a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="294,525,396,553"/><area shape="rect" id="node13" href="a00027.html#a1dca76b0cd170aecbf8a2b53855cb0a9" title="Ray::dPdx" alt="" coords="137,421,220,449"/><area shape="rect" id="node14" href="a00027.html#aae11d929741f134ede07bf6773fc5a9f" title="Ray::dPdy" alt="" coords="137,473,220,501"/><area shape="rect" id="node15" href="a00005.html#a40748b3fdb9139f3819660637a127172" title="BSDF::getIor" alt="" coords="129,525,228,553"/><area shape="rect" id="node16" href="a00013.html#a5032f917f066531ab12142806d5cb023" title="Diff_Geom::normal" alt="" coords="112,577,245,605"/><area shape="rect" id="node17" href="a00013.html#a5fa6ab4c50cd785ab124fcc4b4c1247a" title="Diff_Geom::pos" alt="" coords="122,629,236,657"/><area shape="rect" id="node18" href="a00005.html#a072b04d8fc38b94911e023dcb3a0c28f" title="BSDF::refract_dir" alt="" coords="117,681,241,709"/><area shape="rect" id="node19" href="a00027.html#a5d26fb532f4c86660b2510f1ee652398" title="Ray::setdDdx" alt="" coords="128,733,229,761"/><area shape="rect" id="node20" href="a00027.html#a71bc6099f66336f342eae251540074ea" title="Ray::setdDdy" alt="" coords="128,785,229,813"/><area shape="rect" id="node21" href="a00027.html#a2e2d243083b80167abda5801213e935a" title="Ray::setdPdx" alt="" coords="128,837,229,865"/><area shape="rect" id="node22" href="a00027.html#ac679655f534897cec2a82d88d7e2fd3f" title="Ray::setdPdy" alt="" coords="128,889,229,917"/><area shape="rect" id="node10" href="a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="446,473,536,501"/><area shape="rect" id="node11" href="a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="446,525,536,553"/><area shape="rect" id="node12" href="a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="446,577,536,605"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:47 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

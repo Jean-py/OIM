@@ -1,0 +1,9 @@
+<map id="Diff_Geom::dDdy" name="Diff_Geom::dDdy">
+<area shape="rect" id="node2" href="$a00024.html#ab07fd72491019dfdce875eaa677ba18f" title="clip a ray by a geometry. " alt="" coords="212,57,295,85"/>
+<area shape="rect" id="node6" href="$a00028.html#a0f1778fd9c133a40977e6e33f6a75b61" title="Scene::intersect" alt="" coords="195,109,312,137"/>
+<area shape="rect" id="node8" href="$a00013.html#a6570d0fa978b4a44fa4351d08e6beb9a" title="Diff_Geom::set_dDdy" alt="" coords="179,161,328,189"/>
+<area shape="rect" id="node3" href="$a00008.html#aa000dbdde858b3eb9078fe90d3ec71b2" title="Cone::get_clip_points" alt="" coords="376,57,525,85"/>
+<area shape="rect" id="node4" href="$a00008.html#a7ddf59f2bc68bc7d862fc915b2983702" title="clip a ray by a geometry. " alt="" coords="589,5,670,33"/>
+<area shape="rect" id="node5" href="$a00008.html#a525bf376cea933bf1fb4dd47ec77c3c1" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Cone3.cpp " alt="" coords="574,57,685,85"/>
+<area shape="rect" id="node7" href="$a00071.html#gaa971dcbc0062c359e8464f84662b0bd4" title="intersect a given ray with the scene. " alt="" coords="393,109,508,137"/>
+</map>

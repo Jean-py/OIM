@@ -1,0 +1,6 @@
+<map id="prefilterTexture" name="prefilterTexture">
+<area shape="rect" id="node2" href="$a00030.html#a1a5b708cdae443e68e6a12f03f11cbbf" title="Texture::buildmipmaps" alt="" coords="163,5,317,33"/>
+<area shape="rect" id="node3" href="$a00030.html#a527fed2088b0fdb8b9384c7137623104" title="Texture::prefilter" alt="" coords="366,5,482,33"/>
+<area shape="rect" id="node4" href="$a00049.html#a322944f24b18d5647a07cefea27d8861" title="make_textured_scene" alt="" coords="530,5,683,33"/>
+<area shape="rect" id="node5" href="$a00049.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="731,5,781,33"/>
+</map>

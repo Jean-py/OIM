@@ -1,0 +1,13 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+#include <ctype.h>
+
+int main(){
+
+char joueur[8];
+scanf("%s" , &joueur);
+
+return 1;
+}

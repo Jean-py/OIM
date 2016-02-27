@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>M1 Informatique - OIM - mini raytracer:  Fichier source de texture.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">M1 Informatique - OIM - mini raytracer
+   &#160;<span id="projectnumber">2014-2015</span>
+   </div>
+   <div id="projectbrief">Interface de programmation pour un raytracer minimal</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00061_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groupes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">texture.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="a00061.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00062.html">texture.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00064.html">texturefetch.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;png.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="a00030.html#a09c4bcb7462f64c1d20fa69dba3cee8a">   10</a></span>&#160;<a class="code" href="a00030.html#a09c4bcb7462f64c1d20fa69dba3cee8a">Texture::~Texture</a>(){</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="a00030.html#af98df6a5804ac5bf2821da4320c59b22">mPixels</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=1; i&lt;<a class="code" href="a00030.html#a204a0958512e3843c3258f94dfab89d6">mlodmax</a>+1; ++i)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">delete</span>[] <a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>[i];</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="a00030.html#a236619967a1c87428f9393d37cc34e31">   18</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="a00030.html#a236619967a1c87428f9393d37cc34e31">Texture::getclamp</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00030.html#aca02c9519d137e2262ec48d5057749b8">clamp</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="a00030.html#a46fbfaacd024b6c500c499c45adf1abf">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00030.html#a46fbfaacd024b6c500c499c45adf1abf">Texture::setclamp</a>(<span class="keywordtype">bool</span> value)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="a00030.html#aca02c9519d137e2262ec48d5057749b8">clamp</a> = value;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="a00030.html#ae823015eee138329abc71a2f74fa18e6">   28</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="a00030.html#ae823015eee138329abc71a2f74fa18e6">Texture::load</a>(std::string filename){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    FILE *fp;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    png_byte magic[8];</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/* open image file */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    fp = std::fopen (filename.c_str(), <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!fp) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;error: couldn&#39;t open \&quot;%s\&quot;!\n&quot;</span>, filename.c_str());</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">/* read magic number */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    fread (magic, 1, <span class="keyword">sizeof</span> (magic), fp);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">/* check for valid magic number */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (!png_check_sig (magic, <span class="keyword">sizeof</span> (magic))) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        fprintf (stderr, <span class="stringliteral">&quot;error: \&quot;%s\&quot; is not a valid PNG image!\n&quot;</span>, filename.c_str());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        fclose (fp);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">/* create a png read struct */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    png_structp png_ptr = png_create_read_struct (PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (!png_ptr) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        fclose (fp);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">/* create a png info struct */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    png_infop info_ptr = png_create_info_struct (png_ptr);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!info_ptr) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        fclose (fp);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        png_destroy_read_struct (&amp;png_ptr, NULL, NULL);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">/* initialize the setjmp for returning properly after a libpng</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">       error occured */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (setjmp (png_jmpbuf (png_ptr))) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        fclose (fp);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        png_destroy_read_struct (&amp;png_ptr, &amp;info_ptr, NULL);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">/* setup libpng for using standard C fread() function</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">       with our FILE pointer */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    png_init_io (png_ptr, fp);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/* tell libpng that we have already read the magic number */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    png_set_sig_bytes (png_ptr, <span class="keyword">sizeof</span> (magic));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* read png info */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    png_read_info (png_ptr, info_ptr);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> bit_depth, color_type;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">/* get some usefull information from header */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    bit_depth = png_get_bit_depth (png_ptr, info_ptr);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    color_type = png_get_color_type (png_ptr, info_ptr);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">/* convert index color images to RGB images */</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (color_type == PNG_COLOR_TYPE_PALETTE)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      png_set_palette_to_rgb (png_ptr);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">/* convert 1-2-4 bits grayscale images to 8 bits</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">       grayscale. */</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (color_type == PNG_COLOR_TYPE_GRAY &amp;&amp; bit_depth &lt; 8)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      png_set_expand_gray_1_2_4_to_8(png_ptr);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (png_get_valid (png_ptr, info_ptr, PNG_INFO_tRNS))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      png_set_tRNS_to_alpha (png_ptr);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (bit_depth == 16)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      png_set_strip_16 (png_ptr);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bit_depth &lt; 8)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      png_set_packing (png_ptr);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">/* update info structure to apply transformations */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    png_read_update_info (png_ptr, info_ptr);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">/* retrieve updated information */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    png_get_IHDR (png_ptr, info_ptr,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                  (png_uint_32*)(&amp;<a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>),</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                  (png_uint_32*)(&amp;<a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>),</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                  &amp;bit_depth, &amp;color_type,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                  NULL, NULL, NULL);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">switch</span> (color_type) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">case</span> PNG_COLOR_TYPE_GRAY:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a> = 1;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">case</span> PNG_COLOR_TYPE_GRAY_ALPHA:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a> = 2;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">case</span> PNG_COLOR_TYPE_RGB:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a> = 3;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">case</span> PNG_COLOR_TYPE_RGB_ALPHA:</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a> = 4;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">/* Badness */</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">/* we can now allocate memory for storing pixel data */</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="a00030.html#af98df6a5804ac5bf2821da4320c59b22">mPixels</a> = <span class="keyword">new</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>[<a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a> * <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a> * <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>];</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    png_bytep *row_pointers;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">/* setup a pointer array.  Each one points at the begening of a row. */</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    row_pointers = <span class="keyword">new</span> png_bytep[<a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>];</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>; ++i) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        row_pointers[i] = (png_bytep)(<a class="code" href="a00030.html#af98df6a5804ac5bf2821da4320c59b22">mPixels</a> +</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;          ((mHeight - (i + 1)) * <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a> * <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>));</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">/* read pixel data using row pointers */</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    png_read_image (png_ptr, row_pointers);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">/* finish decompression and release memory */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    png_read_end (png_ptr, NULL);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    png_destroy_read_struct (&amp;png_ptr, &amp;info_ptr, NULL);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    fclose (fp);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">/* we don&#39;t need row pointers anymore */</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">delete</span>[] row_pointers;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="code" href="a00030.html#ae97dcc52cd6757bfe077cf3e7d502fa9">  158</a></span>&#160;<a class="code" href="a00030.html#ae97dcc52cd6757bfe077cf3e7d502fa9">Texture::Texture</a>(std::string filename) : mPixels(NULL), mMipMapLevels(NULL), hasmipmap(false), mSu(1.f), mSv(1.f), clamp(false){</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="a00030.html#ae823015eee138329abc71a2f74fa18e6">load</a>(filename)) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;Erreur : impossible de lire le fichier &quot;</span> &lt;&lt; filename &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="a00030.html#a204a0958512e3843c3258f94dfab89d6">mlodmax</a> = (int)std::floor(std::min(std::log2(<a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>), std::log2(<a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>)));</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="code" href="a00030.html#a527fed2088b0fdb8b9384c7137623104">  166</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="a00030.html#a527fed2088b0fdb8b9384c7137623104">Texture::prefilter</a>(){</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="a00030.html#ac3e5c3425222be7fcaf10eb9780d8850">hasmipmap</a> = <a class="code" href="a00030.html#a1a5b708cdae443e68e6a12f03f11cbbf">buildmipmaps</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00030.html#ac3e5c3425222be7fcaf10eb9780d8850">hasmipmap</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="code" href="a00030.html#a1a5b708cdae443e68e6a12f03f11cbbf">  171</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="a00030.html#a1a5b708cdae443e68e6a12f03f11cbbf">Texture::buildmipmaps</a>(){</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a> = <span class="keyword">new</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*[<a class="code" href="a00030.html#a204a0958512e3843c3258f94dfab89d6">mlodmax</a>+1];</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>[0] = <a class="code" href="a00030.html#af98df6a5804ac5bf2821da4320c59b22">mPixels</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=1;i&lt;<a class="code" href="a00030.html#a204a0958512e3843c3258f94dfab89d6">mlodmax</a>+1; ++i)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>[i]=NULL;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">// Call of the student function</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00063.html#a2bbce8cb9f75d7bbfc5601b5cf0c1b01" title="prefilterTexture Compute an array of images with geometrically decreasing resolution from the origina...">prefilterTexture</a>(<a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>, <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>, <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>, <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>, mlodmax+1);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="a00030.html#a634bbf23c61283e52598a73e40bb78b4">  182</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00030.html#a634bbf23c61283e52598a73e40bb78b4">Texture::setScale</a>(<span class="keywordtype">float</span> su, <span class="keywordtype">float</span> sv){</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="a00030.html#aa8cf567ce941e0c0367a77cdbad1915a">mSu</a> = 1.f/su;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="a00030.html#ace24a7cebb3dbd31fa06486787b675b5">mSv</a> = 1.f/sv;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="code" href="a00030.html#a15376a1db3093522b4402220b771ad04">  188</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="a00030.html#a15376a1db3093522b4402220b771ad04">Texture::getPixel</a>(<span class="keywordtype">float</span> u, <span class="keywordtype">float</span> v, <span class="keywordtype">float</span> lod, <a class="code" href="a00007.html" title="Color management. ">Color</a> &amp;color){</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="a00030.html#aca02c9519d137e2262ec48d5057749b8">clamp</a>){</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            u = (u&gt;0) ? ((u&lt;1) ? u : 1) : 0;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            v = (v&gt;0) ? ((v&lt;1) ? v : 1) : 0;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        u = <a class="code" href="a00030.html#aa8cf567ce941e0c0367a77cdbad1915a">mSu</a>*u;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        v = <a class="code" href="a00030.html#ace24a7cebb3dbd31fa06486787b675b5">mSv</a>*v;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordtype">float</span> scaledU = u * (<a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a> - 1);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">float</span> scaledV = v * (<a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a> - 1);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">//        color = Color(u,v,0);</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">//        return;</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">int</span> s = ((int)scaledU) % <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordtype">int</span> t = ((int)scaledV) % <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordtype">float</span> ds = scaledU - std::floor(scaledU);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordtype">float</span> dt = scaledV - std::floor(scaledV);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">if</span> (s&lt;0){</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        s = s+<a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">if</span> (t&lt;0){</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        t = t+<a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="comment">// Nearest</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">//        color = interpolate(mPixels, mWidth, mHeight, s,t, 0.f,0.f);</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">//        return;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;         <span class="comment">// Linear</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">//         color = interpolate(mPixels, mWidth, mHeight, s,t, ds, dt);</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">//         return;</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="comment">/* Filtrage */</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        lod = std::min(lod-1, (<span class="keywordtype">float</span>)<a class="code" href="a00030.html#a204a0958512e3843c3258f94dfab89d6">mlodmax</a>);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span> (lod &gt; 0) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//            color = Color(0, std::floor(lod), 0);</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">//            return;</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordtype">int</span> baselod = (int)std::floor(lod);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordtype">int</span> pix = (int)(std::pow(2.f,baselod)); <span class="comment">// bigger inferior mipmap level</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="a00030.html#ac3e5c3425222be7fcaf10eb9780d8850">hasmipmap</a>){</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <span class="comment">// Sous-echantillonnage --&gt; filtrage mip-map</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <a class="code" href="a00007.html" title="Color management. ">Color</a> color1 = <a class="code" href="a00030.html#a8094e6e1fc9cdf547321f357d818a2bd">integrateMipMap</a>(baselod, ((<span class="keywordtype">float</span>)s + ds)/pix, ((<span class="keywordtype">float</span>)t + dt)/pix, <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>/pix, <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>/pix);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="keywordflow">if</span> (baselod &lt; mlodmax){</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                    pix = std::pow(2.f,baselod+1); <span class="comment">// smaller superior mipmap level</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                    <a class="code" href="a00007.html" title="Color management. ">Color</a> color2 = <a class="code" href="a00030.html#a8094e6e1fc9cdf547321f357d818a2bd">integrateMipMap</a>(baselod+1, ((<span class="keywordtype">float</span>)s + ds)/pix, ((<span class="keywordtype">float</span>)t + dt)/pix, <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>/pix, <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>/pix);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    <span class="keywordtype">float</span> dm = lod - std::floor(lod);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    color = color1 * (1-dm) + color2 * dm;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    color = color1;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <span class="keywordtype">int</span> cs = pix * (s/pix);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordtype">int</span> ct = pix * (t/pix);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <a class="code" href="a00007.html" title="Color management. ">Color</a> color1 = <a class="code" href="a00030.html#a7f7a4bf88646efb0805b8326d4994b50">integrateExplicit</a>(<a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>[0], <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>, <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>, <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>, cs, ct, pix, pix);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <span class="keywordflow">if</span> (baselod &lt; mlodmax){</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                    pix = std::pow(2.f,baselod+1); <span class="comment">// smaller superior mipmap level</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                    cs = pix * (s/pix);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                    ct = pix * (t/pix);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    <a class="code" href="a00007.html" title="Color management. ">Color</a> color2 = <a class="code" href="a00030.html#a7f7a4bf88646efb0805b8326d4994b50">integrateExplicit</a>(<a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>[0], <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>, <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>, <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>, cs, ct, pix, pix);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                    <span class="keywordtype">float</span> dm = lod - std::floor(lod);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                    color = color1 * (1-dm) + color2 * dm;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                    color = color1;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">//            color = Color(1/*fabsf(lod)*/, 0, 0);</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">//            return;</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            color = <a class="code" href="a00030.html#a12d1fa7928a770eb113b12000a0d3633">interpolate</a>(<a class="code" href="a00030.html#af98df6a5804ac5bf2821da4320c59b22">mPixels</a>, <a class="code" href="a00030.html#a0e007f4b4f1a314e5b0dae1402a13afb">mWidth</a>, <a class="code" href="a00030.html#ad7078e03c0ef6e69b733eb85fd72aec2">mHeight</a>, s,t, ds,dt);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="code" href="a00030.html#a8094e6e1fc9cdf547321f357d818a2bd">  274</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00030.html#a8094e6e1fc9cdf547321f357d818a2bd">Texture::integrateMipMap</a>(<span class="keywordtype">int</span> level, <span class="keywordtype">float</span> s, <span class="keywordtype">float</span> t, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h){</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> color(0.f, 0.f, 0.f);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    color = <a class="code" href="a00030.html#a12d1fa7928a770eb113b12000a0d3633">interpolate</a>(<a class="code" href="a00030.html#aa0bb72a0a5e0acf96d34d81aaf48f0ec">mMipMapLevels</a>[level], w, h, (<span class="keywordtype">int</span>)s, (<span class="keywordtype">int</span>)t, s-std::floor(s), t-std::floor(t));</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">return</span> color;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="a00030.html#a7f7a4bf88646efb0805b8326d4994b50">  280</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00030.html#a7f7a4bf88646efb0805b8326d4994b50">Texture::integrateExplicit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pixels, <span class="keywordtype">int</span> imageWidth, <span class="keywordtype">int</span> imageHeight, <span class="keywordtype">int</span> pixelFormat, <span class="keywordtype">float</span> s, <span class="keywordtype">float</span> t, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h){</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span>    <a class="code" href="a00007.html" title="Color management. ">Color</a> color(0.f, 0.f, 0.f);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;h; i++)</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;w; j++) {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="keywordtype">int</span> k = ((int)(t+i)) % imageHeight;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordtype">int</span> l = ((int)(s+j)) % imageWidth;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordtype">int</span> linPos = (k*imageWidth + l)*(pixelFormat);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <a class="code" href="a00007.html" title="Color management. ">Color</a> centerColor(((<span class="keywordtype">float</span>) pixels[linPos])/255.0, ((<span class="keywordtype">float</span>) pixels[linPos+1])/255.0, ((<span class="keywordtype">float</span>) pixels[linPos+2])/255.0);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            color = color + centerColor;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    color = color * (1.f/(w*h));</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">return</span> color;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor"></span>    <span class="comment">// Call of the student function</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00063.html#a79512e8201e923fec16ccc8a8d7113b2" title="integrateTexture Get a texel by computing the mean of the color on a neighborood of size (deltas x de...">integrateTexture</a>(pixels, imageWidth, imageHeight, pixelFormat, s, t, w, h);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="code" href="a00030.html#a12d1fa7928a770eb113b12000a0d3633">  299</a></span>&#160;<a class="code" href="a00007.html" title="Color management. ">Color</a> <a class="code" href="a00030.html#a12d1fa7928a770eb113b12000a0d3633">Texture::interpolate</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pixels, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keywordtype">int</span> s, <span class="keywordtype">int</span> t, <span class="keywordtype">float</span> ds, <span class="keywordtype">float</span> dt){</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span>    <a class="code" href="a00007.html" title="Color management. ">Color</a> color;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// Sur échantillonnage --&gt; interpolation</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">// nearest texel</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">int</span> linPos = (t*w + s)*(<a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> centerColor(((<span class="keywordtype">float</span>) pixels[linPos])/255.0, ((<span class="keywordtype">float</span>) pixels[linPos+1])/255.0, ((<span class="keywordtype">float</span>) pixels[linPos+2])/255.0);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> rightColor;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">int</span> r = std::min(s+1, w-1);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">int</span> posds = (t*w + r)*(<a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    rightColor = <a class="code" href="a00007.html" title="Color management. ">Color</a>(</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                      ((<span class="keywordtype">float</span>) pixels[posds])/255.0,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                      ((<span class="keywordtype">float</span>) pixels[posds+1])/255.0,</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                      ((<span class="keywordtype">float</span>) pixels[posds+2])/255.0</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                  );</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> upColor;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">int</span> p = std::min(t+1, h-1);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">int</span> posdt = (p*w + s)*(<a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    upColor = <a class="code" href="a00007.html" title="Color management. ">Color</a> (</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                    ((<span class="keywordtype">float</span>) pixels[posdt])/255.0,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                    ((<span class="keywordtype">float</span>) pixels[posdt+1])/255.0,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                    ((<span class="keywordtype">float</span>) pixels[posdt+2])/255.0</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;              );</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="a00007.html" title="Color management. ">Color</a> upRightColor;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">int</span> posdtds = (p*w + r)*(<a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    upRightColor = <a class="code" href="a00007.html" title="Color management. ">Color</a> (</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                         ((<span class="keywordtype">float</span>) pixels[posdtds])/255.0,</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                         ((<span class="keywordtype">float</span>) pixels[posdtds+1])/255.0,</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                         ((<span class="keywordtype">float</span>) pixels[posdtds+2])/255.0</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                   );</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    rightColor = centerColor*(1-ds) + rightColor*ds;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    upColor = upColor*(1-ds) + upRightColor*ds;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    color = rightColor*(1-dt) + upColor*dt;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> color;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">// Call of the student function</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="a00063.html#aa82c0e54572b2cc47433b2e7f00f13fc" title="interpolateTexture Get a texel linearly interpolated from its neighbors ">interpolateTexture</a>(pixels, w, h, <a class="code" href="a00030.html#a701fda9c6050d7a8a9a580e05f37ea6d">mPixelFormat</a>, (<span class="keywordtype">float</span>)s+ds, (<span class="keywordtype">float</span>)t+dt);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_2143d69be6627e7c0180aa018df36282.html">coreraytracer</a></li><li class="navelem"><a class="el" href="a00061.html">texture.cpp</a></li>
+    <li class="footer">Généré le Lundi Novembre 3 2014 07:46:46 pour M1 Informatique - OIM - mini raytracer par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

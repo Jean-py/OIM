@@ -1,0 +1,10 @@
+<map id="camera_ray" name="camera_ray">
+<area shape="rect" id="node2" href="$a00006.html#a98275b6232248a9c1691cd9500d8134d" title="Camera::ray_for_pixel" alt="" coords="146,83,299,111"/>
+<area shape="rect" id="node3" href="$a00031.html#a293698c2fcdc50968fa63e125120bd61" title="Vector3D::dot" alt="" coords="542,31,644,59"/>
+<area shape="rect" id="node7" href="$a00031.html#a5b3059961eb8b4db3dc6b79f283dcac1" title="Vector3D::normalize" alt="" coords="347,83,488,111"/>
+<area shape="rect" id="node9" href="$a00027.html#a5d26fb532f4c86660b2510f1ee652398" title="Ray::setdDdx" alt="" coords="367,135,468,163"/>
+<area shape="rect" id="node4" href="$a00031.html#a15a162a986b897ebd0bb74df056d99c5" title="Vector3D::x" alt="" coords="699,5,789,33"/>
+<area shape="rect" id="node5" href="$a00031.html#a1819fd51b78ece8de462d3a2c979111a" title="Vector3D::y" alt="" coords="699,57,789,85"/>
+<area shape="rect" id="node6" href="$a00031.html#a026531e883c967b7a7803a2f6b983d2c" title="Vector3D::z" alt="" coords="699,109,789,137"/>
+<area shape="rect" id="node8" href="$a00031.html#ab58e6202e20f0fd74fc35133eb780254" title="Vector3D::norm" alt="" coords="536,83,650,111"/>
+</map>

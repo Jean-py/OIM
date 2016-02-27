@@ -1,0 +1,4 @@
+<map id="Box3D::clip" name="Box3D::clip">
+<area shape="rect" id="node2" href="$a00004.html#ae9726a96fc8d4b778bcfd9ba8fd693a1" title="clip a ray by a geometry. " alt="" coords="160,5,248,33"/>
+<area shape="rect" id="node3" href="$a00004.html#ad5a9451718d7e98f7425aee8e00dcfbf" title="modifies the ray_.max_t() value, intersect only if the intersection is before ray_.max_t() Adapted from http://www.geometrictools.com/LibMathematics/Intersection/Wm5IntrLine3Box3.cpp " alt="" coords="144,57,264,85"/>
+</map>

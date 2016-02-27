@@ -1,0 +1,5 @@
+<map id="Texture::integrateMipMap" name="Texture::integrateMipMap">
+<area shape="rect" id="node2" href="$a00030.html#a12d1fa7928a770eb113b12000a0d3633" title="Texture::interpolate" alt="" coords="227,5,362,33"/>
+<area shape="rect" id="node3" href="$a00063.html#aa82c0e54572b2cc47433b2e7f00f13fc" title="interpolateTexture Get a texel linearly interpolated from its neighbors " alt="" coords="411,5,538,33"/>
+<area shape="rect" id="node4" href="$a00063.html#ad6c74e0d655725b60d1c0ac068664137" title="getTexel Get a single texel from a texture. " alt="" coords="587,5,658,33"/>
+</map>
